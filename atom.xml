@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xelengo.github.io/"/>
-  <updated>2017-02-02T12:27:27.543Z</updated>
+  <updated>2017-02-02T17:05:49.771Z</updated>
   <id>https://xelengo.github.io/</id>
   
   <author>
@@ -20,17 +20,25 @@
     <link href="https://xelengo.github.io/2017/02/02/test/"/>
     <id>https://xelengo.github.io/2017/02/02/test/</id>
     <published>2017-02-02T11:16:04.226Z</published>
-    <updated>2017-02-02T12:27:27.543Z</updated>
+    <updated>2017-02-02T17:05:49.771Z</updated>
     
     <content type="html"><![CDATA[<p>测试</p>
 <p>使用yilia主题时，文章过长使用<code>&lt;!-- more --&gt;</code>截断文章，示例如第一篇博客。</p>
+<p>yilia模板范例：<br><a href="http://litten.me/" target="_blank" rel="external">yilia博客</a></p>
+<a id="more"></a>
+<h3 id="测试插入图片："><a href="#测试插入图片：" class="headerlink" title="测试插入图片："></a>测试插入图片：</h3><p>网络(绝对)路径：<br><img src="https://github.com/XElengo/XElengo.github.io/tree/master/img/1a.png" alt="text"></p>
+<p>相对路径：<br><img src="img/1c.png" alt="相对"></p>
+<h3 id="yilia-多说评论插件使用"><a href="#yilia-多说评论插件使用" class="headerlink" title="yilia 多说评论插件使用"></a>yilia 多说评论插件使用</h3><p>多说插件<code>duoshuo: &quot;xxxx&quot;</code> 已设置，但是无法成功显示，浏览器调试工具console报错：990002</p>
+<p>自己解决了，方法虽然不太好；写死这个地方yilia\layout_partial\post\duoshuo.ejs ： var duoshuoQuery = {short_name:”xelengo”};<br>short_name是用多说网站生成的模板 即 工具–&gt;通用代码中的short_name，即 多说–&gt;设置 那里的域名的第一部分，如：xelengo.duoshuo.com 中的xelengo。因为多说的账户名称可以修改，但注册账号时的多说域名不可修改，且账户名称与域名的第一部分允许不同，而多说评论插件是通过访问多说域名进行显示的。所以可能会出错吧。另外本地缓存，github上的代码，以及多说本身都会影响运行结果。谢谢 @litten 提供的模板</p>
+<p>参见：<a href="https://github.com/litten/hexo-theme-yilia/issues/28" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia/issues/28</a></p>
+<p>待在线浏览成功后可以再把var duoshuoQuery = {short_name:”xelengo”};改回去。重新发布后评论栏依然存在。由此可以把锅甩给缓存了。。。</p>
 ]]></content>
     
     <summary type="html">
     
       &lt;p&gt;测试&lt;/p&gt;
 &lt;p&gt;使用yilia主题时，文章过长使用&lt;code&gt;&amp;lt;!-- more --&amp;gt;&lt;/code&gt;截断文章，示例如第一篇博客。&lt;/p&gt;
-
+&lt;p&gt;yilia模板范例：&lt;br&gt;&lt;a href=&quot;http://litten.me/&quot;&gt;yilia博客&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -42,7 +50,7 @@
     <link href="https://xelengo.github.io/2017/02/02/hello-world/"/>
     <id>https://xelengo.github.io/2017/02/02/hello-world/</id>
     <published>2017-02-02T02:26:02.612Z</published>
-    <updated>2017-02-02T12:28:29.731Z</updated>
+    <updated>2017-02-02T17:01:39.296Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://xelengo.github.io/">Welcome to my blog.</a></p>
 <p>There is my first article.</p>
@@ -63,21 +71,29 @@
 <p>一个个人收藏的博客：<a href="http://jocs.me/blog/" target="_blank" rel="external">http://jocs.me/blog/</a></p>
 <p>github参考：<a href="https://github.com/youngxhui/youngxhui.github.io" target="_blank" rel="external">https://github.com/youngxhui/youngxhui.github.io</a></p>
 <h3 id="github终端操作指令："><a href="#github终端操作指令：" class="headerlink" title="github终端操作指令："></a>github终端操作指令：</h3><p>安装前提：需要已安装github for windows,node.js</p>
-<p>安装:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure></p>
+<p>安装:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`npm install hexo-cli -g`或`npm install -g hexo-cli`</div></pre></td></tr></table></figure></p>
 <p>一段时间后，安装完成，安装到C盘</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo -v</div></pre></td></tr></table></figure>
 <p>检查版本信息，验证是否安装成功</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo --save</div></pre></td></tr></table></figure>
 <p>安装到D盘（我是这么理解的）</p>
+<p>安装完成后就需要创建本地站点了。</p>
+<p>首先选择一个文件夹作为本地站点根目录。如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd..</div></pre></td></tr></table></figure>
 <p>后退到上级目录</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init [folder]</div></pre></td></tr></table></figure>
-<p>新建一个网站(初始化)。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站</p>
+<p>新建一个网站(初始化)。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站,所以选择好目录后就变成了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure>
+<p>执行完毕后如图3<br>img</p>
+<p>启动服务（先看看效果(<code>http://localhost:4000/</code>)，看完记得关闭服务（ctrl+c））</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
-<p>启动服务（先看看效果，看完记得关闭服务（ctrl+c））</p>
-<p>安装插件（可以一次性复制下面所有命令进行执行，虽然我也不知道这些代码有什么用）</p>
+<p>接下来，安装插件（可以一次性复制下面所有命令进行执行，虽然我也不知道这些代码有什么用）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-index --save</div><div class="line"></div><div class="line">npm install hexo-generator-archive --save</div><div class="line"></div><div class="line">npm install hexo-generator-category --save</div><div class="line"></div><div class="line">npm install hexo-generator-tag --save</div><div class="line"></div><div class="line">npm install hexo-server --save</div><div class="line"></div><div class="line">npm install hexo-deployer-git --save</div><div class="line"></div><div class="line">npm install hexo-deployer-heroku --save</div><div class="line"></div><div class="line">npm install hexo-deployer-rsync --save</div><div class="line"></div><div class="line">npm install hexo-deployer-openshift --save</div><div class="line"></div><div class="line">npm install hexo-renderer-marked@0.2 --save</div><div class="line"></div><div class="line">npm install hexo-renderer-stylus@0.2 --save</div><div class="line"></div><div class="line">npm install hexo-generator-feed@1 --save</div><div class="line"></div><div class="line">npm install hexo-generator-sitemap@1 --save</div></pre></td></tr></table></figure>
-<h3 id="再看看效果"><a href="#再看看效果" class="headerlink" title="再看看效果"></a>再看看效果</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo n #生成文章，或者source\_posts手动编辑</div><div class="line"></div><div class="line">hexo s #本地发布预览效果</div><div class="line"></div><div class="line">hexo g #生成public静态文件</div><div class="line"></div><div class="line">最后我选择手动同步更新至GitHub</div></pre></td></tr></table></figure>
+<p>安装结果：<br>img4</p>
+<h3 id="再看看效果"><a href="#再看看效果" class="headerlink" title="再看看效果"></a>再看看效果</h3><p>Hexo简写命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo n #生成文章，或者source\_posts手动编辑,如果报错就改错。</div><div class="line"></div><div class="line">hexo s #本地发布预览效果</div><div class="line"></div><div class="line">hexo g #生成public静态文件</div><div class="line"></div><div class="line">最后我选择手动同步更新至GitHub</div></pre></td></tr></table></figure>
+<p>还要再装一个yilin需要用的插件：<code>npm i hexo-generator-json-content --save</code></p>
+<p>安装完再部署一遍</p>
 <h2 id="部署静态网页到GitHub"><a href="#部署静态网页到GitHub" class="headerlink" title="部署静态网页到GitHub"></a>部署静态网页到GitHub</h2><h3 id="注册设置GitHub"><a href="#注册设置GitHub" class="headerlink" title="注册设置GitHub"></a>注册设置GitHub</h3><p>— 登录<code>GitHub</code>，注册自定义用户名如wsgzao</p>
 <p>— 在主页右下角创建New repository，name必须和用户名一致如wsgzao.github.io</p>
 <p> – 首次创建耐心等待10分钟左右审核，之后即可访问静态主页如<a href="http://wsgzao.github.io" target="_blank" rel="external">http://wsgzao.github.io</a> </p>
@@ -93,6 +109,11 @@
 <h3 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h3><p>卸载：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm uninstall hexo</div></pre></td></tr></table></figure></p>
 <p>清理掉D盘的相关文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm uninstall hexo-cli -g</div></pre></td></tr></table></figure></p>
 <p>清理掉C盘的相关文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
+<p>##测试$发布常用指令：<br>清除缓存：<code>hexo clean</code></p>
+<p>生成文章 <code>hexo n</code> </p>
+<p>本地发布预览效果 <code>hexo s</code> </p>
+<p>生成public静态文件 <code>hexo g #生成public静态文件</code></p>
+<p>最后手动同步更新至GitHub</p>
 <h2 id="下面贴出github上star数量最多的前10个主题："><a href="#下面贴出github上star数量最多的前10个主题：" class="headerlink" title="下面贴出github上star数量最多的前10个主题："></a>下面贴出github上star数量最多的前10个主题：</h2><ul>
 <li>iissnan/hexo-theme-next ， 3510个star。 </li>
 <li>litten/hexo-theme-yilia ， 1703个star。 </li>

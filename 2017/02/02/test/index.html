@@ -9,18 +9,24 @@
   <title>测试 | XElengo的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="测试
-使用yilia主题时，文章过长使用&amp;lt;!-- more --&amp;gt;截断文章，示例如第一篇博客。">
+使用yilia主题时，文章过长使用&amp;lt;!-- more --&amp;gt;截断文章，示例如第一篇博客。
+yilia模板范例：yilia博客">
 <meta property="og:type" content="article">
 <meta property="og:title" content="测试">
 <meta property="og:url" content="https://xelengo.github.io/2017/02/02/test/index.html">
 <meta property="og:site_name" content="XElengo的个人博客">
 <meta property="og:description" content="测试
-使用yilia主题时，文章过长使用&amp;lt;!-- more --&amp;gt;截断文章，示例如第一篇博客。">
-<meta property="og:updated_time" content="2017-02-02T12:27:27.543Z">
+使用yilia主题时，文章过长使用&amp;lt;!-- more --&amp;gt;截断文章，示例如第一篇博客。
+yilia模板范例：yilia博客">
+<meta property="og:image" content="https://github.com/XElengo/XElengo.github.io/tree/master/img/1a.png">
+<meta property="og:image" content="https://xelengo.github.io/img/1c.png">
+<meta property="og:updated_time" content="2017-02-02T17:05:49.771Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试">
 <meta name="twitter:description" content="测试
-使用yilia主题时，文章过长使用&amp;lt;!-- more --&amp;gt;截断文章，示例如第一篇博客。">
+使用yilia主题时，文章过长使用&amp;lt;!-- more --&amp;gt;截断文章，示例如第一篇博客。
+yilia模板范例：yilia博客">
+<meta name="twitter:image" content="https://github.com/XElengo/XElengo.github.io/tree/master/img/1a.png">
   
     <link rel="alternative" href="/atom.xml" title="XElengo的个人博客" type="application/atom+xml">
   
@@ -62,6 +68,8 @@
 			<ul>
 			
 				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔/">随笔</a></li>
 	        
 				<li><a href="/">相册</a></li>
 	        
@@ -123,6 +131,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -140,12 +150,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/">相册</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/随笔/">随笔</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/">相册</a></li>
 		        
 				</ul>
 			</nav>
@@ -182,6 +194,14 @@
       
         <p>测试</p>
 <p>使用yilia主题时，文章过长使用<code>&lt;!-- more --&gt;</code>截断文章，示例如第一篇博客。</p>
+<p>yilia模板范例：<br><a href="http://litten.me/" target="_blank" rel="external">yilia博客</a></p>
+<a id="more"></a>
+<h3 id="测试插入图片："><a href="#测试插入图片：" class="headerlink" title="测试插入图片："></a>测试插入图片：</h3><p>网络(绝对)路径：<br><img src="https://github.com/XElengo/XElengo.github.io/tree/master/img/1a.png" alt="text"></p>
+<p>相对路径：<br><img src="img/1c.png" alt="相对"></p>
+<h3 id="yilia-多说评论插件使用"><a href="#yilia-多说评论插件使用" class="headerlink" title="yilia 多说评论插件使用"></a>yilia 多说评论插件使用</h3><p>多说插件<code>duoshuo: &quot;xxxx&quot;</code> 已设置，但是无法成功显示，浏览器调试工具console报错：990002</p>
+<p>自己解决了，方法虽然不太好；写死这个地方yilia\layout_partial\post\duoshuo.ejs ： var duoshuoQuery = {short_name:”xelengo”};<br>short_name是用多说网站生成的模板 即 工具–&gt;通用代码中的short_name，即 多说–&gt;设置 那里的域名的第一部分，如：xelengo.duoshuo.com 中的xelengo。因为多说的账户名称可以修改，但注册账号时的多说域名不可修改，且账户名称与域名的第一部分允许不同，而多说评论插件是通过访问多说域名进行显示的。所以可能会出错吧。另外本地缓存，github上的代码，以及多说本身都会影响运行结果。谢谢 @litten 提供的模板</p>
+<p>参见：<a href="https://github.com/litten/hexo-theme-yilia/issues/28" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia/issues/28</a></p>
+<p>待在线浏览成功后可以再把var duoshuoQuery = {short_name:”xelengo”};改回去。重新发布后评论栏依然存在。由此可以把锅甩给缓存了。。。</p>
 
       
 
@@ -300,7 +320,6 @@
 
   
   <div class="duoshuo">
-	<!--测试文本，可删除 -->
 	<!-- 多说评论框 start -->
 	<div class="ds-thread" data-thread-key="test" data-title="测试" data-url="https://xelengo.github.io/2017/02/02/test/"></div>
 	<!-- 多说评论框 end -->
