@@ -18,15 +18,15 @@ yilia模板范例：yilia博客">
 <meta property="og:description" content="测试
 使用yilia主题时，文章过长使用&amp;lt;!-- more --&amp;gt;截断文章，示例如第一篇博客。
 yilia模板范例：yilia博客">
-<meta property="og:image" content="https://github.com/XElengo/XElengo.github.io/tree/master/img/1a.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/XElengo/XElengo.github.io/master/img/1a.png">
 <meta property="og:image" content="https://xelengo.github.io/img/1c.png">
-<meta property="og:updated_time" content="2017-02-02T17:20:11.456Z">
+<meta property="og:updated_time" content="2017-02-02T17:27:53.711Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试">
 <meta name="twitter:description" content="测试
 使用yilia主题时，文章过长使用&amp;lt;!-- more --&amp;gt;截断文章，示例如第一篇博客。
 yilia模板范例：yilia博客">
-<meta name="twitter:image" content="https://github.com/XElengo/XElengo.github.io/tree/master/img/1a.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/XElengo/XElengo.github.io/master/img/1a.png">
   
     <link rel="alternative" href="/atom.xml" title="XElengo的个人博客" type="application/atom+xml">
   
@@ -196,7 +196,7 @@ yilia模板范例：yilia博客">
 <p>使用yilia主题时，文章过长使用<code>&lt;!-- more --&gt;</code>截断文章，示例如第一篇博客。</p>
 <p>yilia模板范例：<br><a href="http://litten.me/" target="_blank" rel="external">yilia博客</a></p>
 <a id="more"></a>
-<h3 id="测试插入图片："><a href="#测试插入图片：" class="headerlink" title="测试插入图片："></a>测试插入图片：</h3><p>网络(绝对)路径：<br><img src="https://github.com/XElengo/XElengo.github.io/tree/master/img/1a.png" alt="text"></p>
+<h3 id="测试插入图片："><a href="#测试插入图片：" class="headerlink" title="测试插入图片："></a>测试插入图片：</h3><p>网络(绝对)路径(显示大图可获得该路径)：<br><img src="https://raw.githubusercontent.com/XElengo/XElengo.github.io/master/img/1a.png" alt="text"></p>
 <p>相对路径：<br><img src="/img/1c.png" alt="相对"></p>
 <h3 id="yilia-多说评论插件使用"><a href="#yilia-多说评论插件使用" class="headerlink" title="yilia 多说评论插件使用"></a>yilia 多说评论插件使用</h3><p>多说插件<code>duoshuo: &quot;xxxx&quot;</code> 已设置，但是无法成功显示，浏览器调试工具console报错：990002</p>
 <p>自己解决了，方法虽然不太好；写死这个地方yilia\layout_partial\post\duoshuo.ejs ： var duoshuoQuery = {short_name:”xelengo”};<br>short_name是用多说网站生成的模板 即 工具–&gt;通用代码中的short_name，即 多说–&gt;设置 那里的域名的第一部分，如：xelengo.duoshuo.com 中的xelengo。因为多说的账户名称可以修改，但注册账号时的多说域名不可修改，且账户名称与域名的第一部分允许不同，而多说评论插件是通过访问多说域名进行显示的。所以可能会出错吧。另外本地缓存，github上的代码，以及多说本身都会影响运行结果。谢谢 @litten 提供的模板</p>
