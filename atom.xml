@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xelengo.github.io/"/>
-  <updated>2017-02-02T09:47:28.007Z</updated>
+  <updated>2017-02-02T12:27:27.543Z</updated>
   <id>https://xelengo.github.io/</id>
   
   <author>
@@ -16,16 +16,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>我的第一篇博文</title>
+    <title>测试</title>
+    <link href="https://xelengo.github.io/2017/02/02/test/"/>
+    <id>https://xelengo.github.io/2017/02/02/test/</id>
+    <published>2017-02-02T11:16:04.226Z</published>
+    <updated>2017-02-02T12:27:27.543Z</updated>
+    
+    <content type="html"><![CDATA[<p>测试</p>
+<p>使用yilia主题时，文章过长使用<code>&lt;!-- more --&gt;</code>截断文章，示例如第一篇博客。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;测试&lt;/p&gt;
+&lt;p&gt;使用yilia主题时，文章过长使用&lt;code&gt;&amp;lt;!-- more --&amp;gt;&lt;/code&gt;截断文章，示例如第一篇博客。&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我的第一篇博文+初步建立博客随笔</title>
     <link href="https://xelengo.github.io/2017/02/02/hello-world/"/>
     <id>https://xelengo.github.io/2017/02/02/hello-world/</id>
     <published>2017-02-02T02:26:02.612Z</published>
-    <updated>2017-02-02T09:47:28.007Z</updated>
+    <updated>2017-02-02T12:28:29.731Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://xelengo.github.io/">Welcome to my blog.</a></p>
 <p>There is my first article.</p>
 <p>原来的欢迎页的一些操作重点：</p>
-<h2 id="示例使用MarkDownPad-两个-号"><a href="#示例使用MarkDownPad-两个-号" class="headerlink" title="示例使用MarkDownPad 两个#号"></a>示例使用MarkDownPad 两个#号</h2><h3 id="示例使用MarkDownPad-三个-号"><a href="#示例使用MarkDownPad-三个-号" class="headerlink" title="示例使用MarkDownPad 三个#号"></a>示例使用MarkDownPad 三个#号</h3><p>代码这样：</p>
+<h2 id="示例使用MarkDownPad-两个-号"><a href="#示例使用MarkDownPad-两个-号" class="headerlink" title="示例使用MarkDownPad 两个#号"></a>示例使用MarkDownPad 两个#号</h2><h3 id="示例使用MarkDownPad-三个-号"><a href="#示例使用MarkDownPad-三个-号" class="headerlink" title="示例使用MarkDownPad 三个#号"></a>示例使用MarkDownPad 三个#号</h3><a id="more"></a>
+<p>代码这样：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ int a,b,c;</div></pre></td></tr></table></figure>
 <p>示例超链接: <a href="https://www.baidu.com" target="_blank" rel="external">跳转到百度</a></p>
 <p>历时两天，从有一个使用github的想法但不知道github可以做什么，到知道用github+hexo可以自建博客，再自己一路摸索过来，在网上不断地找教程，学习，尝试，最后借用github大神的框架进行尝试并成功的建立自己的博客，收获良多。</p>
@@ -89,7 +112,7 @@
       &lt;p&gt;&lt;a href=&quot;https://xelengo.github.io/&quot;&gt;Welcome to my blog.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;There is my first article.&lt;/p&gt;
 &lt;p&gt;原来的欢迎页的一些操作重点：&lt;/p&gt;
-&lt;h2 id=&quot;示例使用Mark
+&lt;h2 id=&quot;示例使用MarkDownPad-两个-号&quot;&gt;&lt;a href=&quot;#示例使用MarkDownPad-两个-号&quot; class=&quot;headerlink&quot; title=&quot;示例使用MarkDownPad 两个#号&quot;&gt;&lt;/a&gt;示例使用MarkDownPad 两个#号&lt;/h2&gt;&lt;h3 id=&quot;示例使用MarkDownPad-三个-号&quot;&gt;&lt;a href=&quot;#示例使用MarkDownPad-三个-号&quot; class=&quot;headerlink&quot; title=&quot;示例使用MarkDownPad 三个#号&quot;&gt;&lt;/a&gt;示例使用MarkDownPad 三个#号&lt;/h3&gt;
     
     </summary>
     
