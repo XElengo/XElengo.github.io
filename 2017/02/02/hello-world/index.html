@@ -20,7 +20,7 @@ There is my first article.
 There is my first article.
 原来的欢迎页的一些操作重点：
 示例使用MarkDownPad 两个#号示例使用MarkDownPad 三个#号">
-<meta property="og:updated_time" content="2017-02-03T04:21:34.461Z">
+<meta property="og:updated_time" content="2017-02-03T10:21:03.880Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的第一篇博文+初步建立博客随笔">
 <meta name="twitter:description" content="Welcome to my blog.
@@ -31,7 +31,7 @@ There is my first article.
     <link rel="alternative" href="/atom.xml" title="XElengo的个人博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/img/icon/x-icon.png">
+    <link rel="icon" href="/assets/img/icon/x-icon.png">
   
   <link rel="stylesheet" type="text/css" href="/./main.2d7529.css">
   <style type="text/css">
@@ -55,7 +55,7 @@ There is my first article.
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/img/icon.jpeg" class="js-avatar">
+			<img src="/assets/img/icon/icon.jpeg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Xulinhu</a></h1>
@@ -71,7 +71,7 @@ There is my first article.
 	        
 				<li><a href="/tags/随笔/">随笔</a></li>
 	        
-				<li><a href="/">相册</a></li>
+				<li><a href="/photos/">相册</a></li>
 	        
 			</ul>
 		</nav>
@@ -97,6 +97,8 @@ There is my first article.
 		        
 					<a class="weibo" target="_blank" href="http://www.weibo.com/3757560467/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo"><i class="icon-weibo"></i></a>
 		        
+					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+		        
 					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/yang-fan-46-64/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 					<a class="mail" target="_blank" href="mailto:2419741156@qq.com" title="mail"><i class="icon-mail"></i></a>
@@ -117,7 +119,7 @@ There is my first article.
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/img/icon.jpeg" class="js-avatar">
+				<img src="/assets/img/icon/icon.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Xulinhu</h1>
@@ -142,6 +144,8 @@ There is my first article.
 			        
 						<a class="weibo" target="_blank" href="http://www.weibo.com/3757560467/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo"><i class="icon-weibo"></i></a>
 			        
+						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+			        
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/yang-fan-46-64/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
 						<a class="mail" target="_blank" href="mailto:2419741156@qq.com" title="mail"><i class="icon-mail"></i></a>
@@ -157,7 +161,7 @@ There is my first article.
 		        
 					<li style="width: 33.333333333333336%"><a href="/tags/随笔/">随笔</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/">相册</a></li>
+					<li style="width: 33.333333333333336%"><a href="/photos/">相册</a></li>
 		        
 				</ul>
 			</nav>
@@ -197,7 +201,7 @@ There is my first article.
 <p>原来的欢迎页的一些操作重点：</p>
 <h2 id="示例使用MarkDownPad-两个-号"><a href="#示例使用MarkDownPad-两个-号" class="headerlink" title="示例使用MarkDownPad 两个#号"></a>示例使用MarkDownPad 两个#号</h2><h3 id="示例使用MarkDownPad-三个-号"><a href="#示例使用MarkDownPad-三个-号" class="headerlink" title="示例使用MarkDownPad 三个#号"></a>示例使用MarkDownPad 三个#号</h3><a id="more"></a>
 <p>代码这样：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ int a,b,c;</div></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="keyword">int</span> a,b,c;</div></pre></td></tr></table></figure>
 <p>示例超链接: <a href="https://www.baidu.com" target="_blank" rel="external">跳转到百度</a></p>
 <p>历时两天，从有一个使用github的想法但不知道github可以做什么，到知道用github+hexo可以自建博客，再自己一路摸索过来，在网上不断地找教程，学习，尝试，最后借用github大神的框架进行尝试并成功的建立自己的博客，收获良多。</p>
 <p>之后会把自己的建博客经过写出来，供大家参考。</p>
@@ -211,28 +215,29 @@ There is my first article.
 <p>一个个人收藏的博客：<a href="http://jocs.me/blog/" target="_blank" rel="external">http://jocs.me/blog/</a></p>
 <p>github参考：<a href="https://github.com/youngxhui/youngxhui.github.io" target="_blank" rel="external">https://github.com/youngxhui/youngxhui.github.io</a></p>
 <h3 id="github终端操作指令："><a href="#github终端操作指令：" class="headerlink" title="github终端操作指令："></a>github终端操作指令：</h3><p>安装前提：需要已安装github for windows,node.js</p>
-<p>安装:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`npm install hexo-cli -g`或`npm install -g hexo-cli`</div></pre></td></tr></table></figure></p>
+<p>安装:</p>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`npm install hexo-cli -g`或`npm install -g hexo-cli`</div></pre></td></tr></table></figure>
 <p>一段时间后，安装完成，安装到C盘</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo -v</div></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo -v</span></div></pre></td></tr></table></figure>
 <p>检查版本信息，验证是否安装成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo --save</div></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm <span class="keyword">install</span> hexo <span class="comment">--save</span></div></pre></td></tr></table></figure>
 <p>安装到D盘（我是这么理解的）</p>
 <p>安装完成后就需要创建本地站点了。</p>
 <p>首先选择一个文件夹作为本地站点根目录。如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd..</div></pre></td></tr></table></figure>
+<figure class="highlight gams"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="title">cd</span></span>..</div></pre></td></tr></table></figure>
 <p>后退到上级目录</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init [folder]</div></pre></td></tr></table></figure>
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init <span class="string">[folder]</span></div></pre></td></tr></table></figure>
 <p>新建一个网站(初始化)。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站,所以选择好目录后就变成了：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo init</span></div></pre></td></tr></table></figure>
 <p>执行完毕后如图3<br>img</p>
 <p>启动服务（先看看效果(<code>http://localhost:4000/</code>)，看完记得关闭服务（ctrl+c））</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
+<figure class="highlight axapta"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">server</span></div></pre></td></tr></table></figure>
 <p>接下来，安装插件（可以一次性复制下面所有命令进行执行，虽然我也不知道这些代码有什么用）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-index --save</div><div class="line"></div><div class="line">npm install hexo-generator-archive --save</div><div class="line"></div><div class="line">npm install hexo-generator-category --save</div><div class="line"></div><div class="line">npm install hexo-generator-tag --save</div><div class="line"></div><div class="line">npm install hexo-server --save</div><div class="line"></div><div class="line">npm install hexo-deployer-git --save</div><div class="line"></div><div class="line">npm install hexo-deployer-heroku --save</div><div class="line"></div><div class="line">npm install hexo-deployer-rsync --save</div><div class="line"></div><div class="line">npm install hexo-deployer-openshift --save</div><div class="line"></div><div class="line">npm install hexo-renderer-marked@0.2 --save</div><div class="line"></div><div class="line">npm install hexo-renderer-stylus@0.2 --save</div><div class="line"></div><div class="line">npm install hexo-generator-feed@1 --save</div><div class="line"></div><div class="line">npm install hexo-generator-sitemap@1 --save</div></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">npm <span class="keyword">install</span> hexo-generator-<span class="keyword">index</span> <span class="comment">--save</span></div><div class="line"></div><div class="line">npm <span class="keyword">install</span> hexo-generator-<span class="keyword">archive</span> <span class="comment">--save</span></div><div class="line"></div><div class="line">npm <span class="keyword">install</span> hexo-generator-<span class="keyword">category</span> <span class="comment">--save</span></div><div class="line"></div><div class="line">npm <span class="keyword">install</span> hexo-generator-tag <span class="comment">--save</span></div><div class="line"></div><div class="line">npm <span class="keyword">install</span> hexo-<span class="keyword">server</span> <span class="comment">--save</span></div><div class="line"></div><div class="line">npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></div><div class="line"></div><div class="line">npm <span class="keyword">install</span> hexo-deployer-heroku <span class="comment">--save</span></div><div class="line"></div><div class="line">npm <span class="keyword">install</span> hexo-deployer-rsync <span class="comment">--save</span></div><div class="line"></div><div class="line">npm <span class="keyword">install</span> hexo-deployer-openshift <span class="comment">--save</span></div><div class="line"></div><div class="line">npm <span class="keyword">install</span> hexo-renderer-marked@<span class="number">0.2</span> <span class="comment">--save</span></div><div class="line"></div><div class="line">npm <span class="keyword">install</span> hexo-renderer-stylus@<span class="number">0.2</span> <span class="comment">--save</span></div><div class="line"></div><div class="line">npm <span class="keyword">install</span> hexo-generator-feed@<span class="number">1</span> <span class="comment">--save</span></div><div class="line"></div><div class="line">npm <span class="keyword">install</span> hexo-generator-sitemap@<span class="number">1</span> <span class="comment">--save</span></div></pre></td></tr></table></figure>
 <p>安装结果：<br>img4</p>
 <h3 id="再看看效果"><a href="#再看看效果" class="headerlink" title="再看看效果"></a>再看看效果</h3><p>Hexo简写命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo n #生成文章，或者source\_posts手动编辑,如果报错就改错。</div><div class="line"></div><div class="line">hexo s #本地发布预览效果</div><div class="line"></div><div class="line">hexo g #生成public静态文件</div><div class="line"></div><div class="line">最后我选择手动同步更新至GitHub</div></pre></td></tr></table></figure>
-<p>还要再装一个yilin需要用的插件：<code>npm i hexo-generator-json-content --save</code></p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo</span> n <span class="comment">#生成文章，或者source\_posts手动编辑,如果报错就改错。</span></div><div class="line"></div><div class="line">hexo s <span class="comment">#本地发布预览效果</span></div><div class="line"></div><div class="line">hexo g <span class="comment">#生成public静态文件</span></div><div class="line"></div><div class="line">最后我选择手动同步更新至GitHub</div></pre></td></tr></table></figure>
+<p>还要再装一个yilin需要用的插件：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm <span class="selector-tag">i</span> hexo-generator-json-<span class="attribute">content</span> --save</div></pre></td></tr></table></figure></p>
 <p>安装完再部署一遍</p>
 <h2 id="部署静态网页到GitHub"><a href="#部署静态网页到GitHub" class="headerlink" title="部署静态网页到GitHub"></a>部署静态网页到GitHub</h2><h3 id="注册设置GitHub"><a href="#注册设置GitHub" class="headerlink" title="注册设置GitHub"></a>注册设置GitHub</h3><p>— 登录<code>GitHub</code>，注册自定义用户名如wsgzao</p>
 <p>— 在主页右下角创建New repository，name必须和用户名一致如wsgzao.github.io</p>
@@ -246,9 +251,9 @@ There is my first article.
 <p>运行GitHub确认修改信息后执行右上角的<code>Sync</code>同步</p>
 <p>最后访问主页观察效果</p>
 <hr>
-<h3 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h3><p>卸载：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm uninstall hexo</div></pre></td></tr></table></figure></p>
-<p>清理掉D盘的相关文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm uninstall hexo-cli -g</div></pre></td></tr></table></figure></p>
-<p>清理掉C盘的相关文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
+<h3 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h3><p>卸载：<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">npm</span> uninstall hexo</div></pre></td></tr></table></figure></p>
+<p>清理掉D盘的相关文件<br><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm uninstall hexo-<span class="keyword">cli</span> -g</div></pre></td></tr></table></figure></p>
+<p>清理掉C盘的相关文件<br><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-<span class="keyword">cli</span></div></pre></td></tr></table></figure></p>
 <p>##测试$发布常用指令：<br>清除缓存：<code>hexo clean</code></p>
 <p>生成文章 <code>hexo n</code> </p>
 <p>本地发布预览效果 <code>hexo s</code> </p>
@@ -283,13 +288,13 @@ There is my first article.
                   <div class="reward-box">
                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="/img/zfb-elengo.jpg">
+                      <img class="reward-img" src="/assets/img/zfb-elengo.jpg">
                       <span class="reward-type">支付宝</span>
                     </div>
                     
                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="/img/wx-elengo.png">
+                      <img class="reward-img" src="/assets/img/wx-elengo.png">
                       <span class="reward-type">微信</span>
                     </div>
                     
