@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xelengo.github.io/"/>
-  <updated>2017-02-03T11:21:31.885Z</updated>
+  <updated>2017-02-04T04:56:49.637Z</updated>
   <id>https://xelengo.github.io/</id>
   
   <author>
@@ -14,6 +14,154 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python3.6安装教程</title>
+    <link href="https://xelengo.github.io/2017/02/04/%E5%AE%89%E8%A3%85python3.6/"/>
+    <id>https://xelengo.github.io/2017/02/04/安装python3.6/</id>
+    <published>2017-02-04T02:43:33.173Z</published>
+    <updated>2017-02-04T04:56:49.637Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先。先看一下Python的简介：</p>
+<p>Python（英国发音：/ˈpaɪθən/ 美国发音：/ˈpaɪθɑːn/），是一种面向对象、解释型的计算机程序语言。它包含了一组功能完备的标准库，能够轻松完成很多常见的任务。它的语法简单，与其它大多数程序设计语言使用大括号不一样，它使用缩进来定义语句块。</p>
+<a id="more"></a>
+<p>与Scheme、Ruby、Perl、Tcl等动态语言一样，Python具备垃圾回收功能，能够自动管理内存使用。它经常被当作脚本语言用于处理系统管理任务和网络程序编写，然而它也非常适合完成各种高级任务。Python虚拟机本身几乎可以在所有的作业系统中运行。使用一些诸如py2exe、PyPy、PyInstaller之类的工具可以将Python源代码转换成可以脱离Python解释器运行的程序。</p>
+<p>Python的官方解释器是CPython，该解释器用C语言编写，是一个由社区驱动的自由软件，目前由Python软件基金会管理。</p>
+<p>Python支持命令式程序设计、面向对象程序设计、函数式编程、面向侧面的程序设计、泛型编程多种编程范式。</p>
+<p>from:<a href="https://zh.wikipedia.org/wiki/Python" target="_blank" rel="external">wiki</a></p>
+<h2 id="在Windows上安装Python"><a href="#在Windows上安装Python" class="headerlink" title="在Windows上安装Python"></a>在Windows上安装Python</h2><p>首先，根据你的Windows版本（64位还是32位）从Python的官方网站下载Python 3.6对应的64位安装程序或32位安装程序（网速慢的同学请移步国内镜像），<a href="https://www.python.org/downloads/release/python-360/" target="_blank" rel="external">点击下载</a></p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_093828.png" alt="图片1"></p>
+<p>然后，运行下载的EXE安装包：</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_094019.png" alt="图片2"></p>
+<p>特别要注意勾上<code>Add Python 3.6 to PATH</code>，然后点“Install Now”即可完成安装。</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_094033.png" alt="图片3"></p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_094138.png" alt="图片4"></p>
+<p>默认会安装到<code>C:\Users\用户名\AppData\Local\Programs\Python\Python36</code>目录下，然后打开命令提示符窗口，敲入python后，会出现两种情况：</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_094217.png" alt="图片5"></p>
+<p>看到上面的画面，就说明Python安装成功！</p>
+<p>你看到提示符&gt;&gt;&gt;就表示我们已经在Python交互式环境中了，可以输入任何Python代码，回车后会立刻得到执行结果。现在，输入exit()并回车，就可以退出Python交互式环境（直接关掉命令行窗口也可以）。</p>
+<p>情况二：得到一个错误：</p>
+<figure class="highlight mel"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">‘<span class="keyword">python</span>’ 不是内部或外部命令，也不是可运行的程序或批处理文件。</div></pre></td></tr></table></figure>
+<p>这是因为Windows会根据一个Path的环境变量设定的路径去查找python.exe，如果没找到，就会报错。如果在安装时漏掉了勾选Add Python 3.5 to PATH，那就要手动把python.exe所在的路径添加到Path中。</p>
+<p>如果你不知道怎么修改环境变量，建议把Python安装程序重新运行一遍，务必记得勾上Add Python 3.5 to PATH。</p>
+<hr>
+<h2 id="参考教程："><a href="#参考教程：" class="headerlink" title="参考教程："></a>参考教程：</h2><p><a href="https://wizardforcel.gitbooks.io/liaoxuefeng/content/py3/4.html" target="_blank" rel="external">安装Python–廖雪峰</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;首先。先看一下Python的简介：&lt;/p&gt;
+&lt;p&gt;Python（英国发音：/ˈpaɪθən/ 美国发音：/ˈpaɪθɑːn/），是一种面向对象、解释型的计算机程序语言。它包含了一组功能完备的标准库，能够轻松完成很多常见的任务。它的语法简单，与其它大多数程序设计语言使用大括号不一样，它使用缩进来定义语句块。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://xelengo.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="教程" scheme="https://xelengo.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>window10安装mysql数据库</title>
+    <link href="https://xelengo.github.io/2017/02/04/window10%E5%AE%89%E8%A3%85mysql%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <id>https://xelengo.github.io/2017/02/04/window10安装mysql数据库/</id>
+    <published>2017-02-04T00:55:36.373Z</published>
+    <updated>2017-02-04T04:56:47.047Z</updated>
+    
+    <content type="html"><![CDATA[<p>mysql是一个轻量级的数据库，非常适合独立开发者安装到自己的电脑上进行程序开发和测试。</p>
+<h3 id="Mysql关系型数据库管理系统"><a href="#Mysql关系型数据库管理系统" class="headerlink" title="Mysql关系型数据库管理系统"></a>Mysql关系型数据库管理系统</h3><p>MySQL是一个开放源码的小型关联式数据库管理系统，开发者为瑞典MySQL AB公司。MySQL被广泛地应用在Internet上的中小型网站中。由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，许多中小型网站为了降低网站总体拥有成本而选择了MySQL作为网站数据库。</p>
+<p>这篇文章主要为大家分享了mysql 5.7.13 安装配置方法图文教程,感兴趣的朋友可以参考一下</p>
+<a id="more"></a>
+<p>MySQL是一款关系型数据库管理系统，是由Oracle旗下公司MySQL AB 公司开发，是在web方面最好的、最流行的关系型数据库软件应用之一，深受广大个人使用者以及中小型企业的喜爱。</p>
+<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h2><p>当前最新版5.7.17.0  官网下载地址：<a href="https://dev.mysql.com/downloads/installer/" target="_blank" rel="external">https://dev.mysql.com/downloads/installer/</a></p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_090312.png" alt="图片1"></p>
+<p>上面明确提示：MySQL安装程序是32位的，但会同时安装32位和64位二进制文件。 所以同样适用于32位和64位的Window操作系统。</p>
+<p>下载的地方有两个，上面一个1.5M的是在线安装程序，我们下载下面一个234.8M的，下载后可直接安装。点击 : Download,  出现如下：</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_090919.png" alt="图片1"></p>
+<p>跳过登陆，直接进行下载，直接点击左下角 ：<strong>No thanks,just start my download  </strong> 进行下载。</p>
+<p>校验：</p>
+<p>大小: 405422080 字节</p>
+<p>MD5: E03723EB6C6BAC271A848BD9031EA859</p>
+<p>SHA1: 064CE58B994314A5F055851BA4B762A37908439B</p>
+<p>CRC32: FAF8B4EF</p>
+<p>效验工具：Hash.exe</p>
+<p>下载好后进行安装</p>
+<h2 id="2-安装"><a href="#2-安装" class="headerlink" title="2. 安装"></a>2. 安装</h2><p>双击安装文件，进入安装，在协议许可（LicenseAgreement）界面，勾选“I  accept  the  license  term”，然后点击“next”</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_091333.png" alt="图片1"></p>
+<p>在选择安装类型（ChoosingaSetupType）界面，根据安装需求选择安装类型（推荐默认开发版本），设置<strong>MySQL安装路径</strong>和<strong>数据存放路径</strong>，最后点击“next”。</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_091748.png" alt="图片1"></p>
+<p>在检查要求（CheckRequirements）界面，点击“Execute”检查是否达到安装的要求，通过检查要求后点击“next‘</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_092504.png" alt="图片1"></p>
+<p><strong>注意：</strong>点击“Execute”按钮后，可能会下载一些程序，到时你自己点击安装就行了，直到所有安装完成就OK了</p>
+<p>因为我的电脑安装有visuao studio 和python 2.7,而这个版本的mysql支持的是python3.4;所以会检查不通过,不用管它，继续next。</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_093010.png" alt="图片1"></p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_094450.png" alt="图片1"></p>
+<p>在安装（Installation）界面，点击“Execute”开始安装，所有的product安装完毕后点击“next”</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_094501.png" alt="图片1"></p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_094948.png" alt="图片1"></p>
+<p>在配置概述（Product Configuration）界面，点击“next”</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_094958.png" alt="图片1"></p>
+<p>在MySQL服务配置（Type and Networking - ServerConfiguration Type）界面，勾选Show Advanced Options，其他的默认不做修改，点击“next”。</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_095010.png" alt="图片1"></p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_095349.png" alt="图片1"></p>
+<p>在账号和角色设置（Accounts and Roles）界面，设置根账户（root账户）密码，添加一个MySQL User Accounts（非根）用户账户。其目的是便于数据库权限管理，为远程访问者提供安全账户，点击“next”</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_095733.png" alt="图片1"></p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_095815.png" alt="图片1"></p>
+<p>在Windows Service界面，默认windows服务配置不做修改，点击“next”</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_095854.png" alt="图片1"></p>
+<p>在插件与扩展（Plugins and Extensions）界面，默认设置，点击“next”</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_100200.png" alt="图片1"></p>
+<p>在高级选项设置（Advanced Options）界面，默认原有设置，点击“next”</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_100211.png" alt="图片1"></p>
+<p>在应用服务器配置（Apply Server Configuration）界面，点击“Execute”，当所有的配置执行完毕后，configuration for mysql server 5.7.13 has successed，点击“finish”</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_100224.png" alt="图片1"></p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_100250.png" alt="图片1"></p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_100259.png" alt="图片1"></p>
+<p>在产品配置（Product Configuration）界面，点击“next”</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_100307.png" alt="图片1"></p>
+<p>在连接到服务器（Connect To Server）界面，点击“check”，测试服务器是否连接成功，连接成功后，点击“next”，</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_100316.png" alt="图片1"></p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_100422.png" alt="图片1"></p>
+<p>回到应用服务器配置（Apply Server Configuration）界面，点击“Execute”，配置成功后，点击“finish”</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_100431.png" alt="图片1"></p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_100512.png" alt="图片1"></p>
+<p>回到产品配置（Product Configuration）界面，点击“next”，</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_100520.png" alt="图片1"></p>
+<p>在安装完成（Installation Complete）界面，点击“finish”</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_100619.png" alt="图片1"></p>
+<p>以上就是mysql 5.7.13安装配置方法，希望对大家的学习有所帮助。</p>
+<h2 id="3-测试"><a href="#3-测试" class="headerlink" title="3.测试"></a>3.测试</h2><p>接下来会自动打开MySQL Workbench，再测试一下：</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_102407.png" alt="图片1"></p>
+<p>输入超级管理员密码，进行登录</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_101454.png" alt="图片1"></p>
+<p>登陆成功</p>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_101604.png" alt="图片1"></p>
+<p>输入sql语句进行测试；</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">show</span> <span class="keyword">database</span>;</div></pre></td></tr></table></figure>
+<p><img src="/assets/img/blogimg/20170204/2017-02-04_101700.png" alt="图片1"></p>
+<p>好了，本教程结束</p>
+<hr>
+<h2 id="参考教程："><a href="#参考教程：" class="headerlink" title="参考教程："></a>参考教程：</h2><p>mysql下载： <a href="http://blog.csdn.net/wtfmonking/article/details/17467399" target="_blank" rel="external">http://blog.csdn.net/wtfmonking/article/details/17467399</a></p>
+<p>安装： <a href="http://www.phperz.com/article/16/0703/231883.html" target="_blank" rel="external">http://www.phperz.com/article/16/0703/231883.html</a></p>
+<p>测试： <a href="http://jingyan.baidu.com/article/7e440953d6f0702fc1e2ef61.html" target="_blank" rel="external">http://jingyan.baidu.com/article/7e440953d6f0702fc1e2ef61.html</a></p>
+<p>RUNOOB教程：<a href="http://www.runoob.com/mysql/mysql-install.html" target="_blank" rel="external">http://www.runoob.com/mysql/mysql-install.html</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;mysql是一个轻量级的数据库，非常适合独立开发者安装到自己的电脑上进行程序开发和测试。&lt;/p&gt;
+&lt;h3 id=&quot;Mysql关系型数据库管理系统&quot;&gt;&lt;a href=&quot;#Mysql关系型数据库管理系统&quot; class=&quot;headerlink&quot; title=&quot;Mysql关系型数据库管理系统&quot;&gt;&lt;/a&gt;Mysql关系型数据库管理系统&lt;/h3&gt;&lt;p&gt;MySQL是一个开放源码的小型关联式数据库管理系统，开发者为瑞典MySQL AB公司。MySQL被广泛地应用在Internet上的中小型网站中。由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，许多中小型网站为了降低网站总体拥有成本而选择了MySQL作为网站数据库。&lt;/p&gt;
+&lt;p&gt;这篇文章主要为大家分享了mysql 5.7.13 安装配置方法图文教程,感兴趣的朋友可以参考一下&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://xelengo.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="教程" scheme="https://xelengo.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>写博客随笔（四）</title>
@@ -42,7 +190,7 @@
     <link href="https://xelengo.github.io/2017/02/03/yilia%E4%BD%BF%E7%94%A8/"/>
     <id>https://xelengo.github.io/2017/02/03/yilia使用/</id>
     <published>2017-02-03T04:50:34.505Z</published>
-    <updated>2017-02-03T11:09:15.680Z</updated>
+    <updated>2017-02-04T04:46:07.735Z</updated>
     
     <content type="html"><![CDATA[<h1 id="yilia主题使用和配置"><a href="#yilia主题使用和配置" class="headerlink" title="yilia主题使用和配置"></a>yilia主题使用和配置</h1><p>本篇内容转自 <a href="http://litten.me/2014/08/31/hexo-theme-yilia/" target="_blank" rel="external">litten.me</a></p>
 <h2 id="一、使用"><a href="#一、使用" class="headerlink" title="一、使用"></a>一、使用</h2><h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="keyword">clone</span> <span class="title">https</span>://github.com/litten/hexo-theme-yilia.git themes/yilia</div></pre></td></tr></table></figure>
@@ -53,7 +201,9 @@
 <figure class="highlight dts"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># Header</span></div><div class="line"><span class="symbol">menu:</span></div><div class="line">  主页: /</div><div class="line">  所有文章: /archives</div><div class="line">  <span class="meta"># 旧事: /tags/旧事</span></div><div class="line"><span class="meta"># SubNav</span></div><div class="line"><span class="symbol">subnav:</span></div><div class="line"><span class="symbol">  github:</span> <span class="string">"https://github.com/litten"</span></div><div class="line"><span class="symbol">  weibo:</span> <span class="string">"http://weibo.com/litten225"</span></div><div class="line"><span class="symbol">  rss:</span> <span class="string">"http://feed.feedsky.com/litten"</span></div><div class="line">  <span class="meta"># facebook: <span class="string">"/"</span></span></div><div class="line">  <span class="meta"># google: <span class="string">"/"</span></span></div><div class="line">  <span class="meta"># twitter: <span class="string">"/"</span></span></div><div class="line">  <span class="meta"># linkedin: <span class="string">"/"</span></span></div><div class="line"><span class="symbol">rss:</span> /atom.xml</div><div class="line"><span class="meta"># Content</span></div><div class="line"><span class="symbol">excerpt_link:</span> more</div><div class="line"><span class="symbol">fancybox:</span> true</div><div class="line"><span class="meta"># Miscellaneous</span></div><div class="line"><span class="symbol">favicon:</span> /favicon.png</div><div class="line"><span class="symbol">avatar:</span> <span class="string">"https://avatars2.githubusercontent.com/u/2024949?v=2&amp;s=150"</span></div><div class="line"><span class="symbol">share:</span> true</div><div class="line"><span class="symbol">duoshuo:</span> true</div></pre></td></tr></table></figure>
 <p><br></p>
 <p><strong>禁止评论</strong>可以通过修改你的.md文章的头部实现。设置comments:false即可。</p>
-]]></content>
+<h2 id="三、-hexo指令集"><a href="#三、-hexo指令集" class="headerlink" title="三、 hexo指令集"></a>三、 hexo指令集</h2><p>Git Shell 在你的<code>hexo</code>根目录下输入：<code>hexo</code>可查看</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo</span></div></pre></td></tr></table></figure>
+<figure class="highlight http"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">Usage</span>: hexo &lt;command&gt;</div><div class="line"></div><div class="line"><span class="livecodeserver">Commands:</span></div><div class="line">  clean     Removed generated <span class="built_in">files</span> <span class="keyword">and</span> cache.</div><div class="line">  config    Get <span class="keyword">or</span> <span class="built_in">set</span> configurations.</div><div class="line">  deploy    Deploy your website.</div><div class="line">  generate  Generate static <span class="built_in">files</span>.</div><div class="line">  help      Get help <span class="keyword">on</span> <span class="title">a</span> <span class="title">command</span>.</div><div class="line">  init      Create <span class="keyword">a</span> <span class="built_in">new</span> Hexo <span class="built_in">folder</span>.</div><div class="line">  list      List <span class="keyword">the</span> information <span class="keyword">of</span> <span class="keyword">the</span> site</div><div class="line">  migrate   Migrate your site <span class="built_in">from</span> other <span class="keyword">system</span> <span class="built_in">to</span> Hexo.</div><div class="line">  <span class="built_in">new</span>       Create <span class="keyword">a</span> <span class="built_in">new</span> <span class="built_in">post</span>.</div><div class="line">  publish   Moves <span class="keyword">a</span> draft <span class="built_in">post</span> <span class="built_in">from</span> <span class="title">_drafts</span> <span class="built_in">to</span> <span class="title">_posts</span> <span class="built_in">folder</span>.</div><div class="line">  render    Render <span class="built_in">files</span> <span class="keyword">with</span> renderer plugins.</div><div class="line">  server    Start <span class="keyword">the</span> server.</div><div class="line">  <span class="built_in">version</span>   Display <span class="built_in">version</span> information.</div><div class="line"></div><div class="line">Global Options:</div><div class="line">  <span class="comment">--config  Specify config file instead of using _config.yml</span></div><div class="line">  <span class="comment">--cwd     Specify the CWD</span></div><div class="line">  <span class="comment">--debug   Display all verbose messages in the terminal</span></div><div class="line">  <span class="comment">--draft   Display draft posts</span></div><div class="line">  <span class="comment">--safe    Disable all plugins and scripts</span></div><div class="line">  <span class="comment">--silent  Hide output on console</span></div><div class="line"></div><div class="line">For more help, you can use <span class="string">'hexo help [command]'</span> <span class="keyword">for</span> <span class="keyword">the</span> <span class="keyword">detailed</span> information</div><div class="line"><span class="keyword">or</span> you can check <span class="keyword">the</span> docs: <span class="keyword">http</span>://hexo.io/docs/</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
