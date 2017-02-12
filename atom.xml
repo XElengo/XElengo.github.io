@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xelengo.github.io/"/>
-  <updated>2017-02-12T07:42:08.392Z</updated>
+  <updated>2017-02-12T07:46:56.595Z</updated>
   <id>https://xelengo.github.io/</id>
   
   <author>
@@ -16,15 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>【Java编码规范】《阿里巴巴Java开发手册（正式版）》发布！</title>
     <link href="https://xelengo.github.io/2017/02/12/%E3%80%90Java%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E3%80%91%E3%80%8A%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E6%AD%A3%E5%BC%8F%E7%89%88%EF%BC%89%E3%80%8B%E5%8F%91%E5%B8%83%EF%BC%81/"/>
     <id>https://xelengo.github.io/2017/02/12/【Java编码规范】《阿里巴巴Java开发手册（正式版）》发布！/</id>
     <published>2017-02-12T06:39:43.674Z</published>
-    <updated>2017-02-12T07:42:08.392Z</updated>
+    <updated>2017-02-12T07:46:56.595Z</updated>
     
-    <content type="html"><![CDATA[<hr>
-<p>title: 【Java编码规范】《阿里巴巴Java开发手册（正式版）》发布！</p>
-<h2 id="tags-编程-java-知识分享-阿里巴巴-开发手册-代码规范"><a href="#tags-编程-java-知识分享-阿里巴巴-开发手册-代码规范" class="headerlink" title="tags: [编程,java,知识分享,阿里巴巴,开发手册,代码规范]"></a>tags: [编程,java,知识分享,阿里巴巴,开发手册,代码规范]</h2><p>2017年2月9日阿里巴巴发布了一份《阿里巴巴Java开发手册（正式版）》，引起了互联网上程序员们广泛讨论。</p>
+    <content type="html"><![CDATA[<p>2017年2月9日阿里巴巴发布了一份《阿里巴巴Java开发手册（正式版）》，引起了互联网上程序员们广泛讨论。</p>
 <p>作为一名java伪初学者，得知这个消息还是要尽快来学习学习的。毕竟是阿里巴巴出的编码规范，总是会对初学者有很大帮助吧。一份好的编码规约，能够让编程少踩很多坑；一个好的编程习惯，能让以后的编程旅途更加顺畅。</p>
 <p><a href="http://pan.baidu.com/s/1c202zNM" target="_blank" rel="external">点击进行百度云下载</a></p>
 <a id="more"></a>
@@ -70,14 +68,24 @@
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;title: 【Java编码规范】《阿里巴巴Java开发手册（正式版）》发布！&lt;/p&gt;
-&lt;h2 id=&quot;tags-编程-java-知识分享-阿里巴巴-开发手册-代码规范&quot;&gt;&lt;a href=&quot;#tags-编程-java-知识分享-阿里巴巴-开发手册-代码规范&quot; class=&quot;headerlink&quot; title=&quot;tags: [编程,java,知识分享,阿里巴巴,开发手册,代码规范]&quot;&gt;&lt;/a&gt;tags: [编程,java,知识分享,阿里巴巴,开发手册,代码规范]&lt;/h2&gt;&lt;p&gt;2017年2月9日阿里巴巴发布了一份《阿里巴巴Java开发手册（正式版）》，引起了互联网上程序员们广泛讨论。&lt;/p&gt;
+      &lt;p&gt;2017年2月9日阿里巴巴发布了一份《阿里巴巴Java开发手册（正式版）》，引起了互联网上程序员们广泛讨论。&lt;/p&gt;
 &lt;p&gt;作为一名java伪初学者，得知这个消息还是要尽快来学习学习的。毕竟是阿里巴巴出的编码规范，总是会对初学者有很大帮助吧。一份好的编码规约，能够让编程少踩很多坑；一个好的编程习惯，能让以后的编程旅途更加顺畅。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://pan.baidu.com/s/1c202zNM&quot;&gt;点击进行百度云下载&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
+    
+      <category term="编程" scheme="https://xelengo.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="java" scheme="https://xelengo.github.io/tags/java/"/>
+    
+      <category term="知识分享" scheme="https://xelengo.github.io/tags/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="阿里巴巴" scheme="https://xelengo.github.io/tags/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4/"/>
+    
+      <category term="开发手册" scheme="https://xelengo.github.io/tags/%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C/"/>
+    
+      <category term="代码规范" scheme="https://xelengo.github.io/tags/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
   </entry>
   
