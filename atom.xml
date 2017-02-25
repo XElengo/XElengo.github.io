@@ -82,11 +82,11 @@ SELECT 字段名 FROM tb_stu WHERE 条件 ORDER BY 字段 ASC  升序
     </summary>
     
     
-      <category term="教程" scheme="https://xelengo.github.io/tags/%E6%95%99%E7%A8%8B/"/>
-    
       <category term="编程" scheme="https://xelengo.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
     
       <category term="MySql" scheme="https://xelengo.github.io/tags/MySql/"/>
+    
+      <category term="教程" scheme="https://xelengo.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
@@ -95,7 +95,7 @@ SELECT 字段名 FROM tb_stu WHERE 条件 ORDER BY 字段 ASC  升序
     <link href="https://xelengo.github.io/2017/02/25/MySql%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E8%AF%AD%E5%8F%A5/"/>
     <id>https://xelengo.github.io/2017/02/25/MySql常用数据库操作语句/</id>
     <published>2017-02-25T06:07:52.952Z</published>
-    <updated>2017-02-25T06:27:21.847Z</updated>
+    <updated>2017-02-25T06:52:20.780Z</updated>
     
     <content type="html"><![CDATA[<p>MySQL（官方发音为英语发音：/maɪ ˌɛskjuːˈɛl/“My S-Q-L”[1]，但也经常读作英语发音：/maɪ ˈsiːkwəl/“My Sequel”）原本是一个开放源代码的关系数据库管理系统，原开发者为瑞典的MySQL AB公司，该公司于2008年被昇阳微系统（Sun Microsystems）收购。2009年，甲骨文公司（Oracle）收购昇阳微系统公司，MySQL成为Oracle旗下产品。<br>MySQL在过去由于性能高、成本低、可靠性好，已经成为最流行的开源数据库，因此被广泛地应用在Internet上的中小型网站中。随着MySQL的不断成熟，它也逐渐用于更多大规模网站和应用，比如维基百科、Google和Facebook等网站。非常流行的开源软件组合LAMP中的“M”指的就是MySQL。<br>但被甲骨文公司收购后，Oracle大幅调涨MySQL商业版的售价，且甲骨文公司不再支持另一个自由软件项目OpenSolaris的发展，因此导致自由软件社区们对于Oracle是否还会持续支持MySQL社区版（MySQL之中唯一的免费版本）有所隐忧，因此原先一些使用MySQL的开源软件逐渐转向其它的数据库。例如维基百科已于2013年正式宣布将从MySQL迁移到MariaDB数据库[2]。MySQL的创始人麦克尔·维德纽斯以MySQL为基础，成立分支计划MariaDB。</p>
 <a id="more"></a>
@@ -180,7 +180,7 @@ b、重新格式化输出检索的数据（TRIM，CONCAT等函数）；
 c、过滤不想要的数据（select部分）
 
 d、使用视图计算字段值，如汇总这样的值。
-</code></pre><h3 id="十四、使用存储过程："><a href="#十四、使用存储过程：" class="headerlink" title="十四、使用存储过程："></a>十四、使用存储过程：</h3><p>　　个人理解，存储过程就是一个自定义函数，有局部变量参数，可传入参数，可以返回值，不过这语法够呆滞的<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#### <span class="number">1</span>、创建存储过程：</div><div class="line"></div><div class="line">	&gt;<span class="keyword">CREATE</span> <span class="function"><span class="keyword">PROCEDURE</span> <span class="title">pro</span><span class="params">(</span></span></div><div class="line"></div><div class="line">	&gt;<span class="keyword">IN</span> num INT,<span class="keyword">OUT</span> total INT)</div><div class="line"></div><div class="line">	&gt;<span class="title">BEGIN</span></div><div class="line"></div><div class="line">	&gt;<span class="title">SELECT</span> <span class="title">SUM</span><span class="params">(score)</span> <span class="title">INTO</span> <span class="title">total</span> <span class="title">FROM</span> <span class="title">tb_name</span> <span class="title">WHERE</span> <span class="title">id</span>=<span class="title">num</span>;</div><div class="line"></div><div class="line">	&gt;<span class="keyword">END</span>;</div><div class="line"></div><div class="line">　　　***这里的  <span class="keyword">IN</span> (传递一个值给存储过程)，<span class="keyword">OUT</span>（从存储过程传出一个值），INOUT（对存储过程传入、传出），<span class="keyword">INTO</span>（保存变量）***</div><div class="line"></div><div class="line">#### <span class="number">2</span>、调用存储过程：</div><div class="line"></div><div class="line">	&gt;CALL pro(<span class="number">13</span>,@total)　　　　　　<span class="comment">//这里的存储过程两个变量，一个是IN一个是OUT，这里的OUT也是需要写上的，不写会出错</span></div><div class="line"></div><div class="line">	&gt;<span class="keyword">SELECT</span> @total　　　　　　　　　<span class="comment">//这里就可以看到结果了；</span></div><div class="line"></div><div class="line">#### <span class="number">3</span>、存储过程的其他操作：</div><div class="line"></div><div class="line">	&gt;SHOW <span class="function"><span class="keyword">PROCEDURE</span> <span class="title">STATUS</span>;</span>　　　　　　<span class="comment">//显示当期的存储过程</span></div><div class="line"></div><div class="line">	&gt;DROP <span class="function"><span class="keyword">PROCEDURE</span> <span class="title">pro</span>;</span>　　　　　　　　　<span class="comment">//删除指定存储过程</span></div><div class="line"></div><div class="line">### 十五、使用游标：</div><div class="line"></div><div class="line">　　对这个理解不是很懂，朋友多多指点哦</div></pre></td></tr></table></figure></p>
+</code></pre><h3 id="十四、使用存储过程："><a href="#十四、使用存储过程：" class="headerlink" title="十四、使用存储过程："></a>十四、使用存储过程：</h3><p>个人理解，存储过程就是一个自定义函数，有局部变量参数，可传入参数，可以返回值，不过这语法够呆滞的<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#### <span class="number">1</span>、创建存储过程：</div><div class="line"></div><div class="line">	&gt;<span class="keyword">CREATE</span> <span class="function"><span class="keyword">PROCEDURE</span> <span class="title">pro</span><span class="params">(</span></span></div><div class="line"></div><div class="line">	&gt;<span class="keyword">IN</span> num INT,<span class="keyword">OUT</span> total INT)</div><div class="line"></div><div class="line">	&gt;<span class="title">BEGIN</span></div><div class="line"></div><div class="line">	&gt;<span class="title">SELECT</span> <span class="title">SUM</span><span class="params">(score)</span> <span class="title">INTO</span> <span class="title">total</span> <span class="title">FROM</span> <span class="title">tb_name</span> <span class="title">WHERE</span> <span class="title">id</span>=<span class="title">num</span>;</div><div class="line"></div><div class="line">	&gt;<span class="keyword">END</span>;</div><div class="line"></div><div class="line">***这里的  <span class="keyword">IN</span> (传递一个值给存储过程)，<span class="keyword">OUT</span>（从存储过程传出一个值），INOUT（对存储过程传入、传出），<span class="keyword">INTO</span>（保存变量）***</div><div class="line"></div><div class="line">####  <span class="number">2</span>、调用存储过程：</div><div class="line"></div><div class="line">	&gt;CALL pro(<span class="number">13</span>,@total)　　　　　　<span class="comment">//这里的存储过程两个变量，一个是IN一个是OUT，这里的OUT也是需要写上的，不写会出错</span></div><div class="line"></div><div class="line">	&gt;<span class="keyword">SELECT</span> @total　　　　　　　　　<span class="comment">//这里就可以看到结果了；</span></div><div class="line"></div><div class="line">####  <span class="number">3</span>、存储过程的其他操作：</div><div class="line"></div><div class="line">	&gt;SHOW <span class="function"><span class="keyword">PROCEDURE</span> <span class="title">STATUS</span>;</span>　　　　　　<span class="comment">//显示当期的存储过程</span></div><div class="line"></div><div class="line">	&gt;DROP <span class="function"><span class="keyword">PROCEDURE</span> <span class="title">pro</span>;</span>　　　　　　　　　<span class="comment">//删除指定存储过程</span></div><div class="line"></div><div class="line">###  十五、使用游标：</div><div class="line"></div><div class="line">　　对这个理解不是很懂，朋友多多指点哦</div></pre></td></tr></table></figure></p>
 <h4 id="1、游标的操作"><a href="#1、游标的操作" class="headerlink" title="1、游标的操作"></a>1、游标的操作</h4><pre><code>&gt;CREATE PROCEDURE pro()
 
 &gt;BEGIN 
@@ -256,11 +256,11 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     </summary>
     
     
-      <category term="教程" scheme="https://xelengo.github.io/tags/%E6%95%99%E7%A8%8B/"/>
-    
       <category term="编程" scheme="https://xelengo.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
     
       <category term="MySql" scheme="https://xelengo.github.io/tags/MySql/"/>
+    
+      <category term="教程" scheme="https://xelengo.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
@@ -379,9 +379,9 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     </summary>
     
     
-      <category term="随笔" scheme="https://xelengo.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="教程" scheme="https://xelengo.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="随笔" scheme="https://xelengo.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -480,9 +480,9 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     </summary>
     
     
-      <category term="随笔" scheme="https://xelengo.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="教程" scheme="https://xelengo.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="随笔" scheme="https://xelengo.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
