@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xelengo.github.io/"/>
-  <updated>2017-03-20T10:36:07.652Z</updated>
+  <updated>2017-03-21T13:11:44.952Z</updated>
   <id>https://xelengo.github.io/</id>
   
   <author>
@@ -20,13 +20,14 @@
     <link href="https://xelengo.github.io/2017/03/20/Java%E9%A1%B9%E7%9B%AE%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83(%E8%BD%AC)/"/>
     <id>https://xelengo.github.io/2017/03/20/Java项目命名规范(转)/</id>
     <published>2017-03-20T10:31:18.730Z</published>
-    <updated>2017-03-20T10:36:07.652Z</updated>
+    <updated>2017-03-21T13:11:44.952Z</updated>
     
     <content type="html"><![CDATA[<h3 id="一、项目名"><a href="#一、项目名" class="headerlink" title="一、项目名"></a>一、项目名</h3><p>全部小写，比如cms、workdesk,jobserver等</p>
 <h3 id="二、java相关命名"><a href="#二、java相关命名" class="headerlink" title="二、java相关命名"></a>二、java相关命名</h3><p>a、类命名：每音节单词前的第一个字母大写，比如FieldInfo、Expression等，</p>
 <p>b、普通变量(包括spring里的变量引用命名)：第一个单词前小写，以后每个单词第一个字母大写，password,primaryFlag</p>
 <p>c、静态变量：全部大写，多个单词则以_分开，比如BOOLEAN_FLAG</p>
 <p>d、包package命名：全部小写,比如com.joinspider.workdesk</p>
+<a id="more"></a>
 <p>补充：</p>
 <ul>
 <li>a、类名、变量名是名字组合，多名词顺序和中文顺序一样，比如ScriptEngine</li>
@@ -77,7 +78,10 @@ public void toString(){}
     <summary type="html">
     
       &lt;h3 id=&quot;一、项目名&quot;&gt;&lt;a href=&quot;#一、项目名&quot; class=&quot;headerlink&quot; title=&quot;一、项目名&quot;&gt;&lt;/a&gt;一、项目名&lt;/h3&gt;&lt;p&gt;全部小写，比如cms、workdesk,jobserver等&lt;/p&gt;
-&lt;h3 id=&quot;二、java相关命名&quot;&gt;&lt;a 
+&lt;h3 id=&quot;二、java相关命名&quot;&gt;&lt;a href=&quot;#二、java相关命名&quot; class=&quot;headerlink&quot; title=&quot;二、java相关命名&quot;&gt;&lt;/a&gt;二、java相关命名&lt;/h3&gt;&lt;p&gt;a、类命名：每音节单词前的第一个字母大写，比如FieldInfo、Expression等，&lt;/p&gt;
+&lt;p&gt;b、普通变量(包括spring里的变量引用命名)：第一个单词前小写，以后每个单词第一个字母大写，password,primaryFlag&lt;/p&gt;
+&lt;p&gt;c、静态变量：全部大写，多个单词则以_分开，比如BOOLEAN_FLAG&lt;/p&gt;
+&lt;p&gt;d、包package命名：全部小写,比如com.joinspider.workdesk&lt;/p&gt;
     
     </summary>
     
