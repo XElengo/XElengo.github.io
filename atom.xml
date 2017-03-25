@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xelengo.github.io/"/>
-  <updated>2017-03-21T13:11:44.952Z</updated>
+  <updated>2017-03-25T08:39:13.626Z</updated>
   <id>https://xelengo.github.io/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="https://xelengo.github.io/2017/03/20/Java%E9%A1%B9%E7%9B%AE%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83(%E8%BD%AC)/"/>
     <id>https://xelengo.github.io/2017/03/20/Java项目命名规范(转)/</id>
     <published>2017-03-20T10:31:18.730Z</published>
-    <updated>2017-03-21T13:11:44.952Z</updated>
+    <updated>2017-03-25T08:39:13.626Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="一、项目名"><a href="#一、项目名" class="headerlink" title="一、项目名"></a>一、项目名</h3><p>全部小写，比如cms、workdesk,jobserver等</p>
+    <content type="html"><![CDATA[<p>这段时间对于java命名规范有些生疏了，特地在网络上整理编写了这篇规范，以后为个人的编程做一个参考吧。</p>
+<h3 id="一、项目名"><a href="#一、项目名" class="headerlink" title="一、项目名"></a>一、项目名</h3><p>全部小写，比如cms、workdesk,jobserver等</p>
 <h3 id="二、java相关命名"><a href="#二、java相关命名" class="headerlink" title="二、java相关命名"></a>二、java相关命名</h3><p>a、类命名：每音节单词前的第一个字母大写，比如FieldInfo、Expression等，</p>
 <p>b、普通变量(包括spring里的变量引用命名)：第一个单词前小写，以后每个单词第一个字母大写，password,primaryFlag</p>
 <p>c、静态变量：全部大写，多个单词则以_分开，比如BOOLEAN_FLAG</p>
@@ -77,7 +78,8 @@ public void toString(){}
     
     <summary type="html">
     
-      &lt;h3 id=&quot;一、项目名&quot;&gt;&lt;a href=&quot;#一、项目名&quot; class=&quot;headerlink&quot; title=&quot;一、项目名&quot;&gt;&lt;/a&gt;一、项目名&lt;/h3&gt;&lt;p&gt;全部小写，比如cms、workdesk,jobserver等&lt;/p&gt;
+      &lt;p&gt;这段时间对于java命名规范有些生疏了，特地在网络上整理编写了这篇规范，以后为个人的编程做一个参考吧。&lt;/p&gt;
+&lt;h3 id=&quot;一、项目名&quot;&gt;&lt;a href=&quot;#一、项目名&quot; class=&quot;headerlink&quot; title=&quot;一、项目名&quot;&gt;&lt;/a&gt;一、项目名&lt;/h3&gt;&lt;p&gt;全部小写，比如cms、workdesk,jobserver等&lt;/p&gt;
 &lt;h3 id=&quot;二、java相关命名&quot;&gt;&lt;a href=&quot;#二、java相关命名&quot; class=&quot;headerlink&quot; title=&quot;二、java相关命名&quot;&gt;&lt;/a&gt;二、java相关命名&lt;/h3&gt;&lt;p&gt;a、类命名：每音节单词前的第一个字母大写，比如FieldInfo、Expression等，&lt;/p&gt;
 &lt;p&gt;b、普通变量(包括spring里的变量引用命名)：第一个单词前小写，以后每个单词第一个字母大写，password,primaryFlag&lt;/p&gt;
 &lt;p&gt;c、静态变量：全部大写，多个单词则以_分开，比如BOOLEAN_FLAG&lt;/p&gt;
@@ -87,8 +89,6 @@ public void toString(){}
     
     
       <category term="编程" scheme="https://xelengo.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-      <category term="随笔" scheme="https://xelengo.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="java" scheme="https://xelengo.github.io/tags/java/"/>
     
@@ -422,7 +422,7 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     <link href="https://xelengo.github.io/2017/02/04/%E5%AE%89%E8%A3%85python3.6/"/>
     <id>https://xelengo.github.io/2017/02/04/安装python3.6/</id>
     <published>2017-02-04T02:43:33.173Z</published>
-    <updated>2017-02-04T04:56:49.637Z</updated>
+    <updated>2017-03-25T08:41:45.147Z</updated>
     
     <content type="html"><![CDATA[<p>首先。先看一下Python的简介：</p>
 <p>Python（英国发音：/ˈpaɪθən/ 美国发音：/ˈpaɪθɑːn/），是一种面向对象、解释型的计算机程序语言。它包含了一组功能完备的标准库，能够轻松完成很多常见的任务。它的语法简单，与其它大多数程序设计语言使用大括号不一样，它使用缩进来定义语句块。</p>
@@ -458,9 +458,11 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     </summary>
     
     
+      <category term="MySql" scheme="https://xelengo.github.io/tags/MySql/"/>
+    
       <category term="教程" scheme="https://xelengo.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="随笔" scheme="https://xelengo.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="数据库" scheme="https://xelengo.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -469,7 +471,7 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     <link href="https://xelengo.github.io/2017/02/04/window10%E5%AE%89%E8%A3%85mysql%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     <id>https://xelengo.github.io/2017/02/04/window10安装mysql数据库/</id>
     <published>2017-02-04T00:55:36.373Z</published>
-    <updated>2017-02-04T04:56:47.047Z</updated>
+    <updated>2017-03-25T08:42:19.151Z</updated>
     
     <content type="html"><![CDATA[<p>mysql是一个轻量级的数据库，非常适合独立开发者安装到自己的电脑上进行程序开发和测试。</p>
 <h3 id="Mysql关系型数据库管理系统"><a href="#Mysql关系型数据库管理系统" class="headerlink" title="Mysql关系型数据库管理系统"></a>Mysql关系型数据库管理系统</h3><p>MySQL是一个开放源码的小型关联式数据库管理系统，开发者为瑞典MySQL AB公司。MySQL被广泛地应用在Internet上的中小型网站中。由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，许多中小型网站为了降低网站总体拥有成本而选择了MySQL作为网站数据库。</p>
@@ -559,9 +561,11 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     </summary>
     
     
+      <category term="MySql" scheme="https://xelengo.github.io/tags/MySql/"/>
+    
       <category term="教程" scheme="https://xelengo.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="随笔" scheme="https://xelengo.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="win10" scheme="https://xelengo.github.io/tags/win10/"/>
     
   </entry>
   
@@ -592,7 +596,7 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     <link href="https://xelengo.github.io/2017/02/03/yilia%E4%BD%BF%E7%94%A8/"/>
     <id>https://xelengo.github.io/2017/02/03/yilia使用/</id>
     <published>2017-02-03T04:50:34.505Z</published>
-    <updated>2017-02-04T04:46:07.735Z</updated>
+    <updated>2017-03-25T08:42:39.433Z</updated>
     
     <content type="html"><![CDATA[<h1 id="yilia主题使用和配置"><a href="#yilia主题使用和配置" class="headerlink" title="yilia主题使用和配置"></a>yilia主题使用和配置</h1><p>本篇内容转自 <a href="http://litten.me/2014/08/31/hexo-theme-yilia/" target="_blank" rel="external">litten.me</a></p>
 <h2 id="一、使用"><a href="#一、使用" class="headerlink" title="一、使用"></a>一、使用</h2><h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="keyword">clone</span> <span class="title">https</span>://github.com/litten/hexo-theme-yilia.git themes/yilia</div></pre></td></tr></table></figure>
@@ -619,6 +623,10 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     
       <category term="随笔" scheme="https://xelengo.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
+      <category term="博客" scheme="https://xelengo.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="分享" scheme="https://xelengo.github.io/tags/%E5%88%86%E4%BA%AB/"/>
+    
   </entry>
   
   <entry>
@@ -626,7 +634,7 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     <link href="https://xelengo.github.io/2017/02/02/test/"/>
     <id>https://xelengo.github.io/2017/02/02/test/</id>
     <published>2017-02-02T11:16:04.226Z</published>
-    <updated>2017-02-03T11:09:19.690Z</updated>
+    <updated>2017-03-21T14:23:45.780Z</updated>
     
     <content type="html"><![CDATA[<p>测试</p>
 <h3 id="设置标题，标签："><a href="#设置标题，标签：" class="headerlink" title="设置标题，标签："></a>设置标题，标签：</h3><p><code>title:  测试</code></p>
@@ -640,6 +648,10 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
 <p>相对路径：<br><img src="/assets/img/blogimg/1c.png" alt="相对"></p>
 <p>语法高亮:</p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="section">cpp</span> &#123;<span class="attribute">int</span> a,b;&#125;</div></pre></td></tr></table></figure>
+<hr>
+<p>测试网易云音乐插件：</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=29811171&auto=0&height=66"></iframe>
+
 <h3 id="yilia-多说评论插件使用"><a href="#yilia-多说评论插件使用" class="headerlink" title="yilia 多说评论插件使用"></a>yilia 多说评论插件使用</h3><p>多说插件<code>duoshuo: &quot;xxxx&quot;</code> 已设置，但是无法成功显示，浏览器调试工具console报错：990002</p>
 <p>自己解决了，方法虽然不太好；写死这个地方yilia\layout_partial\post\duoshuo.ejs ： var duoshuoQuery = {short_name:”xelengo”};<br>short_name是用多说网站生成的模板 即 工具–&gt;通用代码中的short_name，即 多说–&gt;设置 那里的域名的第一部分，如：xelengo.duoshuo.com 中的xelengo。因为多说的账户名称可以修改，但注册账号时的多说域名不可修改，且账户名称与域名的第一部分允许不同，而多说评论插件是通过访问多说域名进行显示的。所以可能会出错吧。另外本地缓存，github上的代码，以及多说本身都会影响运行结果。谢谢 @litten 提供的模板</p>
 <p>参见：<a href="https://github.com/litten/hexo-theme-yilia/issues/28" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia/issues/28</a></p>
