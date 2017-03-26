@@ -5,56 +5,56 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="https://xelengo.github.io">
-  <title>window10安装mysql数据库 | XElengo的个人博客</title>
+  <link rel="dns-prefetch" href="http://xelengo.me">
+  <title>window10安装mysql数据库 | XElengo&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="mysql是一个轻量级的数据库，非常适合独立开发者安装到自己的电脑上进行程序开发和测试。
 Mysql关系型数据库管理系统MySQL是一个开放源码的小型关联式数据库管理系统，开发者为瑞典MySQL AB公司。MySQL被广泛地应用在Internet上的中小型网站中。由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，许多中小型网站为了降低网站总体拥有成本而选择了MySQL作为网站数据库。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="window10安装mysql数据库">
-<meta property="og:url" content="https://xelengo.github.io/2017/02/04/window10安装mysql数据库/index.html">
-<meta property="og:site_name" content="XElengo的个人博客">
+<meta property="og:url" content="http://xelengo.me/2017/02/04/window10安装mysql数据库/index.html">
+<meta property="og:site_name" content="XElengo's blog">
 <meta property="og:description" content="mysql是一个轻量级的数据库，非常适合独立开发者安装到自己的电脑上进行程序开发和测试。
 Mysql关系型数据库管理系统MySQL是一个开放源码的小型关联式数据库管理系统，开发者为瑞典MySQL AB公司。MySQL被广泛地应用在Internet上的中小型网站中。由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，许多中小型网站为了降低网站总体拥有成本而选择了MySQL作为网站数据库。">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_090312.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_090919.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_091333.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_091748.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_092504.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_093010.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_094450.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_094501.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_094948.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_094958.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_095010.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_095349.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_095733.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_095815.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_095854.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_100200.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_100211.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_100224.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_100250.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_100259.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_100307.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_100316.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_100422.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_100431.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_100512.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_100520.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_100619.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_102407.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_101454.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_101604.png">
-<meta property="og:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_101700.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_090312.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_090919.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_091333.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_091748.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_092504.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_093010.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_094450.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_094501.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_094948.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_094958.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_095010.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_095349.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_095733.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_095815.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_095854.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_100200.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_100211.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_100224.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_100250.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_100259.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_100307.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_100316.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_100422.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_100431.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_100512.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_100520.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_100619.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_102407.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_101454.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_101604.png">
+<meta property="og:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_101700.png">
 <meta property="og:updated_time" content="2017-03-25T08:42:19.151Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="window10安装mysql数据库">
 <meta name="twitter:description" content="mysql是一个轻量级的数据库，非常适合独立开发者安装到自己的电脑上进行程序开发和测试。
 Mysql关系型数据库管理系统MySQL是一个开放源码的小型关联式数据库管理系统，开发者为瑞典MySQL AB公司。MySQL被广泛地应用在Internet上的中小型网站中。由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，许多中小型网站为了降低网站总体拥有成本而选择了MySQL作为网站数据库。">
-<meta name="twitter:image" content="https://xelengo.github.io/assets/img/blogimg/20170204/2017-02-04_090312.png">
+<meta name="twitter:image" content="http://xelengo.me/assets/img/blogimg/20170204/2017-02-04_090312.png">
   
-    <link rel="alternative" href="/atom.xml" title="XElengo的个人博客" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="XElengo&#39;s blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/assets/img/icon/x-icon.png">
@@ -127,7 +127,7 @@ var _hmt = _hmt || [];
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="https://github.com/XElengo" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="http://xelengo.me" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="http://weibo.com/u/3757560467?refer_flag=1001030102_" title="weibo"><i class="icon-weibo"></i></a>
 		        
@@ -168,7 +168,7 @@ var _hmt = _hmt || [];
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="https://github.com/XElengo" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="http://xelengo.me" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="http://weibo.com/u/3757560467?refer_flag=1001030102_" title="weibo"><i class="icon-weibo"></i></a>
 			        
@@ -403,7 +403,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://xelengo.github.io/2017/02/04/window10安装mysql数据库/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://xelengo.me/2017/02/04/window10安装mysql数据库/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -442,7 +442,7 @@ var _hmt = _hmt || [];
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="window10安装mysql数据库" data-title="window10安装mysql数据库" data-url="https://xelengo.github.io/2017/02/04/window10安装mysql数据库/"></div>
+	<div class="ds-thread" data-thread-key="window10安装mysql数据库" data-title="window10安装mysql数据库" data-url="http://xelengo.me/2017/02/04/window10安装mysql数据库/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -673,7 +673,7 @@ var _hmt = _hmt || [];
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">&lt;br&gt;但行好事，莫问前程&lt;br&gt;人生不易，莫笑他人&lt;br&gt;</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">&lt;br&gt;但行好事，莫问前程。&lt;br&gt;人生不易，莫笑他人。&lt;br&gt;</div>
   	  	
     	</section>
     
