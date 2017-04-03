@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xelengo.me/"/>
-  <updated>2017-03-25T08:39:13.626Z</updated>
+  <updated>2017-04-03T09:03:49.839Z</updated>
   <id>http://xelengo.me/</id>
   
   <author>
@@ -14,6 +14,77 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网易云跟帖初次使用手记</title>
+    <link href="http://xelengo.me/2017/04/03/%E7%BD%91%E6%98%93%E4%BA%91%E8%B7%9F%E5%B8%96%E6%89%8B%E8%AE%B0/"/>
+    <id>http://xelengo.me/2017/04/03/网易云跟帖手记/</id>
+    <published>2017-04-03T07:08:34.580Z</published>
+    <updated>2017-04-03T09:03:49.839Z</updated>
+    
+    <content type="html"><![CDATA[<p>多说即将语6月1日关闭，因此我把我的评论迁移到了网易云跟帖上。</p>
+<p><img src="/assets/img/blogimg/20170413/2017-04-03_142054.png" alt="图1"></p>
+<p>网易云跟帖是网易推出的一款社会化评论插件；页面简洁，使用方便。</p>
+<p>因为在搭建博客之初使用的是多说的评论插件。因此不得不把评论迁移其他评论平台。最初考察了网络上使用比较多的几款评论插件：友言，畅言，disqus,网易云跟帖。</p>
+<a id="more"></a>
+<p><strong>畅言</strong>背后是属于搜狐这个大公司的，有着这种大背景下，畅言的一些安全和保密性，以及垃圾评论的减少得到保证，而且不会挂掉，很稳定，可靠性不必多言，很多政府网站也在用，算是中国社会化评论框的大牛了。但是畅言有一点原因导致了我放弃了它：那就是它必须要求所使用的站点完成备案，因为我的网站是托管在的github pages上的属于国外服务器，根本没办法去备案的，而且我也不打算自己去租用一个云服务器或云主机来托管博客。所以我就放弃了它，不然它会是目前多说倒闭后的最好选择。</p>
+<p><strong>友言</strong> 使用上据说很方便，但是有一点：不支持多说的数据导入。所以pass.</p>
+<p><strong>disqus</strong>是hexo原生支持的一款评论插件。但是是国外的，纯英文界面不太友好。</p>
+<p>因此，综合考虑，最后选择了网易云跟帖。能导入多说还无需备案。这个实在是符合我的胃口。它是16年6月份才推出的一个新产品，选择这个评论系统有一种情节在里面，因为我本人非常爱用网易云音乐来听歌，所以我本着支持网易云音乐的原则，也来支持这个产品.<br>尽管这个产品目前有很多的不足，不过背后毕竟是网易这个大公司，相信日后会越来越好的。</p>
+<p>接下来上使用教程：</p>
+<ol>
+<li>导出多说的评论数据。  登录多说，工具–&gt; 导出数据–&gt;导出评论；记得勾选 包含文章数据，包含评论数据。</li>
+</ol>
+<p><img src="/assets/img/blogimg/20170413/2017-04-03_144116.png" alt="图2"></p>
+<ol>
+<li>注册<a href="https://manage.gentie.163.com/" target="_blank" rel="external">网易云跟帖</a>.  有网易邮箱的可以直接登录。</li>
+</ol>
+<p><img src="/assets/img/blogimg/20170413/2017-04-03_144545.png" alt="图3"></p>
+<ol>
+<li>登陆后点击右上角后台管理，填写基本信息，站长信息。注册成功。可以看到网易云跟帖的五大模块。在这里不再细说。</li>
+</ol>
+<p><img src="/assets/img/blogimg/20170413/2017-04-03_144930.png" alt="图4"></p>
+<ol>
+<li>获取代码 –&gt; WEB代码；右边代码框中：productKey：xxxxxxx；就是我们注册的账号对应的标识码了。</li>
+</ol>
+<p><img src="/assets/img/blogimg/20170413/2017-04-03_145411.png" alt="图5"></p>
+<ol>
+<li>打开yilia主题在你的电脑上的文件目录，打开<code>themes\yilia\layout\_partial\post</code>。新建文件<code>netease,ejs</code>.写入代码：</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"> </div><div class="line"><span class="comment">&lt;!-- 网易云跟帖评论插件通用代码 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"netease"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"cloud-tie-wrapper"</span> <span class="attr">class</span>=<span class="string">"cloud-tie-wrapper"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line">	<span class="keyword">var</span> cloudTieConfig = &#123;</div><div class="line">	  <span class="attr">url</span>: <span class="built_in">document</span>.location.href, </div><div class="line">	  <span class="attr">sourceId</span>: <span class="string">""</span>,</div><div class="line">	  <span class="attr">productKey</span>: <span class="string">"&lt;%= theme.gentie_productKey %&gt;"</span>,</div><div class="line">	  <span class="attr">target</span>: <span class="string">"cloud-tie-wrapper"</span></div><div class="line">	&#125;;</div><div class="line">	<span class="keyword">var</span> yunManualLoad = <span class="literal">true</span>;</div><div class="line">	Tie.loader(<span class="string">"aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s"</span>, <span class="literal">true</span>);</div><div class="line">	<span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 网易云跟帖代码结束 --&gt;</span></div></pre></td></tr></table></figure>
+<ol>
+<li>找到目录<code>themes\yilia\layout\_partial</code>  下的 <code>articla.ejs</code> 文件中的多说评论模块</li>
+</ol>
+<figure class="highlight mojolicious"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="xml">  <span class="tag">&lt;<span class="name">%</span></span></span><span class="perl"> <span class="keyword">if</span> (!<span class="keyword">index</span>)&#123; </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">  <span class="tag">&lt;<span class="name">%</span></span><span class="perl"> <span class="keyword">if</span> (theme.duoshuo &amp;&amp; post.comments)&#123; </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">  <span class="tag">&lt;<span class="name">%</span></span><span class="perl">- partial(<span class="string">'post/duoshuo'</span>, &#123;</span></div><div class="line">      key: post.slug,</div><div class="line">      title: post.title,</div><div class="line">      url: config.url+url_for(post.path)</div><div class="line">    &#125;) <span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">  <span class="tag">&lt;<span class="name">%</span></span><span class="perl"> &#125; <span class="keyword">else</span> &#123; </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"duoshuo"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">%</span></span><span class="perl"> &#125; </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span><span class="perl"> &#125; </span><span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure>
+<p>在它下面加上以下代码：</p>
+<figure class="highlight mojolicious"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="xml">  <span class="tag">&lt;<span class="name">%</span></span></span><span class="perl"> <span class="keyword">if</span> (!<span class="keyword">index</span>)&#123; </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">  <span class="tag">&lt;<span class="name">%</span></span><span class="perl"> <span class="keyword">if</span> (theme.gentie_productKey &amp;&amp; post.comments)&#123; </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">  <span class="tag">&lt;<span class="name">%</span></span><span class="perl">- partial(<span class="string">'post/netease'</span>) </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">  <span class="tag">&lt;<span class="name">%</span></span><span class="perl"> &#125; <span class="keyword">else</span> &#123; </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"netease"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">%</span></span><span class="perl"> &#125; </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span><span class="perl"> &#125; </span><span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure>
+<p>7.在yilia的配置文件<code>_config.yml</code>中加入以下配置：</p>
+<p><code>gentie_productKey: a037900c12874e75a3fea29d72243104</code></p>
+<p>OK.到此设置结束。赶快去重新发布试试吧。</p>
+<p>完成后的样子参考我的博客<a href="xelengo.me">xelengo.me</a></p>
+<p>欢迎交流探讨</p>
+<hr>
+<p>参考：<a href="http://www.renyyy.com/articles/694/" target="_blank" rel="external">http://www.renyyy.com/articles/694/</a></p>
+<p><a href="http://www.jianshu.com/p/59ffe112fbc8" target="_blank" rel="external">http://www.jianshu.com/p/59ffe112fbc8</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;多说即将语6月1日关闭，因此我把我的评论迁移到了网易云跟帖上。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blogimg/20170413/2017-04-03_142054.png&quot; alt=&quot;图1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;网易云跟帖是网易推出的一款社会化评论插件；页面简洁，使用方便。&lt;/p&gt;
+&lt;p&gt;因为在搭建博客之初使用的是多说的评论插件。因此不得不把评论迁移其他评论平台。最初考察了网络上使用比较多的几款评论插件：友言，畅言，disqus,网易云跟帖。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://xelengo.me/tags/hexo/"/>
+    
+      <category term="yilia" scheme="http://xelengo.me/tags/yilia/"/>
+    
+      <category term="网易云跟帖" scheme="http://xelengo.me/tags/%E7%BD%91%E6%98%93%E4%BA%91%E8%B7%9F%E5%B8%96/"/>
+    
+  </entry>
   
   <entry>
     <title>Java项目命名规范(转)</title>
