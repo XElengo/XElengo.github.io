@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xelengo.me/"/>
-  <updated>2017-04-03T09:03:49.839Z</updated>
+  <updated>2017-04-03T09:50:48.671Z</updated>
   <id>http://xelengo.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xelengo.me/2017/04/03/%E7%BD%91%E6%98%93%E4%BA%91%E8%B7%9F%E5%B8%96%E6%89%8B%E8%AE%B0/"/>
     <id>http://xelengo.me/2017/04/03/网易云跟帖手记/</id>
     <published>2017-04-03T07:08:34.580Z</published>
-    <updated>2017-04-03T09:03:49.839Z</updated>
+    <updated>2017-04-03T09:50:48.671Z</updated>
     
     <content type="html"><![CDATA[<p>多说即将语6月1日关闭，因此我把我的评论迁移到了网易云跟帖上。</p>
 <p><img src="/assets/img/blogimg/20170413/2017-04-03_142054.png" alt="图1"></p>
@@ -52,6 +52,7 @@
 <li>打开yilia主题在你的电脑上的文件目录，打开<code>themes\yilia\layout\_partial\post</code>。新建文件<code>netease,ejs</code>.写入代码：</li>
 </ol>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"> </div><div class="line"><span class="comment">&lt;!-- 网易云跟帖评论插件通用代码 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"netease"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"cloud-tie-wrapper"</span> <span class="attr">class</span>=<span class="string">"cloud-tie-wrapper"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line">	<span class="keyword">var</span> cloudTieConfig = &#123;</div><div class="line">	  <span class="attr">url</span>: <span class="built_in">document</span>.location.href, </div><div class="line">	  <span class="attr">sourceId</span>: <span class="string">""</span>,</div><div class="line">	  <span class="attr">productKey</span>: <span class="string">"&lt;%= theme.gentie_productKey %&gt;"</span>,</div><div class="line">	  <span class="attr">target</span>: <span class="string">"cloud-tie-wrapper"</span></div><div class="line">	&#125;;</div><div class="line">	<span class="keyword">var</span> yunManualLoad = <span class="literal">true</span>;</div><div class="line">	Tie.loader(<span class="string">"aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s"</span>, <span class="literal">true</span>);</div><div class="line">	<span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 网易云跟帖代码结束 --&gt;</span></div></pre></td></tr></table></figure>
+<p>注意：<strong>productKey: “&lt;%= theme.gentie_productKey %&gt;”,</strong></p>
 <ol>
 <li>找到目录<code>themes\yilia\layout\_partial</code>  下的 <code>articla.ejs</code> 文件中的多说评论模块</li>
 </ol>
@@ -59,7 +60,8 @@
 <p>在它下面加上以下代码：</p>
 <figure class="highlight mojolicious"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="xml">  <span class="tag">&lt;<span class="name">%</span></span></span><span class="perl"> <span class="keyword">if</span> (!<span class="keyword">index</span>)&#123; </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">  <span class="tag">&lt;<span class="name">%</span></span><span class="perl"> <span class="keyword">if</span> (theme.gentie_productKey &amp;&amp; post.comments)&#123; </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">  <span class="tag">&lt;<span class="name">%</span></span><span class="perl">- partial(<span class="string">'post/netease'</span>) </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">  <span class="tag">&lt;<span class="name">%</span></span><span class="perl"> &#125; <span class="keyword">else</span> &#123; </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"netease"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">%</span></span><span class="perl"> &#125; </span><span class="xml"><span class="tag">%&gt;</span></span></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span><span class="perl"> &#125; </span><span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure>
 <p>7.在yilia的配置文件<code>_config.yml</code>中加入以下配置：</p>
-<p><code>gentie_productKey: a037900c12874e75a3fea29d72243104</code></p>
+<p><code>gentie_productKey: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</code> </p>
+<p>即：你的网易云跟帖生成的productKey</p>
 <p>OK.到此设置结束。赶快去重新发布试试吧。</p>
 <p>完成后的样子参考我的博客<a href="xelengo.me">xelengo.me</a></p>
 <p>欢迎交流探讨</p>
