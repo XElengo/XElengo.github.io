@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xelengo.me/"/>
-  <updated>2017-04-18T05:30:14.246Z</updated>
+  <updated>2017-05-15T11:07:57.172Z</updated>
   <id>http://xelengo.me/</id>
   
   <author>
@@ -14,6 +14,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>什么是MVC</title>
+    <link href="http://xelengo.me/2017/05/15/%E4%BB%80%E4%B9%88%E6%98%AFMVC/"/>
+    <id>http://xelengo.me/2017/05/15/什么是MVC/</id>
+    <published>2017-05-15T11:03:40.864Z</published>
+    <updated>2017-05-15T11:07:57.172Z</updated>
+    
+    <content type="html"><![CDATA[<p>MVC是一种设计思想、开发模式，即把项目代码分为M（Model 模型层 业务模型）V（View 视图层 用户界面）C（Controller 控制层 控制器）三部分。采用封装（分层）的思想，来降低耦合度，使系统更加灵活，增加程序的扩展性。提高代码的重用性，把业务逻辑代码与视图代码分离，通过控制器连接业务逻辑与视图，使代码结构层次清晰。MVC的缺点是：一个应用程序分成了三个部分开发，增加开发工作量。</p>
+<p>而在j2ee开发中，视图层由jsp页面等进行充当，控制层由action（或controller）进行充当，而剩余的如：实体类，service层，dao（Data Access Object 数据访问对象）层（以及mapper,bean,util等）都属于MVC中的模型层。<br>模型层是处理应用程序数据逻辑的部分，负责业务逻辑的处理，在数据库中存取数据。<br>控制层主要的作用是控制页面跳转，负责与用户的交互，从视图读取数据，控制用户输入，并向模型发送数据。<br>视图层在java web程序中由jsp页面充当，负责处理数据显示的部分。通常视图是依据模型数据创建的。</p>
+<a id="more"></a>
+<h4 id="什么是多例，什么是单例？"><a href="#什么是多例，什么是单例？" class="headerlink" title="什么是多例，什么是单例？"></a>什么是多例，什么是单例？</h4><p>单例就是所有请求都用一个对象来处理，比如常用的service和dao层对象通常就是单例的，多例指每个请求用一个新对象来处理，比如action。</p>
+<p>单例模式的对象在整个系统中只有一份，多例模式可以有多个实例。</p>
+<p>用单例是因为没必要每个请求都新建一个对象，这样既浪费CPU又浪费内存。</p>
+<p>用多例是为了防止并发问题，即一个请求改变了对象的状态，此时对象又处于另一个请求，而之前的请求对象的改变导致了对象对另一个请求做了错误的处理。</p>
+<p>用单例和多例的标准只有一个：当对象含有可变状态时（准确的说是该实例在实际应用中状态会改变），则多例，否则单例。</p>
+<p>而对于struts2来说，action必须为多例，因为action本身含有请求参数的值，即可变的状态，另外service和dao也不一定是单例，原因同上，容易产生隐藏的bug。而并发的bug很难复现。<br><br></p>
+<p><strong>临界资源</strong>：就是公共资源，多个线程间共享的数据称为临界资源（Cricital Resourse），由于是线程调度器负责线程的调度，程序员无法精确控制多线程的交替顺序，因此，多线程对临界资源的访问有时会导致数据的不一致性为。</p>
+<h4 id="SpringMVC的控制层为什么要用多例模式，其它层为什么要用单例模式？"><a href="#SpringMVC的控制层为什么要用多例模式，其它层为什么要用单例模式？" class="headerlink" title="SpringMVC的控制层为什么要用多例模式，其它层为什么要用单例模式？"></a>SpringMVC的控制层为什么要用多例模式，其它层为什么要用单例模式？</h4><p>因为控制层（通常叫做Controller或者action）是处理与用户的逻辑交互的，通常伴随着多线程并发访问，那么这个时候控制层就处于一种临界状态，比如用户A改变了action中的某个对象的状态或者属性，此时用户B又调用了这个对象，那这个时候系统很可能会发生逻辑处理异常，返回错误的结果。所以，需要设置控制层action为多例（scope=”prototype”），每当有一个新的访问请求产生的时候，action就会创建一个新的对象进行处理，不同线程访问的是各自的对象，彼此不会发生并发访问的冲突。</p>
+<p>而service,dao为什么用单例？就是service主要是用来处理业务逻辑的，action发送过来处理请求和处理参数，service进行相应的业务处理，涉及到数据库操作的时候调用dao层的方法，然后对dao层的返回结果进行处理，再把处理结果返回给action。Dao层也叫数据持久层，dao层接收service层发送过来的请求和参数，然后执行具体的数据库操作，再把处理结果返回给service。通常service，dao都是对具体方法的处理，它的属性通常不会发生改变，只是对具体业务进行处理。所以使用单例进行实现。</p>
+<hr>
+<p>参考网络上的一些博客，自己又做了一点总结，梳理。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;MVC是一种设计思想、开发模式，即把项目代码分为M（Model 模型层 业务模型）V（View 视图层 用户界面）C（Controller 控制层 控制器）三部分。采用封装（分层）的思想，来降低耦合度，使系统更加灵活，增加程序的扩展性。提高代码的重用性，把业务逻辑代码与视图代码分离，通过控制器连接业务逻辑与视图，使代码结构层次清晰。MVC的缺点是：一个应用程序分成了三个部分开发，增加开发工作量。&lt;/p&gt;
+&lt;p&gt;而在j2ee开发中，视图层由jsp页面等进行充当，控制层由action（或controller）进行充当，而剩余的如：实体类，service层，dao（Data Access Object 数据访问对象）层（以及mapper,bean,util等）都属于MVC中的模型层。&lt;br&gt;模型层是处理应用程序数据逻辑的部分，负责业务逻辑的处理，在数据库中存取数据。&lt;br&gt;控制层主要的作用是控制页面跳转，负责与用户的交互，从视图读取数据，控制用户输入，并向模型发送数据。&lt;br&gt;视图层在java web程序中由jsp页面充当，负责处理数据显示的部分。通常视图是依据模型数据创建的。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://xelengo.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="java" scheme="http://xelengo.me/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>网易云跟帖初次使用手记</title>
