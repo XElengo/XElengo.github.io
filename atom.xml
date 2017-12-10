@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xelengo.me/"/>
-  <updated>2017-06-04T14:03:02.033Z</updated>
+  <updated>2017-12-10T10:01:48.282Z</updated>
   <id>http://xelengo.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xelengo.me/2017/06/04/%E8%BF%99%E6%AC%A1%E6%B2%A1%E6%9C%89%E4%BA%89%E5%90%B5%EF%BC%8C%E6%B2%A1%E6%9C%89%E6%8B%89%E9%BB%91%EF%BC%8C%E4%BD%86%E6%88%91%E4%BB%AC%E9%83%BD%E6%87%82%EF%BC%9B%E4%BB%8E%E6%AD%A4%E5%86%8D%E6%97%A0%E4%BA%A4%E9%9B%86%EF%BC%8C%E8%BF%99%E5%BA%94%E8%AF%A5%E5%8F%AF%E4%BB%A5%E7%AE%97%E6%98%AF%E6%9C%80%E5%A5%BD%E7%9A%84%E7%A6%BB%E5%BC%80%E6%96%B9%E5%BC%8F/"/>
     <id>http://xelengo.me/2017/06/04/这次没有争吵，没有拉黑，但我们都懂；从此再无交集，这应该可以算是最好的离开方式/</id>
     <published>2017-06-04T13:51:02.326Z</published>
-    <updated>2017-06-04T14:03:02.033Z</updated>
+    <updated>2017-12-10T10:01:48.282Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li>人，最好的心态是平静；最好的状态是简单；最好的感觉是自由；最好的心情是童心。</li>
@@ -94,8 +94,6 @@
     
       <category term="随笔" scheme="http://xelengo.me/tags/%E9%9A%8F%E7%AC%94/"/>
     
-      <category term="直戳内心" scheme="http://xelengo.me/tags/%E7%9B%B4%E6%88%B3%E5%86%85%E5%BF%83/"/>
-    
   </entry>
   
   <entry>
@@ -103,9 +101,9 @@
     <link href="http://xelengo.me/2017/06/04/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/"/>
     <id>http://xelengo.me/2017/06/04/Python内置函数/</id>
     <published>2017-06-04T13:49:32.971Z</published>
-    <updated>2017-06-07T02:45:47.083Z</updated>
+    <updated>2017-12-10T10:02:18.055Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://docs.python.org/3/library/functions.html" target="_blank" rel="external">Python内置函数官方文档</a></p>
+    <content type="html"><![CDATA[<p><a href="//docs.python.org/3/library/functions.html">Python内置函数官方文档</a></p>
 <p>Python的内置函数大体如下，有些函数可能因为版本不同略有变化。但是作为参考还是可以的。</p>
 <a id="more"></a>
 <p>（注意：函数中的[ … ]  表示可选参数，使用中需要去掉[ ]。）</p>
@@ -127,12 +125,12 @@
 <h2 id=""><a href="#" class="headerlink" title=""></a><br></h2><p>ps: 我也不知道那么多换行符是哪来的，无奈脸.jpg</p>
 <p>来自网络，仅用于本人学习使用。</p>
 <p>如有侵权，还望联系删除。</p>
-<p>感谢：<a href="http://jianfeihit.iteye.com/blog/1835272" target="_blank" rel="external">python内置函数大全</a></p>
+<p>感谢：<a href="//jianfeihit.iteye.com/blog/1835272">python内置函数大全</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;https://docs.python.org/3/library/functions.html&quot;&gt;Python内置函数官方文档&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;//docs.python.org/3/library/functions.html&quot;&gt;Python内置函数官方文档&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Python的内置函数大体如下，有些函数可能因为版本不同略有变化。但是作为参考还是可以的。&lt;/p&gt;
     
     </summary>
@@ -188,7 +186,7 @@
     <link href="http://xelengo.me/2017/03/20/Java%E9%A1%B9%E7%9B%AE%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83(%E8%BD%AC)/"/>
     <id>http://xelengo.me/2017/03/20/Java项目命名规范(转)/</id>
     <published>2017-03-20T10:31:18.730Z</published>
-    <updated>2017-03-25T08:39:13.626Z</updated>
+    <updated>2017-12-10T09:59:14.612Z</updated>
     
     <content type="html"><![CDATA[<p>这段时间对于java命名规范有些生疏了，特地在网络上整理编写了这篇规范，以后为个人的编程做一个参考吧。</p>
 <h3 id="一、项目名"><a href="#一、项目名" class="headerlink" title="一、项目名"></a>一、项目名</h3><p>全部小写，比如cms、workdesk,jobserver等</p>
@@ -241,7 +239,7 @@ public void toString(){}
 <p>如：//背景颜色</p>
 <pre><code>Color bgColor = Color.RED
 </code></pre><hr>
-<p>参考：<a href="http://www.cnblogs.com/maowang1991/archive/2013/06/29/3162366.html" target="_blank" rel="external">http://www.cnblogs.com/maowang1991/archive/2013/06/29/3162366.html</a></p>
+<p>参考：<a href="//www.cnblogs.com/maowang1991/archive/2013/06/29/3162366.html">http://www.cnblogs.com/maowang1991/archive/2013/06/29/3162366.html</a></p>
 ]]></content>
     
     <summary type="html">
@@ -267,7 +265,7 @@ public void toString(){}
     <link href="http://xelengo.me/2017/02/25/23%E4%B8%AAMySQL%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/"/>
     <id>http://xelengo.me/2017/02/25/23个MySQL常用查询语句/</id>
     <published>2017-02-25T06:28:37.631Z</published>
-    <updated>2017-02-25T06:35:07.326Z</updated>
+    <updated>2017-12-10T09:57:52.536Z</updated>
     
     <content type="html"><![CDATA[<h3 id="一查询数值型数据"><a href="#一查询数值型数据" class="headerlink" title="一查询数值型数据:"></a>一查询数值型数据:</h3><pre><code>SELECT * FROM tb_name WHERE sum &gt; 100;
 </code></pre><p> 查询谓词:&gt;,=,&lt;,&lt;&gt;,!=,!&gt;,!&lt;,=&gt;,=&lt;</p>
@@ -317,7 +315,7 @@ SELECT 字段名 FROM tb_stu WHERE 条件 ORDER BY 字段 ASC  升序
 <p>二十三多表分组统计<br>    SELECT a.name,AVG(a.price),b.name,AVG(b.price) FROM tb_demo058 AS a,tb_demo058_1 AS b WHERE a.id=b.id GROUP BY b.type;</p>
 <hr>
 <p>参考教程：</p>
-<p><a href="http://bbs.csdn.net/topics/390407669" target="_blank" rel="external">23个MySQL常用查询语句</a></p>
+<p><a href="//bbs.csdn.net/topics/390407669">23个MySQL常用查询语句</a></p>
 ]]></content>
     
     <summary type="html">
@@ -342,7 +340,7 @@ SELECT 字段名 FROM tb_stu WHERE 条件 ORDER BY 字段 ASC  升序
     <link href="http://xelengo.me/2017/02/25/MySql%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E8%AF%AD%E5%8F%A5/"/>
     <id>http://xelengo.me/2017/02/25/MySql常用数据库操作语句/</id>
     <published>2017-02-25T06:07:52.952Z</published>
-    <updated>2017-02-25T06:52:20.780Z</updated>
+    <updated>2017-12-10T09:58:13.121Z</updated>
     
     <content type="html"><![CDATA[<p>MySQL（官方发音为英语发音：/maɪ ˌɛskjuːˈɛl/“My S-Q-L”[1]，但也经常读作英语发音：/maɪ ˈsiːkwəl/“My Sequel”）原本是一个开放源代码的关系数据库管理系统，原开发者为瑞典的MySQL AB公司，该公司于2008年被昇阳微系统（Sun Microsystems）收购。2009年，甲骨文公司（Oracle）收购昇阳微系统公司，MySQL成为Oracle旗下产品。<br>MySQL在过去由于性能高、成本低、可靠性好，已经成为最流行的开源数据库，因此被广泛地应用在Internet上的中小型网站中。随着MySQL的不断成熟，它也逐渐用于更多大规模网站和应用，比如维基百科、Google和Facebook等网站。非常流行的开源软件组合LAMP中的“M”指的就是MySQL。<br>但被甲骨文公司收购后，Oracle大幅调涨MySQL商业版的售价，且甲骨文公司不再支持另一个自由软件项目OpenSolaris的发展，因此导致自由软件社区们对于Oracle是否还会持续支持MySQL社区版（MySQL之中唯一的免费版本）有所隐忧，因此原先一些使用MySQL的开源软件逐渐转向其它的数据库。例如维基百科已于2013年正式宣布将从MySQL迁移到MariaDB数据库[2]。MySQL的创始人麦克尔·维德纽斯以MySQL为基础，成立分支计划MariaDB。</p>
 <a id="more"></a>
@@ -493,7 +491,7 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
 </code></pre><h4 id="15、UPDATE-更新一个表中的一行或多行"><a href="#15、UPDATE-更新一个表中的一行或多行" class="headerlink" title="15、UPDATE(更新一个表中的一行或多行)"></a>15、UPDATE(更新一个表中的一行或多行)</h4><pre><code>UPDATE tb_name SET column=value,......[ where ]
 </code></pre><hr>
 <p>参考教程：</p>
-<p><a href="http://www.cnblogs.com/picaso/archive/2012/05/17/2505895.html" target="_blank" rel="external">常用的Mysql数据库操作语句大全</a></p>
+<p><a href="//www.cnblogs.com/picaso/archive/2012/05/17/2505895.html">常用的Mysql数据库操作语句大全</a></p>
 ]]></content>
     
     <summary type="html">
@@ -516,11 +514,11 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     <link href="http://xelengo.me/2017/02/12/%E3%80%90Java%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E3%80%91%E3%80%8A%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E6%AD%A3%E5%BC%8F%E7%89%88%EF%BC%89%E3%80%8B%E5%8F%91%E5%B8%83%EF%BC%81/"/>
     <id>http://xelengo.me/2017/02/12/【Java编码规范】《阿里巴巴Java开发手册（正式版）》发布！/</id>
     <published>2017-02-12T06:39:43.674Z</published>
-    <updated>2017-02-12T07:46:56.595Z</updated>
+    <updated>2017-12-10T09:57:34.939Z</updated>
     
     <content type="html"><![CDATA[<p>2017年2月9日阿里巴巴发布了一份《阿里巴巴Java开发手册（正式版）》，引起了互联网上程序员们广泛讨论。</p>
 <p>作为一名java伪初学者，得知这个消息还是要尽快来学习学习的。毕竟是阿里巴巴出的编码规范，总是会对初学者有很大帮助吧。一份好的编码规约，能够让编程少踩很多坑；一个好的编程习惯，能让以后的编程旅途更加顺畅。</p>
-<p><a href="http://pan.baidu.com/s/1c202zNM" target="_blank" rel="external">点击进行百度云下载</a></p>
+<p><a href="//pan.baidu.com/s/1c202zNM">点击进行百度云下载</a></p>
 <a id="more"></a>
 <hr>
 <blockquote>
@@ -529,9 +527,9 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
 </ul>
 </blockquote>
 <p><strong>2017年开春之际，诚意献上重磅大礼：阿里巴巴Java开发手册，首次公开阿里官方Java代码规范标准。这套Java统一规范标准将有助于提高行业编码规范化水平，帮助行业人员提高开发质量和效率、大大降低代码维护成本。</strong></p>
-<p>点击下载《阿里巴巴Java开发手册》：<a href="https://yq.aliyun.com/attachment/download/?id=1170" target="_blank" rel="external">阿里云点击下载 https://yq.aliyun.com/attachment/download/?id=1170</a></p>
+<p>点击下载《阿里巴巴Java开发手册》：<a href="//yq.aliyun.com/attachment/download/?id=1170">阿里云点击下载 https://yq.aliyun.com/attachment/download/?id=1170</a></p>
 <p><img src="/assets/img/blogimg/20170212/aliyun.jpeg" alt="图片1"></p>
-<p>（点击参与话题讨论：<a href="https://yq.aliyun.com/roundtable/47961?spm=5176.100239.blogcont69327.8.NO0IAQ" target="_blank" rel="external">Java开发者们，一起来聊聊大家的开发规约吧</a>）</p>
+<p>（点击参与话题讨论：<a href="//yq.aliyun.com/roundtable/47961?spm=5176.100239.blogcont69327.8.NO0IAQ">Java开发者们，一起来聊聊大家的开发规约吧</a>）</p>
 <center> 你是否曾因Java代码规范版本纷杂而无所适从？<br><br>你是否想过代码规范能将系统故障率降低20%？<br><br>你是否曾因团队代码风格迥异而协同困难？<br><br>你是否正在review一些原本可以避免的故障？<br><br>你是否无法确定自己的代码足够健壮？  </center>
 
 <p><strong>码出高效，码出质量！</strong></p>
@@ -556,17 +554,17 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
 <p>开发的同学们赶紧行动起来，遵守代码规范，你好，我好，大家好！ </p>
 <hr>
 <p>扩展阅读：</p>
-<p><a href="https://www.zhihu.com/question/55642203" target="_blank" rel="external">知乎–如何评价阿里近期发布的Java编码规范？</a></p>
-<p><a href="https://yq.aliyun.com/articles/69327?utm_campaign=javac&amp;utm_medium=images&amp;utm_source=renyimen&amp;utm_content=m_10068" target="_blank" rel="external">云栖社区–【Java编码规范】《阿里巴巴Java开发手册（正式版）》发布！</a></p>
-<p><a href="https://gold.xitu.io/entry/589c173b8d6d81006c7e9f70" target="_blank" rel="external">掘金–【Java编码规范】《阿里巴巴Java开发手册（正式版）》发布！</a></p>
-<p><a href="https://yq.aliyun.com/roundtable/47961?spm=5176.100239.blogcont69327.8.NO0IAQ" target="_blank" rel="external">云栖社区-话题讨论-Java开发者们，一起来聊聊大家的开发规约吧</a></p>
+<p><a href="//www.zhihu.com/question/55642203">知乎–如何评价阿里近期发布的Java编码规范？</a></p>
+<p><a href="//yq.aliyun.com/articles/69327?utm_campaign=javac&amp;utm_medium=images&amp;utm_source=renyimen&amp;utm_content=m_10068">云栖社区–【Java编码规范】《阿里巴巴Java开发手册（正式版）》发布！</a></p>
+<p><a href="//gold.xitu.io/entry/589c173b8d6d81006c7e9f70">掘金–【Java编码规范】《阿里巴巴Java开发手册（正式版）》发布！</a></p>
+<p><a href="//yq.aliyun.com/roundtable/47961?spm=5176.100239.blogcont69327.8.NO0IAQ">云栖社区-话题讨论-Java开发者们，一起来聊聊大家的开发规约吧</a></p>
 ]]></content>
     
     <summary type="html">
     
       &lt;p&gt;2017年2月9日阿里巴巴发布了一份《阿里巴巴Java开发手册（正式版）》，引起了互联网上程序员们广泛讨论。&lt;/p&gt;
 &lt;p&gt;作为一名java伪初学者，得知这个消息还是要尽快来学习学习的。毕竟是阿里巴巴出的编码规范，总是会对初学者有很大帮助吧。一份好的编码规约，能够让编程少踩很多坑；一个好的编程习惯，能让以后的编程旅途更加顺畅。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://pan.baidu.com/s/1c202zNM&quot;&gt;点击进行百度云下载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;//pan.baidu.com/s/1c202zNM&quot;&gt;点击进行百度云下载&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -590,7 +588,7 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     <link href="http://xelengo.me/2017/02/04/%E5%AE%89%E8%A3%85python3.6/"/>
     <id>http://xelengo.me/2017/02/04/安装python3.6/</id>
     <published>2017-02-04T02:43:33.173Z</published>
-    <updated>2017-03-25T08:41:45.147Z</updated>
+    <updated>2017-12-10T10:00:04.738Z</updated>
     
     <content type="html"><![CDATA[<p>首先。先看一下Python的简介：</p>
 <p>Python（英国发音：/ˈpaɪθən/ 美国发音：/ˈpaɪθɑːn/），是一种面向对象、解释型的计算机程序语言。它包含了一组功能完备的标准库，能够轻松完成很多常见的任务。它的语法简单，与其它大多数程序设计语言使用大括号不一样，它使用缩进来定义语句块。</p>
@@ -598,8 +596,8 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
 <p>与Scheme、Ruby、Perl、Tcl等动态语言一样，Python具备垃圾回收功能，能够自动管理内存使用。它经常被当作脚本语言用于处理系统管理任务和网络程序编写，然而它也非常适合完成各种高级任务。Python虚拟机本身几乎可以在所有的作业系统中运行。使用一些诸如py2exe、PyPy、PyInstaller之类的工具可以将Python源代码转换成可以脱离Python解释器运行的程序。</p>
 <p>Python的官方解释器是CPython，该解释器用C语言编写，是一个由社区驱动的自由软件，目前由Python软件基金会管理。</p>
 <p>Python支持命令式程序设计、面向对象程序设计、函数式编程、面向侧面的程序设计、泛型编程多种编程范式。</p>
-<p>from:<a href="https://zh.wikipedia.org/wiki/Python" target="_blank" rel="external">wiki</a></p>
-<h2 id="在Windows上安装Python"><a href="#在Windows上安装Python" class="headerlink" title="在Windows上安装Python"></a>在Windows上安装Python</h2><p>首先，根据你的Windows版本（64位还是32位）从Python的官方网站下载Python 3.6对应的64位安装程序或32位安装程序（网速慢的同学请移步国内镜像），<a href="https://www.python.org/downloads/release/python-360/" target="_blank" rel="external">点击下载</a></p>
+<p>from:<a href="//zh.wikipedia.org/wiki/Python">wiki</a></p>
+<h2 id="在Windows上安装Python"><a href="#在Windows上安装Python" class="headerlink" title="在Windows上安装Python"></a>在Windows上安装Python</h2><p>首先，根据你的Windows版本（64位还是32位）从Python的官方网站下载Python 3.6对应的64位安装程序或32位安装程序（网速慢的同学请移步国内镜像），<a href="//www.python.org/downloads/release/python-360/">点击下载</a></p>
 <p><img src="/assets/img/blogimg/20170204/2017-02-04_093828.png" alt="图片1"></p>
 <p>然后，运行下载的EXE安装包：</p>
 <p><img src="/assets/img/blogimg/20170204/2017-02-04_094019.png" alt="图片2"></p>
@@ -615,7 +613,7 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
 <p>这是因为Windows会根据一个Path的环境变量设定的路径去查找python.exe，如果没找到，就会报错。如果在安装时漏掉了勾选Add Python 3.5 to PATH，那就要手动把python.exe所在的路径添加到Path中。</p>
 <p>如果你不知道怎么修改环境变量，建议把Python安装程序重新运行一遍，务必记得勾上Add Python 3.5 to PATH。</p>
 <hr>
-<h2 id="参考教程："><a href="#参考教程：" class="headerlink" title="参考教程："></a>参考教程：</h2><p><a href="https://wizardforcel.gitbooks.io/liaoxuefeng/content/py3/4.html" target="_blank" rel="external">安装Python–廖雪峰</a></p>
+<h2 id="参考教程："><a href="#参考教程：" class="headerlink" title="参考教程："></a>参考教程：</h2><p><a href="//wizardforcel.gitbooks.io/liaoxuefeng/content/py3/4.html">安装Python–廖雪峰</a></p>
 ]]></content>
     
     <summary type="html">
@@ -639,14 +637,14 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     <link href="http://xelengo.me/2017/02/04/window10%E5%AE%89%E8%A3%85mysql%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     <id>http://xelengo.me/2017/02/04/window10安装mysql数据库/</id>
     <published>2017-02-04T00:55:36.373Z</published>
-    <updated>2017-03-25T08:42:19.151Z</updated>
+    <updated>2017-12-10T10:01:11.009Z</updated>
     
     <content type="html"><![CDATA[<p>mysql是一个轻量级的数据库，非常适合独立开发者安装到自己的电脑上进行程序开发和测试。</p>
 <h3 id="Mysql关系型数据库管理系统"><a href="#Mysql关系型数据库管理系统" class="headerlink" title="Mysql关系型数据库管理系统"></a>Mysql关系型数据库管理系统</h3><p>MySQL是一个开放源码的小型关联式数据库管理系统，开发者为瑞典MySQL AB公司。MySQL被广泛地应用在Internet上的中小型网站中。由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，许多中小型网站为了降低网站总体拥有成本而选择了MySQL作为网站数据库。</p>
 <p>这篇文章主要为大家分享了mysql 5.7.13 安装配置方法图文教程,感兴趣的朋友可以参考一下</p>
 <a id="more"></a>
 <p>MySQL是一款关系型数据库管理系统，是由Oracle旗下公司MySQL AB 公司开发，是在web方面最好的、最流行的关系型数据库软件应用之一，深受广大个人使用者以及中小型企业的喜爱。</p>
-<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h2><p>当前最新版5.7.17.0  官网下载地址：<a href="https://dev.mysql.com/downloads/installer/" target="_blank" rel="external">https://dev.mysql.com/downloads/installer/</a></p>
+<h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h2><p>当前最新版5.7.17.0  官网下载地址：<a href="//dev.mysql.com/downloads/installer/">https://dev.mysql.com/downloads/installer/</a></p>
 <p><img src="/assets/img/blogimg/20170204/2017-02-04_090312.png" alt="图片1"></p>
 <p>上面明确提示：MySQL安装程序是32位的，但会同时安装32位和64位二进制文件。 所以同样适用于32位和64位的Window操作系统。</p>
 <p>下载的地方有两个，上面一个1.5M的是在线安装程序，我们下载下面一个234.8M的，下载后可直接安装。点击 : Download,  出现如下：</p>
@@ -714,10 +712,10 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
 <p><img src="/assets/img/blogimg/20170204/2017-02-04_101700.png" alt="图片1"></p>
 <p>好了，本教程结束</p>
 <hr>
-<h2 id="参考教程："><a href="#参考教程：" class="headerlink" title="参考教程："></a>参考教程：</h2><p>mysql下载： <a href="http://blog.csdn.net/wtfmonking/article/details/17467399" target="_blank" rel="external">http://blog.csdn.net/wtfmonking/article/details/17467399</a></p>
-<p>安装： <a href="http://www.phperz.com/article/16/0703/231883.html" target="_blank" rel="external">http://www.phperz.com/article/16/0703/231883.html</a></p>
-<p>测试： <a href="http://jingyan.baidu.com/article/7e440953d6f0702fc1e2ef61.html" target="_blank" rel="external">http://jingyan.baidu.com/article/7e440953d6f0702fc1e2ef61.html</a></p>
-<p>RUNOOB教程：<a href="http://www.runoob.com/mysql/mysql-install.html" target="_blank" rel="external">http://www.runoob.com/mysql/mysql-install.html</a></p>
+<h2 id="参考教程："><a href="#参考教程：" class="headerlink" title="参考教程："></a>参考教程：</h2><p>mysql下载： <a href="//blog.csdn.net/wtfmonking/article/details/17467399">http://blog.csdn.net/wtfmonking/article/details/17467399</a></p>
+<p>安装： <a href="//www.phperz.com/article/16/0703/231883.html">http://www.phperz.com/article/16/0703/231883.html</a></p>
+<p>测试： <a href="//jingyan.baidu.com/article/7e440953d6f0702fc1e2ef61.html">http://jingyan.baidu.com/article/7e440953d6f0702fc1e2ef61.html</a></p>
+<p>RUNOOB教程：<a href="//www.runoob.com/mysql/mysql-install.html">http://www.runoob.com/mysql/mysql-install.html</a></p>
 ]]></content>
     
     <summary type="html">
@@ -802,7 +800,7 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     <link href="http://xelengo.me/2017/02/02/test/"/>
     <id>http://xelengo.me/2017/02/02/test/</id>
     <published>2017-02-02T11:16:04.226Z</published>
-    <updated>2017-03-21T14:23:45.780Z</updated>
+    <updated>2017-12-10T09:58:55.819Z</updated>
     
     <content type="html"><![CDATA[<p>测试</p>
 <h3 id="设置标题，标签："><a href="#设置标题，标签：" class="headerlink" title="设置标题，标签："></a>设置标题，标签：</h3><p><code>title:  测试</code></p>
@@ -810,9 +808,9 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">设置标签可以通过下面两种方式实现</div><div class="line"><span class="string">menu:</span></div><div class="line">主页: /</div><div class="line">所有文章: /archives</div><div class="line">前端: <span class="regexp">/categories/</span>前端</div><div class="line">随笔: <span class="regexp">/tags/</span>随笔</div><div class="line"></div><div class="line">在post的顶部添加<span class="string">categories:</span> 前端 ，<span class="string">tags:</span> 随笔</div><div class="line"></div><div class="line">或者</div><div class="line"><span class="string">menu:</span></div><div class="line">主页: /</div><div class="line">所有文章: /archives</div><div class="line">前端: <span class="regexp">/tags/</span>前端</div><div class="line">随笔: <span class="regexp">/tags/</span>随笔</div></pre></td></tr></table></figure>
 <p>在post的顶部添加tags: [随笔, 前端]</p>
 <p>使用yilia主题时，文章过长使用<code>&lt;!-- more --&gt;</code>截断文章，示例如第一篇博客。</p>
-<p>yilia模板范例：<br><a href="http://litten.me/" target="_blank" rel="external">yilia博客</a></p>
+<p>yilia模板范例：<br><a href="//litten.me/">yilia博客</a></p>
 <a id="more"></a>
-<h3 id="测试插入图片："><a href="#测试插入图片：" class="headerlink" title="测试插入图片："></a>测试插入图片：</h3><p>网络(绝对)路径(显示大图可获得该路径)：<br><img src="https://raw.githubusercontent.com/XElengo/XElengo.github.io/master/assets/img/blogimg/1a.png" alt="text"></p>
+<h3 id="测试插入图片："><a href="#测试插入图片：" class="headerlink" title="测试插入图片："></a>测试插入图片：</h3><p>网络(绝对)路径(显示大图可获得该路径)：<br><img src="//raw.githubusercontent.com/XElengo/XElengo.github.io/master/assets/img/blogimg/1a.png" alt="text"></p>
 <p>相对路径：<br><img src="/assets/img/blogimg/1c.png" alt="相对"></p>
 <p>语法高亮:</p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="section">cpp</span> &#123;<span class="attribute">int</span> a,b;&#125;</div></pre></td></tr></table></figure>
@@ -822,7 +820,7 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
 
 <h3 id="yilia-多说评论插件使用"><a href="#yilia-多说评论插件使用" class="headerlink" title="yilia 多说评论插件使用"></a>yilia 多说评论插件使用</h3><p>多说插件<code>duoshuo: &quot;xxxx&quot;</code> 已设置，但是无法成功显示，浏览器调试工具console报错：990002</p>
 <p>自己解决了，方法虽然不太好；写死这个地方yilia\layout_partial\post\duoshuo.ejs ： var duoshuoQuery = {short_name:”xelengo”};<br>short_name是用多说网站生成的模板 即 工具–&gt;通用代码中的short_name，即 多说–&gt;设置 那里的域名的第一部分，如：xelengo.duoshuo.com 中的xelengo。因为多说的账户名称可以修改，但注册账号时的多说域名不可修改，且账户名称与域名的第一部分允许不同，而多说评论插件是通过访问多说域名进行显示的。所以可能会出错吧。另外本地缓存，github上的代码，以及多说本身都会影响运行结果。谢谢 @litten 提供的模板</p>
-<p>参见：<a href="https://github.com/litten/hexo-theme-yilia/issues/28" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia/issues/28</a></p>
+<p>参见：<a href="https://github.com/litten/hexo-theme-yilia/issues/28" target="_blank" rel="external">//github.com/litten/hexo-theme-yilia/issues/28</a></p>
 <p>待在线浏览成功后可以再把var duoshuoQuery = {short_name:”xelengo”};改回去。重新发布后评论栏依然存在。由此可以把锅甩给缓存了。。。</p>
 <p>试试代码高亮：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!doctype html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></div><div class="line"><span class="selector-tag">table</span>&#123;</div><div class="line">  <span class="attribute">background</span>:grey;</div><div class="line">&#125; </div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line">   <span class="function"><span class="keyword">function</span> <span class="title">addListen</span>(<span class="params"></span>)</span>&#123;</div><div class="line">     <span class="keyword">var</span>  arrTrs = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'tr'</span>);</div><div class="line">     <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;arrTrs.length;i++)&#123;</div><div class="line">      </div><div class="line">        <span class="keyword">var</span> ss = arrTrs[i] ;</div><div class="line">        <span class="keyword">if</span>(arrTrs[i].addEventListener)&#123;</div><div class="line">            arrTrs[i].addEventListener(<span class="string">'click'</span>,setTable)</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            arrTrs[i].attachEvent(<span class="string">"onclick"</span>,setTable);</div><div class="line">        &#125;</div><div class="line">     &#125;</div><div class="line">     </div><div class="line">   &#125;</div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="title">setTable</span>(<span class="params">evt</span>)</span>&#123;</div><div class="line">       <span class="keyword">var</span>  arrTrs = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'tr'</span>);</div><div class="line">       <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;arrTrs.length;i++)&#123;</div><div class="line">          arrTrs[i].style.background=<span class="string">'grey'</span>;</div><div class="line">       &#125;</div><div class="line">       evt.target.parentNode.style.background=<span class="string">'red'</span>;</div><div class="line">       </div><div class="line">       </div><div class="line">  &#125;</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">onload</span>=<span class="string">'addListen()'</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">1</span> <span class="attr">width</span>=<span class="string">'400px'</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>s1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>s1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>s1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>s1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>s1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>s1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>s1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>s1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>s1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>s1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>s1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>s1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>s1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>s1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">      </div><div class="line">   <span class="tag">&lt;/<span class="name">table</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <p>###有任何无法解释的异常都可以试试这三个命令：<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo <span class="keyword">g</span></div><div class="line">hexo <span class="keyword">d</span>  <span class="comment">//发布，手动发布可忽略</span></div><div class="line">hexo <span class="built_in">s</span></div></pre></td></tr></table></figure></p>
@@ -836,7 +834,7 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
 &lt;figure class=&quot;highlight groovy&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;设置标签可以通过下面两种方式实现&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;menu:&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;主页: /&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;所有文章: /archives&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;前端: &lt;span class=&quot;regexp&quot;&gt;/categories/&lt;/span&gt;前端&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;随笔: &lt;span class=&quot;regexp&quot;&gt;/tags/&lt;/span&gt;随笔&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;在post的顶部添加&lt;span class=&quot;string&quot;&gt;categories:&lt;/span&gt; 前端 ，&lt;span class=&quot;string&quot;&gt;tags:&lt;/span&gt; 随笔&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;或者&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;menu:&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;主页: /&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;所有文章: /archives&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;前端: &lt;span class=&quot;regexp&quot;&gt;/tags/&lt;/span&gt;前端&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;随笔: &lt;span class=&quot;regexp&quot;&gt;/tags/&lt;/span&gt;随笔&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;在post的顶部添加tags: [随笔, 前端]&lt;/p&gt;
 &lt;p&gt;使用yilia主题时，文章过长使用&lt;code&gt;&amp;lt;!-- more --&amp;gt;&lt;/code&gt;截断文章，示例如第一篇博客。&lt;/p&gt;
-&lt;p&gt;yilia模板范例：&lt;br&gt;&lt;a href=&quot;http://litten.me/&quot;&gt;yilia博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;yilia模板范例：&lt;br&gt;&lt;a href=&quot;//litten.me/&quot;&gt;yilia博客&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -850,24 +848,24 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     <link href="http://xelengo.me/2017/02/02/hello-world/"/>
     <id>http://xelengo.me/2017/02/02/hello-world/</id>
     <published>2017-02-02T02:26:02.612Z</published>
-    <updated>2017-02-03T11:18:38.186Z</updated>
+    <updated>2017-12-10T09:50:25.178Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://xelengo.github.io/" target="_blank" rel="external">Welcome to my blog.</a></p>
+    <content type="html"><![CDATA[<p><a href="//xelengo.github.io/">Welcome to my blog.</a></p>
 <p>There is my first article.</p>
 <p>原来的欢迎页的一些操作重点：</p>
 <h2 id="示例使用MarkDownPad-两个-号"><a href="#示例使用MarkDownPad-两个-号" class="headerlink" title="示例使用MarkDownPad 两个#号"></a>示例使用MarkDownPad 两个#号</h2><h3 id="示例使用MarkDownPad-三个-号"><a href="#示例使用MarkDownPad-三个-号" class="headerlink" title="示例使用MarkDownPad 三个#号"></a>示例使用MarkDownPad 三个#号</h3><a id="more"></a>
-<p>示例超链接: <a href="https://www.baidu.com" target="_blank" rel="external">跳转到百度</a></p>
+<p>示例超链接: <a href="//www.baidu.com">跳转到百度</a></p>
 <p>历时两天，从有一个使用github的想法但不知道github可以做什么，到知道用github+hexo可以自建博客，再自己一路摸索过来，在网上不断地找教程，学习，尝试，最后借用github大神的框架进行尝试并成功的建立自己的博客，收获良多。</p>
 <p>之后会把自己的建博客经过写出来，供大家参考。</p>
 <p>博客和新浪微博，QQ空间，百度贴吧等一样，它更像是一个完全属于自己的小站，把它从无到有的建立出来的这个过程，是有着完全不同的体会。</p>
 <hr>
-<h3 id="感谢-amp-参考文档："><a href="#感谢-amp-参考文档：" class="headerlink" title="感谢&amp;参考文档："></a>感谢&amp;参考文档：</h3><p>框架模板来自github大神：<a href="https://github.com/litten" target="_blank" rel="external">litten-github主页</a>，<a href="http://litten.me/" target="_blank" rel="external">litten的博客</a></p>
-<p>官方文档还是很有用的：<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo官方网站</a></p>
-<p>hexo框架github地址，有个readme.md还是有点用的：<a href="https://github.com/hexojs/hexo/" target="_blank" rel="external">https://github.com/hexojs/hexo/</a></p>
-<p>这篇博客也很不错，我就是通过学习这个教程做的。<a href="https://wsgzao.github.io/post/hexo-guide/" target="_blank" rel="external">https://wsgzao.github.io/post/hexo-guide/</a></p>
-<p>如果要建一个独立域名的个人博客，可以参考这一篇：<a href="http://www.cnfeat.com/blog/2014/05/10/how-to-build-a-blog/" target="_blank" rel="external">http://www.cnfeat.com/blog/2014/05/10/how-to-build-a-blog/</a></p>
-<p>一个个人收藏的博客：<a href="http://jocs.me/blog/" target="_blank" rel="external">http://jocs.me/blog/</a></p>
-<p>github参考：<a href="https://github.com/youngxhui/youngxhui.github.io" target="_blank" rel="external">https://github.com/youngxhui/youngxhui.github.io</a></p>
+<h3 id="感谢-amp-参考文档："><a href="#感谢-amp-参考文档：" class="headerlink" title="感谢&amp;参考文档："></a>感谢&amp;参考文档：</h3><p>框架模板来自github大神：<a href="//github.com/litten">litten-github主页</a>，<a href="//litten.me/">litten的博客</a></p>
+<p>官方文档还是很有用的：<a href="//hexo.io/zh-cn/">hexo官方网站</a></p>
+<p>hexo框架github地址，有个readme.md还是有点用的：<a href="//github.com/hexojs/hexo/">//github.com/hexojs/hexo/</a></p>
+<p>这篇博客也很不错，我就是通过学习这个教程做的。<a href="//wsgzao.github.io/post/hexo-guide/">//wsgzao.github.io/post/hexo-guide/</a></p>
+<p>如果要建一个独立域名的个人博客，可以参考这一篇：<a href="//www.cnfeat.com/blog/2014/05/10/how-to-build-a-blog/">//www.cnfeat.com/blog/2014/05/10/how-to-build-a-blog/</a></p>
+<p>一个个人收藏的博客：<a href="//jocs.me/blog/">//jocs.me/blog/</a></p>
+<p>github参考：<a href="//github.com/youngxhui/youngxhui.github.io">//github.com/youngxhui/youngxhui.github.io</a></p>
 <h3 id="github终端操作指令："><a href="#github终端操作指令：" class="headerlink" title="github终端操作指令："></a>github终端操作指令：</h3><p>安装前提：需要已安装github for windows,node.js</p>
 <p>安装:</p>
 <figure class="highlight clean"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`npm install hexo-cli -g`或`npm install -g hexo-cli`</div></pre></td></tr></table></figure>
@@ -933,7 +931,7 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;https://xelengo.github.io/&quot;&gt;Welcome to my blog.&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;//xelengo.github.io/&quot;&gt;Welcome to my blog.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;There is my first article.&lt;/p&gt;
 &lt;p&gt;原来的欢迎页的一些操作重点：&lt;/p&gt;
 &lt;h2 id=&quot;示例使用MarkDownPad-两个-号&quot;&gt;&lt;a href=&quot;#示例使用MarkDownPad-两个-号&quot; class=&quot;headerlink&quot; title=&quot;示例使用MarkDownPad 两个#号&quot;&gt;&lt;/a&gt;示例使用MarkDownPad 两个#号&lt;/h2&gt;&lt;h3 id=&quot;示例使用MarkDownPad-三个-号&quot;&gt;&lt;a href=&quot;#示例使用MarkDownPad-三个-号&quot; class=&quot;headerlink&quot; title=&quot;示例使用MarkDownPad 三个#号&quot;&gt;&lt;/a&gt;示例使用MarkDownPad 三个#号&lt;/h3&gt;
