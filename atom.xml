@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xelengo.me/"/>
-  <updated>2017-12-10T10:01:48.282Z</updated>
+  <updated>2017-12-16T12:38:27.151Z</updated>
   <id>http://xelengo.me/</id>
   
   <author>
@@ -14,6 +14,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jsp一列变多列</title>
+    <link href="http://xelengo.me/2017/12/16/jsp%E4%B8%80%E5%88%97%E5%8F%98%E5%A4%9A%E5%88%97/"/>
+    <id>http://xelengo.me/2017/12/16/jsp一列变多列/</id>
+    <published>2017-12-16T09:49:41.194Z</published>
+    <updated>2017-12-16T12:38:27.151Z</updated>
+    
+    <content type="html"><![CDATA[<p>在这里，我展示了一个怎么把原来只有一列的表格变成一行放三个，变成三列进行展示的方法，适用于你的table只有一至三列数据（总之表格的列变少了会很奇怪，但是又必须用表格），但是需要把数据拆成更多列进行展示的情况。</p>
+<a id="more"></a>
+<p>最近在做项目的时候有一个需求，本来是一个只有一个参数需要展示的list,理所当然的做成了一列进行展示，如图：（没毛病吧）</p>
+<p><img src="/assets/img/blogimg/20171216/2017-12-15_135244.png" alt="相对"></p>
+<p>然后也太难看了，能不能把一列变成多列进行展示呢？通过自己的构思，加上在网上查找实现方法，最后在CSDN博客（当时忘记收藏了，后来再找找不到了）上找到了一个写法，非常好用：</p>
+<figure class="highlight dust"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span></div><div class="line">	<span class="tag">&lt;<span class="name">thead</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">th</span> <span class="attr">colspan</span>=<span class="string">"3"</span>&gt;</span>编号<span class="tag">&lt;/<span class="name">th</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">thead</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">tbody</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">c:forEach</span> <span class="attr">items</span>=<span class="string">"$</span></span><span class="template-variable">&#123;list&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">var</span>=<span class="string">"test"</span> <span class="attr">varStatus</span>=<span class="string">"status"</span>&gt;</span></span></div><div class="line">			<span class="tag">&lt;<span class="name">c:if</span> <span class="attr">test</span>=<span class="string">"$</span></span><span class="template-variable">&#123;status.count%3==1&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></div><div class="line">				<span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">c:if</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">td</span>&gt;</span>$<span class="template-variable">&#123;test.id&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></div><div class="line">			<span class="tag">&lt;<span class="name">c:if</span> <span class="attr">test</span>=<span class="string">"$</span></span><span class="template-variable">&#123;status.count%3==0&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></div><div class="line">				<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">c:if</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">c:set</span> <span class="attr">var</span>=<span class="string">"v_count"</span> <span class="attr">value</span>=<span class="string">"$</span></span><span class="template-variable">&#123;status.count&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> /&gt;</span></span></div><div class="line">		<span class="tag">&lt;/<span class="name">c:forEach</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">c:if</span> <span class="attr">test</span>=<span class="string">"$</span></span><span class="template-variable">&#123;v_count%3==1&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></div><div class="line">			<span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">c:if</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">c:if</span> <span class="attr">test</span>=<span class="string">"$</span></span><span class="template-variable">&#123;v_count%3==2&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></div><div class="line">			<span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">c:if</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>效果如图：</p>
+<p><img src="/assets/img/blogimg/20171216/2017-12-15_135327.png" alt="相对"></p>
+<p>如果需要循环的list只有两个值，就会变成下面这样：</p>
+<p><img src="/assets/img/blogimg/20171216/2017-12-15_135349.png" alt="相对"></p>
+<p>如果最后一行占不满，会是这样：</p>
+<p><img src="/assets/img/blogimg/20171216/2017-12-15_135410.png" alt="相对"></p>
+<p>有了上面的方法，那相应的，一列变两列，两列变四列，都不在话下啦。</p>
+<p>示例：两列变四列：</p>
+<figure class="highlight dust"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">table</span> <span class="attr">id</span>=<span class="string">"contentTable"</span> &gt;</span></span></div><div class="line">	<span class="tag">&lt;<span class="name">thead</span>&gt;</span>  </div><div class="line">		<span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">th</span>&gt;</span>编号<span class="tag">&lt;/<span class="name">th</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">th</span>&gt;</span>名称<span class="tag">&lt;/<span class="name">th</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">th</span>&gt;</span>编号<span class="tag">&lt;/<span class="name">th</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">th</span>&gt;</span>名称<span class="tag">&lt;/<span class="name">th</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">thead</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">tbody</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">c:forEach</span> <span class="attr">items</span>=<span class="string">"$</span></span><span class="template-variable">&#123;list&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">var</span>=<span class="string">"test"</span> <span class="attr">varStatus</span>=<span class="string">"status"</span>&gt;</span></span></div><div class="line">			<span class="tag">&lt;<span class="name">c:if</span> <span class="attr">test</span>=<span class="string">"$</span></span><span class="template-variable">&#123;status.count%2==1&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></div><div class="line">				<span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">c:if</span>&gt;</span>				</div><div class="line">				<span class="tag">&lt;<span class="name">td</span>&gt;</span></div><div class="line">					$<span class="template-variable">&#123;test.id&#125;</span><span class="xml"></span></div><div class="line">				<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">				<span class="tag">&lt;<span class="name">td</span>&gt;</span></div><div class="line">					$<span class="template-variable">&#123;test.name&#125;</span><span class="xml"></span></div><div class="line">				<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">c:if</span> <span class="attr">test</span>=<span class="string">"$</span></span><span class="template-variable">&#123;status.count%2==0&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></div><div class="line">				<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">c:if</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">c:set</span> <span class="attr">var</span> =<span class="string">"v_count"</span> <span class="attr">value</span>=<span class="string">"$</span></span><span class="template-variable">&#123;status.count&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>/&gt;</span></span></div><div class="line">		<span class="tag">&lt;/<span class="name">c:forEach</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">c:if</span> <span class="attr">test</span>=<span class="string">"$</span></span><span class="template-variable">&#123;v_count%2==1&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></div><div class="line">			<span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">c:if</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></div></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>真的不是我不放这种写法的源博客，是真的找不到。。。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在这里，我展示了一个怎么把原来只有一列的表格变成一行放三个，变成三列进行展示的方法，适用于你的table只有一至三列数据（总之表格的列变少了会很奇怪，但是又必须用表格），但是需要把数据拆成更多列进行展示的情况。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://xelengo.me/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="学习" scheme="http://xelengo.me/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="java" scheme="http://xelengo.me/tags/java/"/>
+    
+      <category term="html" scheme="http://xelengo.me/tags/html/"/>
+    
+      <category term="jsp" scheme="http://xelengo.me/tags/jsp/"/>
+    
+  </entry>
   
   <entry>
     <title>这次没有争吵，没有拉黑，但我们都懂；从此再无交集，这应该可以算是最好的离开方式</title>
@@ -136,11 +183,11 @@
     </summary>
     
     
-      <category term="随笔" scheme="http://xelengo.me/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="学习" scheme="http://xelengo.me/tags/%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="python" scheme="http://xelengo.me/tags/python/"/>
+    
+      <category term="随笔" scheme="http://xelengo.me/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -727,11 +774,11 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     </summary>
     
     
-      <category term="win10" scheme="http://xelengo.me/tags/win10/"/>
-    
       <category term="MySql" scheme="http://xelengo.me/tags/MySql/"/>
     
       <category term="教程" scheme="http://xelengo.me/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="win10" scheme="http://xelengo.me/tags/win10/"/>
     
   </entry>
   
@@ -762,9 +809,9 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     <link href="http://xelengo.me/2017/02/03/yilia%E4%BD%BF%E7%94%A8/"/>
     <id>http://xelengo.me/2017/02/03/yilia使用/</id>
     <published>2017-02-03T04:50:34.505Z</published>
-    <updated>2017-03-25T08:42:39.433Z</updated>
+    <updated>2017-12-10T14:39:43.039Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="yilia主题使用和配置"><a href="#yilia主题使用和配置" class="headerlink" title="yilia主题使用和配置"></a>yilia主题使用和配置</h1><p>本篇内容转自 <a href="http://litten.me/2014/08/31/hexo-theme-yilia/" target="_blank" rel="external">litten.me</a></p>
+    <content type="html"><![CDATA[<h1 id="yilia主题使用和配置"><a href="#yilia主题使用和配置" class="headerlink" title="yilia主题使用和配置"></a>yilia主题使用和配置</h1><p>本篇内容转自 <a href="//litten.me/2014/08/31/hexo-theme-yilia/">litten.me</a></p>
 <h2 id="一、使用"><a href="#一、使用" class="headerlink" title="一、使用"></a>一、使用</h2><h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="keyword">clone</span> <span class="title">https</span>://github.com/litten/hexo-theme-yilia.git themes/yilia</div></pre></td></tr></table></figure>
 <h4 id="2-配置"><a href="#2-配置" class="headerlink" title="2. 配置"></a>2. 配置</h4><p>修改hexo根目录下的 _config.yml ： theme: yilia</p>
 <h4 id="3-更新"><a href="#3-更新" class="headerlink" title="3. 更新"></a>3. 更新</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> themes/yilia</div><div class="line">git pull</div></pre></td></tr></table></figure>
@@ -779,7 +826,7 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     
     <summary type="html">
     
-      &lt;h1 id=&quot;yilia主题使用和配置&quot;&gt;&lt;a href=&quot;#yilia主题使用和配置&quot; class=&quot;headerlink&quot; title=&quot;yilia主题使用和配置&quot;&gt;&lt;/a&gt;yilia主题使用和配置&lt;/h1&gt;&lt;p&gt;本篇内容转自 &lt;a href=&quot;http://litten.me/2014/08/31/hexo-theme-yilia/&quot;&gt;litten.me&lt;/a&gt;&lt;/p&gt;
+      &lt;h1 id=&quot;yilia主题使用和配置&quot;&gt;&lt;a href=&quot;#yilia主题使用和配置&quot; class=&quot;headerlink&quot; title=&quot;yilia主题使用和配置&quot;&gt;&lt;/a&gt;yilia主题使用和配置&lt;/h1&gt;&lt;p&gt;本篇内容转自 &lt;a href=&quot;//litten.me/2014/08/31/hexo-theme-yilia/&quot;&gt;litten.me&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;一、使用&quot;&gt;&lt;a href=&quot;#一、使用&quot; class=&quot;headerlink&quot; title=&quot;一、使用&quot;&gt;&lt;/a&gt;一、使用&lt;/h2&gt;&lt;h4 id=&quot;1-安装&quot;&gt;&lt;a href=&quot;#1-安装&quot; class=&quot;headerlink&quot; title=&quot;1. 安装&quot;&gt;&lt;/a&gt;1. 安装&lt;/h4&gt;&lt;figure class=&quot;highlight crmsh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ git &lt;span class=&quot;keyword&quot;&gt;clone&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;https&lt;/span&gt;://github.com/litten/hexo-theme-yilia.git themes/yilia&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h4 id=&quot;2-配置&quot;&gt;&lt;a href=&quot;#2-配置&quot; class=&quot;headerlink&quot; title=&quot;2. 配置&quot;&gt;&lt;/a&gt;2. 配置&lt;/h4&gt;&lt;p&gt;修改hexo根目录下的 _config.yml ： theme: yilia&lt;/p&gt;
 &lt;h4 id=&quot;3-更新&quot;&gt;&lt;a href=&quot;#3-更新&quot; class=&quot;headerlink&quot; title=&quot;3. 更新&quot;&gt;&lt;/a&gt;3. 更新&lt;/h4&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; themes/yilia&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git pull&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
