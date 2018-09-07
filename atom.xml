@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xelengo.me/"/>
-  <updated>2017-12-16T12:38:27.151Z</updated>
+  <updated>2018-09-07T15:44:52.891Z</updated>
   <id>http://xelengo.me/</id>
   
   <author>
@@ -16,17 +16,104 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>jsp一列变多列</title>
-    <link href="http://xelengo.me/2017/12/16/jsp%E4%B8%80%E5%88%97%E5%8F%98%E5%A4%9A%E5%88%97/"/>
-    <id>http://xelengo.me/2017/12/16/jsp一列变多列/</id>
+    <title>git 配置及基本操作</title>
+    <link href="http://xelengo.me/2018/09/07/20180907_1/"/>
+    <id>http://xelengo.me/2018/09/07/20180907_1/</id>
+    <published>2018-09-07T04:19:53.310Z</published>
+    <updated>2018-09-07T15:44:52.891Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>debian 下 安装 ： <code>sudo apt-get install git</code><br>windows 下： 下载安装包进行安装<br>安装完后打开<code>GitBash</code>进行账户设置：<br>设置用户名，邮箱<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user<span class="selector-class">.name</span> xlh</div><div class="line">$ git config --global user<span class="selector-class">.email</span> <span class="string">"xlhhaha@gmail.com"</span></div></pre></td></tr></table></figure></p>
+<p>–global 标识这台电脑上的所有git仓库都会使用这个账号。 （全局设置）</p>
+<h3 id="必要配置："><a href="#必要配置：" class="headerlink" title="必要配置："></a>必要配置：</h3><figure class="highlight stata"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">mkdir</span> gittest1   <span class="comment">//  创建一个文件夹，作为版本库</span></div><div class="line"><span class="keyword">cd</span> gittest1</div><div class="line"><span class="keyword">pwd</span> <span class="comment">// 显示当前目录</span></div><div class="line">git init <span class="comment">// 初始化仓库，会在所选目录下创建 .git 隐藏文件夹</span></div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="其他配置"><a href="#其他配置" class="headerlink" title="其他配置"></a>其他配置</h3><p>1.让git显示颜色，让命令输出看起来更醒目<br><figure class="highlight autoit"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --<span class="keyword">global</span> color.ui <span class="literal">true</span>`</div></pre></td></tr></table></figure></p>
+<p><code>--global</code>   //  指定为全局配置 ，不加这个参数则配置只在当前仓库生效</p>
+<p>2.忽略指定文件：<br>在工作区创建一个<code>.gitignore</code> 文件, 然后把忽略的文件名,或文件类型，或文件夹 填进去，即可。 <code>.gitignore</code>文件本身要加入版本控制。 如：database.db, <em>.so, </em>.class, dist<br>想要强制添加某个已被忽略的文件：<code>git add -f origin aaa.class</code></p>
+<p>3.设置忽略文件<br><figure class="highlight smali"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git<span class="built_in"> check-ignore </span> //  检查忽略文件中的某个规则在忽略文件中的哪个位置</div></pre></td></tr></table></figure></p>
+<pre><code>$ git chexk-ignore -v aaa.class
+.gitignore:3:*.class   //  结果可以看出，是在第三行忽略了这类文件。
+</code></pre><p>4.配置别名<br><figure class="highlight mel"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">例：git config --<span class="keyword">global</span> <span class="keyword">alias</span> st status  <span class="comment">//  设置 status 用 st 代替</span></div><div class="line">则：git status ⇒  git st</div><div class="line"></div><div class="line"><span class="comment">// 常用别名：</span></div><div class="line">git config --<span class="keyword">global</span> <span class="keyword">alias</span> co checkout</div><div class="line">git config --<span class="keyword">global</span> <span class="keyword">alias</span> ci commit   <span class="comment">//  则提交可以写成：git ci ‘bala bala bala ...’</span></div><div class="line">git config --<span class="keyword">global</span> <span class="keyword">alias</span> br branch</div><div class="line"><span class="comment">// 其他别名参考：</span></div><div class="line">git config --<span class="keyword">global</span> <span class="keyword">alias</span> unstage ‘reset HEAD’  <span class="comment">// 则 git unstage aaa.js 相当于 git reset HEAD aaa.js</span></div><div class="line">git config --<span class="keyword">global</span> <span class="keyword">alias</span> last ‘<span class="keyword">log</span> <span class="number">-1</span>’   <span class="comment">//  git last   显示最后一次提交信息</span></div><div class="line">git config --<span class="keyword">global</span> <span class="keyword">alias</span> lg “<span class="keyword">log</span> --<span class="keyword">color</span> --graph --pretty=formart:’%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset<span class="string">' --abbrev-commit’”    //  美化 log 输出</span></div></pre></td></tr></table></figure></p>
+<pre><code>每个仓库的配置文件 在.gIt/config文件中。里边包含了这个仓库的基本信息，远程仓库，分支信息，别名设置 等，要编辑配置在这个文件里编辑即可。
+当前用户的配置文件在用户主目录下的一个隐藏文件.gitconfig中。别名也可以在这里配置，改错了可以删掉重新通过命令配置。
+</code></pre><hr>
+<h3 id="使用："><a href="#使用：" class="headerlink" title="使用："></a>使用：</h3><p>1.在仓库文件夹下创建一个文件，如： test.txt，并写入一些内容<br>2.<code>git add test.txt</code> // 将文件加入版本库管理, 多个文件一起加入： <code>git add a.txt b.txt</code><br>3.<code>git commit -m &#39;add a file&#39;</code> // 提交修改 <code>-m</code> 后边是填入本次修改的备注<br>4.<code>git status</code> // 查看当前版本库状态<br>5.<code>git diff test.txt</code> // 查看仓库最新版本与本地当前文件之间的差异（本地做了哪些更改（未提交））<br>6.<code>git log</code> 查看仓库提交历史记录 <code>--pretty=oneline</code> // 简化每条历史记录为一行<br>7.<code>git reset --hard HEAD^</code> 回退到上个版本 ，几个<code>^</code>就是回退到倒数第几个版本，往上指定(100)个版本：<code>HEAD~100</code>，回退到指定版本号的版本：<code>git reset --hard xxxxx</code>, 可以往前，可以往后。<br>8.<code>git reflog</code> 查看自己的提交命令历史记录及版本号<br>9.<code>git diff HEAD -- test.txt</code> 查看工作区（本地当前）和版本库最新版本的区别<br>    <code>git diff commit_id_1 commit_id_2</code> 比较两个版本之间的差异<br>    <code>git diff</code> 比较 工作区（当前打开改文件看到的状态）与暂存区（add后 commit前 ）区别<br>    <code>git diff -staged</code> 比较暂存与仓库的区别<br>10.<code>git checkout -- test.txt</code> 撤销更改, 如果文件修改后没有add,就会回退到仓库最新版，修改后有           add,没有commit,就回退到add的版本;  如果已经add过，没有commit;又想回退到仓库最新版，用：<br>     <code>git reset HEAD test.txt</code>, 即可撤销掉add, 本地文件为add前的文件，再执行<br>     <code>git checkout -- text.txt</code> 用仓库最新版覆盖本地。<br>11.删除文件：<br>(1).  WINDOWS系统中，在本地删除要删除的文件，<br>(2).  <code>git rm test.txt</code> 或 <code>git add test.txt</code>，<br>本地删掉文件后要从仓库恢复文件：<code>git checkout text.txt</code><br>12.<code>cat xxxx.txt</code>   //  win git Bash 查看文本文件内容 </p>
+<hr>
+<h3 id="与远程库协作"><a href="#与远程库协作" class="headerlink" title="与远程库协作"></a>与远程库协作</h3><p>13.生成秘钥 安装完git后生成ssh key:  <code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code> ,  然后把公钥文件中的内容加到git仓库中。</p>
+<p>14.github 上的操作：<br>      把本地库与远程库进行关联：<br>      github创建完空仓库后：<br>(1). 通过命令行从github库克隆出新的仓库：<br>    <figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">echo <span class="string">"# testRes2"</span> &gt;&gt; README<span class="selector-class">.md</span></div><div class="line">git init</div><div class="line">git add README<span class="selector-class">.md</span></div><div class="line">git commit -m <span class="string">"first commit"</span></div><div class="line">git remote add origin git@github<span class="selector-class">.com</span>:XElengo/testRes2<span class="selector-class">.git</span></div><div class="line">git push -u origin master</div></pre></td></tr></table></figure></p>
+<p>(2).通过命令行把 已有的本地库与github仓库进行关联并把本地库的内容上传到github库：<br><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote <span class="keyword">add</span><span class="bash"> origin git@github.com:XElengo/<span class="built_in">test</span>Res2.git</span></div><div class="line">git push -u origin master</div></pre></td></tr></table></figure></p>
+<p>两个命令原理都一样，都是先在本地的git仓库加文件，再上传到github仓库。<br><code>git push</code> 把当前分支master推送到远程。<br><code>-u</code> 把本地master分支和远程的master分支关联起来。<br><code>git push origin master</code> 把本地指定(master)分支的最新版推送到指定的github(远程(origin))仓库对应的远程分支。</p>
+<ul>
+<li><p>注意：第一次使用git的clone 或 push 会有一个警告，需要确认GitHub的Key的指纹信息是否真的来自GitHub的服务器，输入yes回车即可。</p>
+</li>
+<li><p>Git会输出一个警告，告诉你已经把GitHub的Key添加到本机的一个信任列表里了，这个警告指挥出现一次。</p>
+<p>(3). 从远程库把项目导到本地：<br>进入一个文件夹，然后把github仓库的项目克隆下来成为一个本地库：<code>git clone git@github.com:XElengo/test1Res.git</code></p>
+</li>
+</ul>
+<p>15.<code>git remote -m origin</code>   //  本地库与远程库取消关联,在某个本地库文件夹中操作</p>
+<p>16.一个本地库可以关联多个远程库，只要给远程库起的本地名字/代号(origin)不一样即可。</p>
+<hr>
+<h3 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h3><figure class="highlight q"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">git checkout -b <span class="built_in">dev</span>   <span class="comment">//  创建dev分支并切换到dev 分支。</span></div><div class="line">git checkout 命令加上 -b 参数表示创建并切换，相当于以下两条命令：</div><div class="line">	git branch <span class="built_in">dev</span>   <span class="comment">// 创建分支</span></div><div class="line">	git checkout <span class="built_in">dev</span>   <span class="comment">// 切换分支</span></div><div class="line"></div><div class="line">git branch   <span class="comment">// 列出所有分支，当前分支前面标有*号。切换分支后的提交都会提交到所选分支。</span></div><div class="line">git merge <span class="built_in">dev</span>   <span class="comment">//  合并指定分支（dev）到当前分支</span></div><div class="line">git branch -d <span class="built_in">dev</span>   <span class="comment">// 删除指定分支</span></div><div class="line">git branch -D <span class="built_in">dev</span>   <span class="comment">// 强制删除指定分支，分支在没有被合并前不允许删除，需要强制删除。</span></div><div class="line">git branch --<span class="built_in">set</span>-upstram-to=origin/<span class="built_in">dev</span> <span class="built_in">dev</span>   <span class="comment">//  指定本地分支与远程分支的关联(名字建议保持一致，但允许不一样)，</span></div><div class="line"><span class="comment">// 用于 远程库已经有了一个分支，你又在本地新建了一个同名分支，这时拉取(pull)远程代码到本地会冲突，需要进行关联。关联后如有冲突继续解决冲突，然后再进行push。</span></div></pre></td></tr></table></figure>
+<ul>
+<li>在不同分支对同一文件分别提交修改，再执行merge会出现冲突，出现冲突时，用 <code>git status</code> 可以查看冲突信息，修复冲突后再进行提交和合并。</li>
+</ul>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">log</span> <span class="comment">--graph --pretty=oneline --abbrev-commit   // 以图形化方式展示分支合并图</span></div></pre></td></tr></table></figure>
+<p><code>git merge</code> 这种方式提交，默认会在删除分支后丢掉你分支信息<br><code>git merge --no-ff -m ”commit mark” dev</code>  // 这种提交，参数(<code>--no-ff</code>)禁用<code>Fast forward</code>,这样能在提交历史中保留分支信息<br><code>git stash</code>   //  暂存当前分支做的尚未提交的本地修改，并把当前工作区的文件恢复到修改之前的状态。<br><code>git stash list</code>  // 查看本地暂存列表<br><code>git stash apply</code>   // 从 stash 恢复暂存的修改（工作进度），stash 中的 内容不会被删除，<br><code>git stash drop</code>   // 删除stash<br><code>git stash pop</code>  // 从stash恢复修改并删除stash,相当于上面两句的集合。<br><code>git stash apply stash@{0}</code>   // 当有多个版本的stash时，恢复到指定版本的stash。<br>git 建立一个新的<strong>bug分支</strong>，通常命名为     <code>issue</code>-101<br>为了开发一个新功能而建立的分支通常命名为 <code>feature</code>-newFea,开发完成后合并，删除该分支。<br><code>git remote</code> 查看远程库信息<br><code>git remote -v</code> 显示更详细的信息</p>
+<pre><code>origin  git@github.com:XElengo/test1Res.git (fetch)
+origin  git@github.com:XElengo/test1Res.git (push)
+</code></pre><p>上面显示了可以抓取和推送的origin的地址。如果没有推送权限，就看不到push的地址。</p>
+<ul>
+<li><p>要推送哪些本地分支到远程库完全由自己决定，通常master要时刻与远程库同步，dev作为开发主分支也要与远程库保持同步，bug分支一般不需要推送到远程仓库，feature分支如果多人合作开发，就要保持同步，如果单独开发，就等开发完毕再推送到远程库。</p>
+</li>
+<li><p>如果多个人在不同的客户端分别修改了同一个文件，第二个人提交推送时会产生冲突，需要先把远程库最新版本拉下来，在本地解决冲突后再提交到远程库：</p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git pull   <span class="comment">//  从远程库拉取最新版代码</span></div><div class="line">git push origin branch-<span class="keyword">name</span>   <span class="comment">//  推送本地分支到远程库</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><code>git rebase</code>  //  把本地未push的分叉的提交历史整理成一条直线，使提交历史更美观(变基)。</p>
+<pre><code>注意：只对尚未推送或分享给别人的本地修改执行变基操作清理历史；
+     从不对已推送至别处的提交执行变基操作
+</code></pre><hr>
+<h3 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h3><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">tag</span> <span class="title">v1</span>.<span class="number">0</span>   // 在某分支(<span class="literal">master</span>)中把当前版本命名成一个标签，便于以后查找这个节点的文件。</div><div class="line">git <span class="keyword">tag</span>   <span class="title">//  查看所有的标签，标签按照字母排序</span></div><div class="line">git <span class="keyword">tag</span> <span class="title">v0</span>.<span class="number">9</span> f010234   //  把过去的某个版本打一个标签，指定提交id，给那次提交打一个标签。</div><div class="line">git <span class="keyword">tag</span> <span class="title">-a</span> v0.<span class="number">1</span> -m “<span class="keyword">version</span> <span class="number">0.1</span> released” <span class="number">0</span>x01234   //  -a 指定标签名，-m 指定说明文字</div><div class="line">git show v1.<span class="number">0</span>   //  查看某个版本标签信息</div><div class="line">git <span class="keyword">tag</span> <span class="title">-d</span> v0.<span class="number">1</span>   //  删除某个标签</div><div class="line">git push origin <span class="tag">&lt;tagname&gt;</span>   //  推送某个标签到远程仓库</div><div class="line">git push origin --tags   //  推送所有尚未推送到远程仓库的标签</div></pre></td></tr></table></figure>
+<p>要删除远程仓库的某个标签：<br>先删除本地：<code>git tag -d v0.1</code><br>再删除远程：<code>git push origin :refs/tags/v0.1</code><br>(两条命令没有必然联系)</p>
+<hr>
+<h4 id="搭建git服务器"><a href="#搭建git服务器" class="headerlink" title="搭建git服务器"></a>搭建git服务器</h4><p>debian/ubuntu:</p>
+<p>1.安装git : <code>sudo apt-get install git</code><br>2.创建用户： <code>sudo adduser git</code><br>3.把所有用户的公钥导入到 <code>/home/git/.ssh/authorized_keys</code>, 一行一个公钥。<br>如果人数较少，可以使用这种方法，如果有几百人，可以使用 Gitosis管理公钥。<br>4.初始化git仓库：<br>选定一个目录作为git仓库,如：<code>/srv/sample.git</code>,<br>在 /srv目录下输入命令： <code>sudo git init --bare sample.git</code><br>git会创建一个裸仓库，没有工作区，只能上传文件和共享，所以不允许用户直接登录进服务器去改工作区的文件，且通常以.git结尾。<br>5.把仓库文件所有权改为git:  <code>sudo chown -R git:git sample.git</code><br>6.禁用shell登录： cd进入<code>/etc/passwd</code> 文件，修改以 git 用户开头的一行，如：<br>    <code>git:x:1001:1001:,,,:/home/git:/bin/bash</code><br>改为：<br>    <code>git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell</code><br>使git 用户只能使用git命令。<br>到此，远程仓库就搭建好了。</p>
+<p>7.在自己的客户端电脑上克隆远程仓库：<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone git<span class="variable">@server</span><span class="symbol">:/srv/sample</span>.git</div></pre></td></tr></table></figure></p>
+<p><strong>其他：</strong></p>
+<ul>
+<li>git 仓库默认是不支持权限控制的，但是因为git支持钩子（<code>hook</code>）,所以，可以在服务器端编写脚本达到控制提交等操作，可以使用<code>Gitolite</code>这样的小工具。</li>
+</ul>
+<hr>
+<h3 id="linux-vim-常用命令"><a href="#linux-vim-常用命令" class="headerlink" title="linux vim 常用命令"></a>linux vim 常用命令</h3><p><code>vi readme.txt</code> 进入VIM编辑器,可以新建文件也可以修改文件<br>如果这个文件以前是没有的，则为新建，则下方有提示为新文件。</p>
+<p>按ESC键 跳到命令模式，然后：</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">:<span class="keyword">w</span> 保存文件但不退出<span class="keyword">vi</span></div><div class="line">:<span class="keyword">w</span> <span class="keyword">file</span> 将修改另外保存到<span class="keyword">file</span>中，不退出<span class="keyword">vi</span></div><div class="line">:w! 强制保存，不推出<span class="keyword">vi</span></div><div class="line">:<span class="keyword">wq</span> 保存文件并退出<span class="keyword">vi</span></div><div class="line">:wq! 强制保存文件，并退出<span class="keyword">vi</span></div><div class="line">q: 不保存文件，退出<span class="keyword">vi</span></div><div class="line">:q! 不保存文件，强制退出<span class="keyword">vi</span></div><div class="line">:e! 放弃所有修改，从上次保存文件开始再编辑</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;p&gt;debian 下 安装 ： &lt;code&gt;sudo apt-get install git&lt;/code&gt;&lt;br&gt;windows 下： 下载安装包进行安装&lt;br&gt;安装完后打开&lt;code&gt;GitBash&lt;/code&gt;进行账户设置：&lt;br&gt;设置用户名，邮箱&lt;br&gt;&lt;figure class=&quot;highlight stylus&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ git config --global user&lt;span class=&quot;selector-class&quot;&gt;.name&lt;/span&gt; xlh&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ git config --global user&lt;span class=&quot;selector-class&quot;&gt;.email&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;xlhhaha@gmail.com&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;–global 标识这台电脑上的所有git仓库都会使用这个账号。 （全局设置）&lt;/p&gt;
+&lt;h3 id=&quot;必要配置：&quot;&gt;&lt;a href=&quot;#必要配置：&quot; class=&quot;headerlink&quot; title=&quot;必要配置：&quot;&gt;&lt;/a&gt;必要配置：&lt;/h3&gt;&lt;figure class=&quot;highlight stata&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;mkdir&lt;/span&gt; gittest1   &lt;span class=&quot;comment&quot;&gt;//  创建一个文件夹，作为版本库&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;cd&lt;/span&gt; gittest1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;pwd&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// 显示当前目录&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git init &lt;span class=&quot;comment&quot;&gt;// 初始化仓库，会在所选目录下创建 .git 隐藏文件夹&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="http://xelengo.me/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="git" scheme="http://xelengo.me/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jsp页面列表 一列变多列</title>
+    <link href="http://xelengo.me/2017/12/16/20171216_1/"/>
+    <id>http://xelengo.me/2017/12/16/20171216_1/</id>
     <published>2017-12-16T09:49:41.194Z</published>
-    <updated>2017-12-16T12:38:27.151Z</updated>
+    <updated>2017-12-16T13:07:36.633Z</updated>
     
     <content type="html"><![CDATA[<p>在这里，我展示了一个怎么把原来只有一列的表格变成一行放三个，变成三列进行展示的方法，适用于你的table只有一至三列数据（总之表格的列变少了会很奇怪，但是又必须用表格），但是需要把数据拆成更多列进行展示的情况。</p>
 <a id="more"></a>
-<p>最近在做项目的时候有一个需求，本来是一个只有一个参数需要展示的list,理所当然的做成了一列进行展示，如图：（没毛病吧）</p>
+<p>前段时间在做项目的时候有一个需求，本来是一个只有一个参数需要展示的list,理所当然的做成了一列进行展示，如图：（没毛病吧）</p>
 <p><img src="/assets/img/blogimg/20171216/2017-12-15_135244.png" alt="相对"></p>
-<p>然后也太难看了，能不能把一列变成多列进行展示呢？通过自己的构思，加上在网上查找实现方法，最后在CSDN博客（当时忘记收藏了，后来再找找不到了）上找到了一个写法，非常好用：</p>
+<p>然后也太不美观了，能不能把一列变成多列进行展示呢？通过自己的构思，加上在网上查找实现方法，最后在CSDN博客（当时忘记收藏了，后来再找找不到了）上找到了一个写法，非常好用：</p>
 <figure class="highlight dust"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span></div><div class="line">	<span class="tag">&lt;<span class="name">thead</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">th</span> <span class="attr">colspan</span>=<span class="string">"3"</span>&gt;</span>编号<span class="tag">&lt;/<span class="name">th</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">thead</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">tbody</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">c:forEach</span> <span class="attr">items</span>=<span class="string">"$</span></span><span class="template-variable">&#123;list&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">var</span>=<span class="string">"test"</span> <span class="attr">varStatus</span>=<span class="string">"status"</span>&gt;</span></span></div><div class="line">			<span class="tag">&lt;<span class="name">c:if</span> <span class="attr">test</span>=<span class="string">"$</span></span><span class="template-variable">&#123;status.count%3==1&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></div><div class="line">				<span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">c:if</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">td</span>&gt;</span>$<span class="template-variable">&#123;test.id&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></div><div class="line">			<span class="tag">&lt;<span class="name">c:if</span> <span class="attr">test</span>=<span class="string">"$</span></span><span class="template-variable">&#123;status.count%3==0&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></div><div class="line">				<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">c:if</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">c:set</span> <span class="attr">var</span>=<span class="string">"v_count"</span> <span class="attr">value</span>=<span class="string">"$</span></span><span class="template-variable">&#123;status.count&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> /&gt;</span></span></div><div class="line">		<span class="tag">&lt;/<span class="name">c:forEach</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">c:if</span> <span class="attr">test</span>=<span class="string">"$</span></span><span class="template-variable">&#123;v_count%3==1&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></div><div class="line">			<span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">c:if</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">c:if</span> <span class="attr">test</span>=<span class="string">"$</span></span><span class="template-variable">&#123;v_count%3==2&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></div><div class="line">			<span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">			<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">c:if</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>效果如图：</p>
 <p><img src="/assets/img/blogimg/20171216/2017-12-15_135327.png" alt="相对"></p>
@@ -52,9 +139,9 @@
     
       <category term="编程" scheme="http://xelengo.me/tags/%E7%BC%96%E7%A8%8B/"/>
     
-      <category term="学习" scheme="http://xelengo.me/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="java" scheme="http://xelengo.me/tags/java/"/>
+    
+      <category term="学习" scheme="http://xelengo.me/tags/%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="html" scheme="http://xelengo.me/tags/html/"/>
     
@@ -64,8 +151,8 @@
   
   <entry>
     <title>这次没有争吵，没有拉黑，但我们都懂；从此再无交集，这应该可以算是最好的离开方式</title>
-    <link href="http://xelengo.me/2017/06/04/%E8%BF%99%E6%AC%A1%E6%B2%A1%E6%9C%89%E4%BA%89%E5%90%B5%EF%BC%8C%E6%B2%A1%E6%9C%89%E6%8B%89%E9%BB%91%EF%BC%8C%E4%BD%86%E6%88%91%E4%BB%AC%E9%83%BD%E6%87%82%EF%BC%9B%E4%BB%8E%E6%AD%A4%E5%86%8D%E6%97%A0%E4%BA%A4%E9%9B%86%EF%BC%8C%E8%BF%99%E5%BA%94%E8%AF%A5%E5%8F%AF%E4%BB%A5%E7%AE%97%E6%98%AF%E6%9C%80%E5%A5%BD%E7%9A%84%E7%A6%BB%E5%BC%80%E6%96%B9%E5%BC%8F/"/>
-    <id>http://xelengo.me/2017/06/04/这次没有争吵，没有拉黑，但我们都懂；从此再无交集，这应该可以算是最好的离开方式/</id>
+    <link href="http://xelengo.me/2017/06/04/20170604_2/"/>
+    <id>http://xelengo.me/2017/06/04/20170604_2/</id>
     <published>2017-06-04T13:51:02.326Z</published>
     <updated>2017-12-10T10:01:48.282Z</updated>
     
@@ -145,8 +232,8 @@
   
   <entry>
     <title>python内置函数</title>
-    <link href="http://xelengo.me/2017/06/04/Python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/"/>
-    <id>http://xelengo.me/2017/06/04/Python内置函数/</id>
+    <link href="http://xelengo.me/2017/06/04/20170604_1/"/>
+    <id>http://xelengo.me/2017/06/04/20170604_1/</id>
     <published>2017-06-04T13:49:32.971Z</published>
     <updated>2017-12-10T10:02:18.055Z</updated>
     
@@ -183,18 +270,18 @@
     </summary>
     
     
+      <category term="随笔" scheme="http://xelengo.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
       <category term="学习" scheme="http://xelengo.me/tags/%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="python" scheme="http://xelengo.me/tags/python/"/>
-    
-      <category term="随笔" scheme="http://xelengo.me/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>什么是MVC</title>
-    <link href="http://xelengo.me/2017/05/15/%E4%BB%80%E4%B9%88%E6%98%AFMVC/"/>
-    <id>http://xelengo.me/2017/05/15/什么是MVC/</id>
+    <link href="http://xelengo.me/2017/05/15/20170515_1/"/>
+    <id>http://xelengo.me/2017/05/15/20170515_1/</id>
     <published>2017-05-15T11:03:40.864Z</published>
     <updated>2017-05-15T11:07:57.172Z</updated>
     
@@ -230,8 +317,8 @@
   
   <entry>
     <title>Java项目命名规范(转)</title>
-    <link href="http://xelengo.me/2017/03/20/Java%E9%A1%B9%E7%9B%AE%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83(%E8%BD%AC)/"/>
-    <id>http://xelengo.me/2017/03/20/Java项目命名规范(转)/</id>
+    <link href="http://xelengo.me/2017/03/20/20170320_1/"/>
+    <id>http://xelengo.me/2017/03/20/20170320_1/</id>
     <published>2017-03-20T10:31:18.730Z</published>
     <updated>2017-12-10T09:59:14.612Z</updated>
     
@@ -309,8 +396,8 @@ public void toString(){}
   
   <entry>
     <title>23个MySQL常用查询语句</title>
-    <link href="http://xelengo.me/2017/02/25/23%E4%B8%AAMySQL%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/"/>
-    <id>http://xelengo.me/2017/02/25/23个MySQL常用查询语句/</id>
+    <link href="http://xelengo.me/2017/02/25/20170225_2/"/>
+    <id>http://xelengo.me/2017/02/25/20170225_2/</id>
     <published>2017-02-25T06:28:37.631Z</published>
     <updated>2017-12-10T09:57:52.536Z</updated>
     
@@ -374,18 +461,18 @@ SELECT 字段名 FROM tb_stu WHERE 条件 ORDER BY 字段 ASC  升序
     </summary>
     
     
-      <category term="编程" scheme="http://xelengo.me/tags/%E7%BC%96%E7%A8%8B/"/>
-    
       <category term="MySql" scheme="http://xelengo.me/tags/MySql/"/>
     
       <category term="教程" scheme="http://xelengo.me/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="编程" scheme="http://xelengo.me/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>MySql常用数据库操作语句</title>
-    <link href="http://xelengo.me/2017/02/25/MySql%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E8%AF%AD%E5%8F%A5/"/>
-    <id>http://xelengo.me/2017/02/25/MySql常用数据库操作语句/</id>
+    <link href="http://xelengo.me/2017/02/25/20170225_1/"/>
+    <id>http://xelengo.me/2017/02/25/20170225_1/</id>
     <published>2017-02-25T06:07:52.952Z</published>
     <updated>2017-12-10T09:58:13.121Z</updated>
     
@@ -548,18 +635,18 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     </summary>
     
     
-      <category term="编程" scheme="http://xelengo.me/tags/%E7%BC%96%E7%A8%8B/"/>
-    
       <category term="MySql" scheme="http://xelengo.me/tags/MySql/"/>
     
       <category term="教程" scheme="http://xelengo.me/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="编程" scheme="http://xelengo.me/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>【Java编码规范】《阿里巴巴Java开发手册（正式版）》发布！</title>
-    <link href="http://xelengo.me/2017/02/12/%E3%80%90Java%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E3%80%91%E3%80%8A%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E6%AD%A3%E5%BC%8F%E7%89%88%EF%BC%89%E3%80%8B%E5%8F%91%E5%B8%83%EF%BC%81/"/>
-    <id>http://xelengo.me/2017/02/12/【Java编码规范】《阿里巴巴Java开发手册（正式版）》发布！/</id>
+    <link href="http://xelengo.me/2017/02/12/20170212_1/"/>
+    <id>http://xelengo.me/2017/02/12/20170212_1/</id>
     <published>2017-02-12T06:39:43.674Z</published>
     <updated>2017-12-10T09:57:34.939Z</updated>
     
@@ -632,8 +719,8 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
   
   <entry>
     <title>Python3.6安装教程</title>
-    <link href="http://xelengo.me/2017/02/04/%E5%AE%89%E8%A3%85python3.6/"/>
-    <id>http://xelengo.me/2017/02/04/安装python3.6/</id>
+    <link href="http://xelengo.me/2017/02/04/20170204_2/"/>
+    <id>http://xelengo.me/2017/02/04/20170204_2/</id>
     <published>2017-02-04T02:43:33.173Z</published>
     <updated>2017-12-10T10:00:04.738Z</updated>
     
@@ -681,8 +768,8 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
   
   <entry>
     <title>window10安装mysql数据库</title>
-    <link href="http://xelengo.me/2017/02/04/window10%E5%AE%89%E8%A3%85mysql%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    <id>http://xelengo.me/2017/02/04/window10安装mysql数据库/</id>
+    <link href="http://xelengo.me/2017/02/04/20170204_1/"/>
+    <id>http://xelengo.me/2017/02/04/20170204_1/</id>
     <published>2017-02-04T00:55:36.373Z</published>
     <updated>2017-12-10T10:01:11.009Z</updated>
     
@@ -774,18 +861,18 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
     </summary>
     
     
+      <category term="win10" scheme="http://xelengo.me/tags/win10/"/>
+    
       <category term="MySql" scheme="http://xelengo.me/tags/MySql/"/>
     
       <category term="教程" scheme="http://xelengo.me/tags/%E6%95%99%E7%A8%8B/"/>
-    
-      <category term="win10" scheme="http://xelengo.me/tags/win10/"/>
     
   </entry>
   
   <entry>
     <title>写博客随笔（四）</title>
-    <link href="http://xelengo.me/2017/02/03/yilia%E7%9A%84%E4%B8%A4%E4%B8%AA_config/"/>
-    <id>http://xelengo.me/2017/02/03/yilia的两个_config/</id>
+    <link href="http://xelengo.me/2017/02/03/20170203-2/"/>
+    <id>http://xelengo.me/2017/02/03/20170203-2/</id>
     <published>2017-02-03T11:02:53.773Z</published>
     <updated>2017-02-03T11:21:31.885Z</updated>
     
@@ -806,8 +893,8 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
   
   <entry>
     <title>写博客随笔（三）</title>
-    <link href="http://xelengo.me/2017/02/03/yilia%E4%BD%BF%E7%94%A8/"/>
-    <id>http://xelengo.me/2017/02/03/yilia使用/</id>
+    <link href="http://xelengo.me/2017/02/03/20170203-1/"/>
+    <id>http://xelengo.me/2017/02/03/20170203-1/</id>
     <published>2017-02-03T04:50:34.505Z</published>
     <updated>2017-12-10T14:39:43.039Z</updated>
     
@@ -844,8 +931,8 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
   
   <entry>
     <title>写博客随笔（二）</title>
-    <link href="http://xelengo.me/2017/02/02/test/"/>
-    <id>http://xelengo.me/2017/02/02/test/</id>
+    <link href="http://xelengo.me/2017/02/02/20170202-2/"/>
+    <id>http://xelengo.me/2017/02/02/20170202-2/</id>
     <published>2017-02-02T11:16:04.226Z</published>
     <updated>2017-12-10T09:58:55.819Z</updated>
     
@@ -891,11 +978,11 @@ SELECT columns , .......   FROM tb_name [ WHERE ...... ] ;
   </entry>
   
   <entry>
-    <title>我的第一篇博文+初步建立博客随笔（一）</title>
-    <link href="http://xelengo.me/2017/02/02/hello-world/"/>
-    <id>http://xelengo.me/2017/02/02/hello-world/</id>
+    <title>Hello world（一）</title>
+    <link href="http://xelengo.me/2017/02/02/20170202-1/"/>
+    <id>http://xelengo.me/2017/02/02/20170202-1/</id>
     <published>2017-02-02T02:26:02.612Z</published>
-    <updated>2017-12-10T09:50:25.178Z</updated>
+    <updated>2017-12-16T12:59:35.578Z</updated>
     
     <content type="html"><![CDATA[<p><a href="//xelengo.github.io/">Welcome to my blog.</a></p>
 <p>There is my first article.</p>
