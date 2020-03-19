@@ -5,18 +5,16 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://xelengo.me">
+  <link rel="dns-prefetch" href="https://xelengo.me">
   <title>XElengo&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="折腾，才是人生">
+  <meta name="keywords" content="程序猿,Java,Web">
 <meta property="og:type" content="website">
-<meta property="og:title" content="XElengo's blog">
-<meta property="og:url" content="http://xelengo.me/index.html">
-<meta property="og:site_name" content="XElengo's blog">
-<meta property="og:description" content="折腾，才是人生">
+<meta property="og:title" content="XElengo&#39;s blog">
+<meta property="og:url" content="https:&#x2F;&#x2F;xelengo.me&#x2F;">
+<meta property="og:site_name" content="XElengo&#39;s blog">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="XElengo's blog">
-<meta name="twitter:description" content="折腾，才是人生">
   
     <link rel="alternative" href="/atom.xml" title="XElengo&#39;s blog" type="application/atom+xml">
   
@@ -38,7 +36,7 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-98682476-1', 'auto');
+ga('create', 'UA-145457907-1', 'auto');
 ga('send', 'pageview');
 
 </script>
@@ -46,6 +44,16 @@ ga('send', 'pageview');
 
 
   
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?f8277fcbf43a2524f680480856f42d72";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 
 </head>
 
@@ -61,16 +69,18 @@ ga('send', 'pageview');
 			<img src="/assets/img/icon/icon.jpeg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">Xulinhu</a></h1>
+		  <h1 class="header-author"><a href="/">Xelengo</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">从今天起，立志改变</p>
+		<p class="header-subtitle">广厦起于累土，长堤毁于蚁穴</p>
 		
 
 		<nav class="header-menu">
 			<ul>
 			
 				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -90,9 +100,14 @@ ga('send', 'pageview');
 				
 					<a class="github" target="_blank" href="https://github.com/XElengo" title="github"><i class="icon-github"></i></a>
 		        
+					<a class="mail" target="_blank" href="mailto:2419741156@qq.com" title="mail"><i class="icon-mail"></i></a>
+		        
 			</div>
-		</nav>
-	</header>		
+    </nav>
+    <nav class="header-bottom" >
+      
+    </nav>
+	</header>
 </div>
 
     </div>
@@ -109,21 +124,25 @@ ga('send', 'pageview');
 				<img src="/assets/img/icon/icon.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">Xulinhu</h1>
+			  <h1 class="header-author js-header-author">Xelengo</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>从今天起，立志改变<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>广厦起于累土，长堤毁于蚁穴<i class="icon icon-quo-right"></i></p>
 			
 			
 			
 				
 			
+				
 			
 			
+
 			<nav class="header-nav">
 				<div class="social">
 					
 						<a class="github" target="_blank" href="https://github.com/XElengo" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="mail" target="_blank" href="mailto:2419741156@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -132,11 +151,17 @@ ga('send', 'pageview');
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 100%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
+		        
+					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
 				</ul>
-			</nav>
-		</header>				
+      </nav>
+
+      <nav class="header-bottom" >
+        
+      </nav>
+		</header>
 	</div>
 	<div class="mobile-mask" style="display:none" q-show="isShow"></div>
 </nav>
@@ -149,6 +174,351 @@ ga('send', 'pageview');
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-20191208_2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/20191208_2/">angular主路由，辅助路由</a>
+    </h1>
+  
+
+        
+        <a href="/2019/20191208_2/" class="archive-article-date">
+  	<time datetime="2019-12-08T07:14:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>因为项目需要，因此开始使用主路由和辅助路由，主路由和辅助路由可以用来分别控制项目的不同部分进行跳转，例如实现左半部分和右半部分分别跳转到不同的模块，展示不同的内容。</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2019/20191208_2/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/20191208_2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-20191208_1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/20191208_1/">angular4升级angular8要点</a>
+    </h1>
+  
+
+        
+        <a href="/2019/20191208_1/" class="archive-article-date">
+  	<time datetime="2019-12-08T06:05:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
+<p>因为公司的项目框架过于老旧，因此进行此次升级，因为依赖过于庞大，使用angular官网的升级指南总是出现依赖的版本不匹配问题，因此直接重新下载最新版angular脚手架，然后把公司项目的代码移到新的脚手架里，根据公司项目的依赖情况再重新安装依赖包，最后完成升级，总结要点如下：</p>
+</blockquote>
+<h3 id="升级步骤"><a href="#升级步骤" class="headerlink" title="升级步骤"></a>升级步骤</h3><p>私以为全新安装能得到比升级脚手架较少一些node_modules的体积，并且升级过程中无需考虑过多的版本兼容问题。</p>
+        
+          <a class="article-more-a" href="/2019/20191208_1/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/20191208_1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-20190423_1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/20190423_1/">ngrx使用总结</a>
+    </h1>
+  
+
+        
+        <a href="/2019/20190423_1/" class="archive-article-date">
+  	<time datetime="2019-04-23T08:49:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="基础知识及示例，参考："><a href="#基础知识及示例，参考：" class="headerlink" title="基础知识及示例，参考："></a>基础知识及示例，参考：</h4><blockquote>
+<p><a href="https://blog.csdn.net/j_bleach/article/details/78161765">https://blog.csdn.net/j_bleach/article/details/78161765</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://blog.csdn.net/j_bleach/article/details/78070539">https://blog.csdn.net/j_bleach/article/details/78070539</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://blog.csdn.net/fen747042796/article/details/74840844">https://blog.csdn.net/fen747042796/article/details/74840844</a></p>
+</blockquote>
+<blockquote>
+<p><a href="http://www.voidcn.com/article/p-garylnzx-xv.html">http://www.voidcn.com/article/p-garylnzx-xv.html</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://github.com/jiwenjiang/angular4-material2">https://github.com/jiwenjiang/angular4-material2</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://blog.csdn.net/chenqiuge1984/article/details/80130244">https://blog.csdn.net/chenqiuge1984/article/details/80130244</a></p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2019/20190423_1/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/20190423_1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-20190422_1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/20190422_1/">vs code 常用插件</a>
+    </h1>
+  
+
+        
+        <a href="/2019/20190422_1/" class="archive-article-date">
+  	<time datetime="2019-04-22T05:32:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>所有插件只按照类型区分，每一类型的插件不区分先后顺序。</p>
+<h3 id="基本插件"><a href="#基本插件" class="headerlink" title="基本插件"></a>基本插件</h3><h4 id="Beautify"><a href="#Beautify" class="headerlink" title="Beautify"></a><a href="https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify">Beautify</a></h4><p>美化javascript，JSON，CSS，Sass和HTML</p>
+<h4 id="Chinese-Simplified-Language-Pack-for-Visual-Studio-Code"><a href="#Chinese-Simplified-Language-Pack-for-Visual-Studio-Code" class="headerlink" title="Chinese (Simplified) Language Pack for Visual Studio Code"></a><a href="https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans">Chinese (Simplified) Language Pack for Visual Studio Code</a></h4><p>vs code简体中文包，安装后，在 locale.json 中添加 “locale”: “zh-cn”，即可载入中文（简体）语言包。要修改 locale.json，你可以同时按下 Ctrl+Shift+P 打开命令面板，之后输入 “config” 筛选可用命令列表，最后选择配置语言命令。</p>
+<h4 id="ESLint"><a href="#ESLint" class="headerlink" title="ESLint"></a><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a></h4><p>js，ts代码格式检查，默认根据内置的代码语法检查规则进行代码校验并标记出不符合规范的代码。</p>
+        
+          <a class="article-more-a" href="/2019/20190422_1/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/20190422_1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-20180907_1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -156,24 +526,26 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/07/20180907_1/">git 配置及基本操作</a>
+      <a class="article-title" href="/2018/20180907_1/">git 配置及基本操作</a>
     </h1>
   
 
         
-        <a href="/2018/09/07/20180907_1/" class="archive-article-date">
-  	<time datetime="2018-09-07T04:19:53.310Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-07</time>
+        <a href="/2018/20180907_1/" class="archive-article-date">
+  	<time datetime="2018-09-07T15:44:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>debian 下 安装 ： <code>sudo apt-get install git</code><br>windows 下： 下载安装包进行安装<br>安装完后打开<code>GitBash</code>进行账户设置：<br>设置用户名，邮箱<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user<span class="selector-class">.name</span> xlh</div><div class="line">$ git config --global user<span class="selector-class">.email</span> <span class="string">"xlhhaha@gmail.com"</span></div></pre></td></tr></table></figure></p>
+        <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>debian 下 安装 ： <code>sudo apt-get install git</code><br>windows 下： 下载安装包进行安装<br>安装完后打开<code>GitBash</code>进行账户设置：<br>设置用户名，邮箱</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ git<span class="built_in"> config </span>--global user.name xlh</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">$ git<span class="built_in"> config </span>--global user.email <span class="string">"xlhhaha@gmail.com"</span></span></pre></td></tr></table></figure>
+
 <p>–global 标识这台电脑上的所有git仓库都会使用这个账号。 （全局设置）</p>
-<h3 id="必要配置："><a href="#必要配置：" class="headerlink" title="必要配置："></a>必要配置：</h3><figure class="highlight stata"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">mkdir</span> gittest1   <span class="comment">//  创建一个文件夹，作为版本库</span></div><div class="line"><span class="keyword">cd</span> gittest1</div><div class="line"><span class="keyword">pwd</span> <span class="comment">// 显示当前目录</span></div><div class="line">git init <span class="comment">// 初始化仓库，会在所选目录下创建 .git 隐藏文件夹</span></div></pre></td></tr></table></figure>
+<h3 id="必要配置："><a href="#必要配置：" class="headerlink" title="必要配置："></a>必要配置：</h3><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">mkdir gittest1   <span class="string">//</span>  创建一个文件夹，作为版本库</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> gittest1</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">pwd</span> <span class="string">//</span> 显示当前目录</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">git init <span class="string">//</span> 初始化仓库，会在所选目录下创建 <span class="string">.git</span> 隐藏文件夹</span></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2018/09/07/20180907_1/#more">more >></a>
+          <a class="article-more-a" href="/2018/20180907_1/#more">more >></a>
         
       
 
@@ -201,7 +573,7 @@ ga('send', 'pageview');
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/09/07/20180907_1/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/20180907_1/">展开全文 >></a>
         </p>
       
 
@@ -238,13 +610,13 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/16/20171216_1/">jsp页面列表 一列变多列</a>
+      <a class="article-title" href="/2017/20171216_1/">jsp页面列表 一列变多列</a>
     </h1>
   
 
         
-        <a href="/2017/12/16/20171216_1/" class="archive-article-date">
-  	<time datetime="2017-12-16T09:49:41.194Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-16</time>
+        <a href="/2017/20171216_1/" class="archive-article-date">
+  	<time datetime="2017-12-16T13:07:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-16</time>
 </a>
         
       </header>
@@ -253,7 +625,7 @@ ga('send', 'pageview');
       
         <p>在这里，我展示了一个怎么把原来只有一列的表格变成一行放三个，变成三列进行展示的方法，适用于你的table只有一至三列数据（总之表格的列变少了会很奇怪，但是又必须用表格），但是需要把数据拆成更多列进行展示的情况。</p>
         
-          <a class="article-more-a" href="/2017/12/16/20171216_1/#more">more >></a>
+          <a class="article-more-a" href="/2017/20171216_1/#more">more >></a>
         
       
 
@@ -293,7 +665,7 @@ ga('send', 'pageview');
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/16/20171216_1/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/20171216_1/">展开全文 >></a>
         </p>
       
 
@@ -330,13 +702,13 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/04/20170604_2/">这次没有争吵，没有拉黑，但我们都懂；从此再无交集，这应该可以算是最好的离开方式</a>
+      <a class="article-title" href="/2017/20170604_2/">这次没有争吵，没有拉黑，但我们都懂；从此再无交集，这应该可以算是最好的离开方式</a>
     </h1>
   
 
         
-        <a href="/2017/06/04/20170604_2/" class="archive-article-date">
-  	<time datetime="2017-06-04T13:51:02.326Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-04</time>
+        <a href="/2017/20170604_2/" class="archive-article-date">
+  	<time datetime="2017-06-14T10:02:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
 </a>
         
       </header>
@@ -354,7 +726,7 @@ ga('send', 'pageview');
 <li>最暖心的感觉莫过于我随随便便说的话；有人认真的把它听了，而且还做了。</li>
 </ul>
         
-          <a class="article-more-a" href="/2017/06/04/20170604_2/#more">more >></a>
+          <a class="article-more-a" href="/2017/20170604_2/#more">more >></a>
         
       
 
@@ -378,7 +750,7 @@ ga('send', 'pageview');
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/04/20170604_2/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/20170604_2/">展开全文 >></a>
         </p>
       
 
@@ -415,13 +787,13 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/04/20170604_1/">python内置函数</a>
+      <a class="article-title" href="/2017/20170604_1/">python内置函数</a>
     </h1>
   
 
         
-        <a href="/2017/06/04/20170604_1/" class="archive-article-date">
-  	<time datetime="2017-06-04T13:49:32.971Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-04</time>
+        <a href="/2017/20170604_1/" class="archive-article-date">
+  	<time datetime="2017-06-14T10:01:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
 </a>
         
       </header>
@@ -431,7 +803,7 @@ ga('send', 'pageview');
         <p><a href="//docs.python.org/3/library/functions.html">Python内置函数官方文档</a></p>
 <p>Python的内置函数大体如下，有些函数可能因为版本不同略有变化。但是作为参考还是可以的。</p>
         
-          <a class="article-more-a" href="/2017/06/04/20170604_1/#more">more >></a>
+          <a class="article-more-a" href="/2017/20170604_1/#more">more >></a>
         
       
 
@@ -463,7 +835,7 @@ ga('send', 'pageview');
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/04/20170604_1/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/20170604_1/">展开全文 >></a>
         </p>
       
 
@@ -500,13 +872,13 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/15/20170515_1/">什么是MVC</a>
+      <a class="article-title" href="/2017/20170515_1/">什么是MVC</a>
     </h1>
   
 
         
-        <a href="/2017/05/15/20170515_1/" class="archive-article-date">
-  	<time datetime="2017-05-15T11:03:40.864Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-15</time>
+        <a href="/2017/20170515_1/" class="archive-article-date">
+  	<time datetime="2017-05-15T14:39:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-15</time>
 </a>
         
       </header>
@@ -516,7 +888,7 @@ ga('send', 'pageview');
         <p>MVC是一种设计思想、开发模式，即把项目代码分为M（Model 模型层 业务模型）V（View 视图层 用户界面）C（Controller 控制层 控制器）三部分。采用封装（分层）的思想，来降低耦合度，使系统更加灵活，增加程序的扩展性。提高代码的重用性，把业务逻辑代码与视图代码分离，通过控制器连接业务逻辑与视图，使代码结构层次清晰。MVC的缺点是：一个应用程序分成了三个部分开发，增加开发工作量。</p>
 <p>而在j2ee开发中，视图层由jsp页面等进行充当，控制层由action（或controller）进行充当，而剩余的如：实体类，service层，dao（Data Access Object 数据访问对象）层（以及mapper,bean,util等）都属于MVC中的模型层。<br>模型层是处理应用程序数据逻辑的部分，负责业务逻辑的处理，在数据库中存取数据。<br>控制层主要的作用是控制页面跳转，负责与用户的交互，从视图读取数据，控制用户输入，并向模型发送数据。<br>视图层在java web程序中由jsp页面充当，负责处理数据显示的部分。通常视图是依据模型数据创建的。</p>
         
-          <a class="article-more-a" href="/2017/05/15/20170515_1/#more">more >></a>
+          <a class="article-more-a" href="/2017/20170515_1/#more">more >></a>
         
       
 
@@ -544,7 +916,7 @@ ga('send', 'pageview');
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/15/20170515_1/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/20170515_1/">展开全文 >></a>
         </p>
       
 
@@ -581,13 +953,13 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/20/20170320_1/">Java项目命名规范(转)</a>
+      <a class="article-title" href="/2017/20170320_1/">Java项目命名规范(转)</a>
     </h1>
   
 
         
-        <a href="/2017/03/20/20170320_1/" class="archive-article-date">
-  	<time datetime="2017-03-20T10:31:18.730Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-20</time>
+        <a href="/2017/20170320_1/" class="archive-article-date">
+  	<time datetime="2017-03-20T14:39:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-20</time>
 </a>
         
       </header>
@@ -601,7 +973,7 @@ ga('send', 'pageview');
 <p>c、静态变量：全部大写，多个单词则以_分开，比如BOOLEAN_FLAG</p>
 <p>d、包package命名：全部小写,比如com.joinspider.workdesk</p>
         
-          <a class="article-more-a" href="/2017/03/20/20170320_1/#more">more >></a>
+          <a class="article-more-a" href="/2017/20170320_1/#more">more >></a>
         
       
 
@@ -629,360 +1001,7 @@ ga('send', 'pageview');
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/20/20170320_1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20170225_2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/25/20170225_2/">23个MySQL常用查询语句</a>
-    </h1>
-  
-
-        
-        <a href="/2017/02/25/20170225_2/" class="archive-article-date">
-  	<time datetime="2017-02-25T06:28:37.631Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一查询数值型数据"><a href="#一查询数值型数据" class="headerlink" title="一查询数值型数据:"></a>一查询数值型数据:</h3><pre><code>SELECT * FROM tb_name WHERE sum &gt; 100;
-</code></pre><p> 查询谓词:&gt;,=,&lt;,&lt;&gt;,!=,!&gt;,!&lt;,=&gt;,=&lt;</p>
-<h3 id="二查询字符串"><a href="#二查询字符串" class="headerlink" title="二查询字符串"></a>二查询字符串</h3>
-        
-          <a class="article-more-a" href="/2017/02/25/20170225_2/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySql</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/25/20170225_2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20170225_1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/25/20170225_1/">MySql常用数据库操作语句</a>
-    </h1>
-  
-
-        
-        <a href="/2017/02/25/20170225_1/" class="archive-article-date">
-  	<time datetime="2017-02-25T06:07:52.952Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>MySQL（官方发音为英语发音：/maɪ ˌɛskjuːˈɛl/“My S-Q-L”[1]，但也经常读作英语发音：/maɪ ˈsiːkwəl/“My Sequel”）原本是一个开放源代码的关系数据库管理系统，原开发者为瑞典的MySQL AB公司，该公司于2008年被昇阳微系统（Sun Microsystems）收购。2009年，甲骨文公司（Oracle）收购昇阳微系统公司，MySQL成为Oracle旗下产品。<br>MySQL在过去由于性能高、成本低、可靠性好，已经成为最流行的开源数据库，因此被广泛地应用在Internet上的中小型网站中。随着MySQL的不断成熟，它也逐渐用于更多大规模网站和应用，比如维基百科、Google和Facebook等网站。非常流行的开源软件组合LAMP中的“M”指的就是MySQL。<br>但被甲骨文公司收购后，Oracle大幅调涨MySQL商业版的售价，且甲骨文公司不再支持另一个自由软件项目OpenSolaris的发展，因此导致自由软件社区们对于Oracle是否还会持续支持MySQL社区版（MySQL之中唯一的免费版本）有所隐忧，因此原先一些使用MySQL的开源软件逐渐转向其它的数据库。例如维基百科已于2013年正式宣布将从MySQL迁移到MariaDB数据库[2]。MySQL的创始人麦克尔·维德纽斯以MySQL为基础，成立分支计划MariaDB。</p>
-        
-          <a class="article-more-a" href="/2017/02/25/20170225_1/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySql</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/25/20170225_1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20170212_1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/12/20170212_1/">【Java编码规范】《阿里巴巴Java开发手册（正式版）》发布！</a>
-    </h1>
-  
-
-        
-        <a href="/2017/02/12/20170212_1/" class="archive-article-date">
-  	<time datetime="2017-02-12T06:39:43.674Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>2017年2月9日阿里巴巴发布了一份《阿里巴巴Java开发手册（正式版）》，引起了互联网上程序员们广泛讨论。</p>
-<p>作为一名java伪初学者，得知这个消息还是要尽快来学习学习的。毕竟是阿里巴巴出的编码规范，总是会对初学者有很大帮助吧。一份好的编码规约，能够让编程少踩很多坑；一个好的编程习惯，能让以后的编程旅途更加顺畅。</p>
-<p><a href="//pan.baidu.com/s/1c202zNM">点击进行百度云下载</a></p>
-        
-          <a class="article-more-a" href="/2017/02/12/20170212_1/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">知识分享</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">阿里巴巴</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">开发手册</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">代码规范</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/12/20170212_1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20170204_2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/04/20170204_2/">Python3.6安装教程</a>
-    </h1>
-  
-
-        
-        <a href="/2017/02/04/20170204_2/" class="archive-article-date">
-  	<time datetime="2017-02-04T02:43:33.173Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>首先。先看一下Python的简介：</p>
-<p>Python（英国发音：/ˈpaɪθən/ 美国发音：/ˈpaɪθɑːn/），是一种面向对象、解释型的计算机程序语言。它包含了一组功能完备的标准库，能够轻松完成很多常见的任务。它的语法简单，与其它大多数程序设计语言使用大括号不一样，它使用缩进来定义语句块。</p>
-        
-          <a class="article-more-a" href="/2017/02/04/20170204_2/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySql</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">数据库</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/04/20170204_2/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/20170320_1/">展开全文 >></a>
         </p>
       
 
@@ -1014,7 +1033,7 @@ ga('send', 'pageview');
   
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
     </nav>
   
 
@@ -1026,7 +1045,7 @@ ga('send', 'pageview');
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 Xulinhu
+    		&copy; 2019 Xelengo
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -1117,19 +1136,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分享</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">win10</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">MySql</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">教程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分享</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">win10</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1157,19 +1180,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">学习</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1178,6 +1189,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">jsp</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">web</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1228,7 +1251,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">&lt;br&gt;但行好事，莫问前程。&lt;br&gt;人生不易，莫笑他人。&lt;br&gt;</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">&lt;br&gt;但行好事，莫问前程。&lt;br&gt;&lt;br&gt;人生不易，莫笑他人。&lt;br&gt;</div>
   	  	
     	</section>
     
